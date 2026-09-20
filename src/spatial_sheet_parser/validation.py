@@ -1,7 +1,9 @@
 """Validation engine for enforcing product JSON contract integrity."""
 
+from __future__ import annotations
+
 import math
-from typing import Any, Dict, List, Optional, Set
+from typing import Any, Dict, List, Optional, Set, Tuple
 from spatial_sheet_parser.config import ParserConfig
 from spatial_sheet_parser import schema, warnings as warn_taxonomy
 
