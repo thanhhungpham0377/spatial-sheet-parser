@@ -1,0 +1,4171 @@
+{
+  "metadata": {
+    "parser_version": "0.1.0",
+    "source_format": "xlsx",
+    "sheet_name": "AI outcome",
+    "toc_summary": [
+      {
+        "row": 2,
+        "content": "Ứng dụng tự động hóa task trong role Tax consultant"
+      },
+      {
+        "row": 3,
+        "content": "Quy trình thiết kế Dashboard Power BI bằng AI"
+      },
+      {
+        "row": 4,
+        "content": "Xây dựng thương hiệu cá nhân"
+      },
+      {
+        "row": 5,
+        "content": "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng"
+      },
+      {
+        "row": 6,
+        "content": "Bảng 2: Phân tích đối chiếu đặc thù quản trị giữa Thương hiệu Sản phẩm và Thương hiệu Cá nhân"
+      },
+      {
+        "row": 7,
+        "content": "Bảng 3: Quy trình chuẩn mực 4 giai đoạn xây dựng thương hiệu cá nhân"
+      },
+      {
+        "row": 8,
+        "content": "Bảng 4: Quy trình chuẩn mực 4 giai đoạn xây dựng thương hiệu sản phẩm"
+      },
+      {
+        "row": 9,
+        "content": "Bảng 5: Phân loại 12 Hình mẫu thương hiệu (Brand Archetypes) theo động lực tâm lý"
+      },
+      {
+        "row": 10,
+        "content": "Bảng 6: Cấu trúc 6 khía cạnh của Lăng kính Bản sắc Thương hiệu (Brand Identity Prism)"
+      },
+      {
+        "row": 11,
+        "content": "Bảng 7: Các mô hình Kiến trúc thương hiệu (Brand Architecture)"
+      },
+      {
+        "row": 12,
+        "content": "Bảng 8: Ma trận chỉ số đo lường hiệu quả (KPIs)"
+      },
+      {
+        "row": 13,
+        "content": "Bảng 9: Ma trận quản trị khủng hoảng danh tiếng theo thuyết SCCT"
+      },
+      {
+        "row": 14,
+        "content": "Nghiên Cứu Chiến Lược & So Sánh Các Nền Tảng AI Agent: Microsoft Copilot Studio, Google Gemini và Anthropic Claude"
+      },
+      {
+        "row": 15,
+        "content": "1. So sánh kiến trúc kỹ thuật và triết lý phát triển"
+      },
+      {
+        "row": 16,
+        "content": "2. So sánh năng lực RAG, kết nối dữ liệu và chuẩn tích hợp"
+      },
+      {
+        "row": 17,
+        "content": "3. So sánh an toàn, bảo mật, định danh và tuân thủ"
+      },
+      {
+        "row": 18,
+        "content": "4. So sánh cơ cấu chi phí và tổng chi phí sở hữu (TCO)"
+      },
+      {
+        "row": 19,
+        "content": "5. So sánh năng lực tự trị và cơ chế kiểm soát rủi ro"
+      },
+      {
+        "row": 20,
+        "content": "6. Bảng tổng hợp ứng dụng thực tế theo phòng ban doanh nghiệp"
+      },
+      {
+        "row": 21,
+        "content": "7. Ma trận hướng dẫn lựa chọn nền tảng tối ưu"
+      },
+      {
+        "row": 28,
+        "content": "Ứng dụng tự động hóa task trong role Tax consultant"
+      }
+    ],
+    "data_start_row": 0,
+    "warnings": [],
+    "validation": {
+      "is_valid": true,
+      "error_count": 0,
+      "warning_count": 0,
+      "errors": [],
+      "warnings": []
+    },
+    "grid_dimensions": {
+      "rows": 1036,
+      "cols": 27
+    }
+  },
+  "tables": [
+    {
+      "table_id": "tbl_003",
+      "title": "STT",
+      "level": 2,
+      "parent_id": "tbl_002",
+      "title_cell": {
+        "row": 30,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 30,
+        "start_col": 2,
+        "end_row": 38,
+        "end_col": 9
+      },
+      "header_row": 31,
+      "record_start_row": 32,
+      "record_end_row": 38,
+      "columns": [
+        "Thuế TNDN (CIT)",
+        "Rà soát Sổ cái chi phí (GL Deductibility Review)",
+        "• Đọc và rà soát thủ công hàng chục nghìn dòng diễn giải (Narrative) trên các tài khoản 641, 642, 635, 811.\n\n• Diễn giải viết tắt, không chuẩn hóa.\n\n• Phải lọc nhiều lần để tìm chi phí nhạy cảm.",
+        "• Sổ cái (General Ledger).\n\n• Bảng cân đối số phát sinh (Trial Balance).\n\n• Hóa đơn, hợp đồng chứng từ đính kèm.",
+        "• Chi phí không có hóa đơn/chứng từ hợp lệ: TK đối ứng không phải 111, 112, 331.\n\n• Khoản chi nhạy cảm: Từ khóa phạt vi phạm, bồi thường, biếu tặng, nghỉ mát, tài trợ.\n\n• Khống chế trần chi phí: Quỹ phúc lợi $\\le$ 1 tháng lương bình quân thực tế; trang phục $\\le$ 5 triệu/người/năm.\n\n• Lãi vay: Khống chế theo vốn điều lệ chưa góp đủ và trần 30% EBITDA (NĐ 132).",
+        "• AI/NLP Text Classifier: Tự động đọc diễn giải và gán nhãn rủi ro (Được trừ / Không được trừ / Cần xem xét chứng từ).\n\n• Auto-Cap Calculator: Tự động tính toán các khoản chi vượt trần quy định.",
+        "Python (Pandas, NLP), Google Apps Script, LLM Prompting"
+      ],
+      "column_details": [
+        {
+          "key": "Thuế TNDN (CIT)",
+          "label": "Thuế TNDN (CIT)",
+          "col_index": 3
+        },
+        {
+          "key": "Rà soát Sổ cái chi phí (GL Deductibility Review)",
+          "label": "Rà soát Sổ cái chi phí (GL Deductibility Review)",
+          "col_index": 4
+        },
+        {
+          "key": "• Đọc và rà soát thủ công hàng chục nghìn dòng diễn giải (Narrative) trên các tài khoản 641, 642, 635, 811.\n\n• Diễn giải viết tắt, không chuẩn hóa.\n\n• Phải lọc nhiều lần để tìm chi phí nhạy cảm.",
+          "label": "• Đọc và rà soát thủ công hàng chục nghìn dòng diễn giải (Narrative) trên các tài khoản 641, 642, 635, 811.\n\n• Diễn giải viết tắt, không chuẩn hóa.\n\n• Phải lọc nhiều lần để tìm chi phí nhạy cảm.",
+          "col_index": 5
+        },
+        {
+          "key": "• Sổ cái (General Ledger).\n\n• Bảng cân đối số phát sinh (Trial Balance).\n\n• Hóa đơn, hợp đồng chứng từ đính kèm.",
+          "label": "• Sổ cái (General Ledger).\n\n• Bảng cân đối số phát sinh (Trial Balance).\n\n• Hóa đơn, hợp đồng chứng từ đính kèm.",
+          "col_index": 6
+        },
+        {
+          "key": "• Chi phí không có hóa đơn/chứng từ hợp lệ: TK đối ứng không phải 111, 112, 331.\n\n• Khoản chi nhạy cảm: Từ khóa phạt vi phạm, bồi thường, biếu tặng, nghỉ mát, tài trợ.\n\n• Khống chế trần chi phí: Quỹ phúc lợi $\\le$ 1 tháng lương bình quân thực tế; trang phục $\\le$ 5 triệu/người/năm.\n\n• Lãi vay: Khống chế theo vốn điều lệ chưa góp đủ và trần 30% EBITDA (NĐ 132).",
+          "label": "• Chi phí không có hóa đơn/chứng từ hợp lệ: TK đối ứng không phải 111, 112, 331.\n\n• Khoản chi nhạy cảm: Từ khóa phạt vi phạm, bồi thường, biếu tặng, nghỉ mát, tài trợ.\n\n• Khống chế trần chi phí: Quỹ phúc lợi $\\le$ 1 tháng lương bình quân thực tế; trang phục $\\le$ 5 triệu/người/năm.\n\n• Lãi vay: Khống chế theo vốn điều lệ chưa góp đủ và trần 30% EBITDA (NĐ 132).",
+          "col_index": 7
+        },
+        {
+          "key": "• AI/NLP Text Classifier: Tự động đọc diễn giải và gán nhãn rủi ro (Được trừ / Không được trừ / Cần xem xét chứng từ).\n\n• Auto-Cap Calculator: Tự động tính toán các khoản chi vượt trần quy định.",
+          "label": "• AI/NLP Text Classifier: Tự động đọc diễn giải và gán nhãn rủi ro (Được trừ / Không được trừ / Cần xem xét chứng từ).\n\n• Auto-Cap Calculator: Tự động tính toán các khoản chi vượt trần quy định.",
+          "col_index": 8
+        },
+        {
+          "key": "Python (Pandas, NLP), Google Apps Script, LLM Prompting",
+          "label": "Python (Pandas, NLP), Google Apps Script, LLM Prompting",
+          "col_index": 9
+        }
+      ],
+      "records": [
+        {
+          "Thuế TNDN (CIT)": "Thuế GTGT (VAT)",
+          "Rà soát Sổ cái chi phí (GL Deductibility Review)": "Đối soát Bảng kê Hóa đơn đầu vào với Cổng Thuế",
+          "• Đọc và rà soát thủ công hàng chục nghìn dòng diễn giải (Narrative) trên các tài khoản 641, 642, 635, 811.\n\n• Diễn giải viết tắt, không chuẩn hóa.\n\n• Phải lọc nhiều lần để tìm chi phí nhạy cảm.": "• Tải từng hóa đơn hoặc bảng kê từ Cổng Hóa đơn điện tử về đối chiếu với sổ sách kế toán.\n\n• Tra cứu thủ công tình trạng hoạt động của từng người bán trên cổng thông tin người nộp thuế.",
+          "• Sổ cái (General Ledger).\n\n• Bảng cân đối số phát sinh (Trial Balance).\n\n• Hóa đơn, hợp đồng chứng từ đính kèm.": "• File XML/PDF Hóa đơn điện tử.\n\n• Bảng kê mua vào (Sổ kế toán TK 133).\n\n• Dữ liệu trên Cổng HĐĐT của Tổng cục Thuế.",
+          "• Chi phí không có hóa đơn/chứng từ hợp lệ: TK đối ứng không phải 111, 112, 331.\n\n• Khoản chi nhạy cảm: Từ khóa phạt vi phạm, bồi thường, biếu tặng, nghỉ mát, tài trợ.\n\n• Khống chế trần chi phí: Quỹ phúc lợi $\\le$ 1 tháng lương bình quân thực tế; trang phục $\\le$ 5 triệu/người/năm.\n\n• Lãi vay: Khống chế theo vốn điều lệ chưa góp đủ và trần 30% EBITDA (NĐ 132).": "• Trạng thái người bán: Phát hiện người bán thuộc diện rủi ro cao (bỏ trốn, tạm ngừng kinh doanh, đóng mã số thuế).\n\n• Thời điểm lập hóa đơn: Ngày ký số lệch nhiều ngày so với ngày lập; hóa đơn phát hành sau ngày nghiệm thu dịch vụ.\n\n• Khớp thông tin: Khớp MST, ngày hóa đơn, tiền trước thuế và tiền thuế giữa bảng kê và hóa đơn gốc.",
+          "• AI/NLP Text Classifier: Tự động đọc diễn giải và gán nhãn rủi ro (Được trừ / Không được trừ / Cần xem xét chứng từ).\n\n• Auto-Cap Calculator: Tự động tính toán các khoản chi vượt trần quy định.": "• Batch XML Ingestion Tool: Script tự động đọc hàng loạt file XML, trích xuất vào bảng và phát hiện chênh lệch.\n\n• MST Risk Checker: Tự động gọi hàm/API tra cứu trạng thái MST người bán theo danh sách.",
+          "Python (Pandas, NLP), Google Apps Script, LLM Prompting": "Python (lxml, Requests), Power Query"
+        },
+        {
+          "Thuế TNDN (CIT)": "Thuế GTGT & TNDN",
+          "Rà soát Sổ cái chi phí (GL Deductibility Review)": "Kiểm tra Thanh toán không dùng tiền mặt",
+          "• Đọc và rà soát thủ công hàng chục nghìn dòng diễn giải (Narrative) trên các tài khoản 641, 642, 635, 811.\n\n• Diễn giải viết tắt, không chuẩn hóa.\n\n• Phải lọc nhiều lần để tìm chi phí nhạy cảm.": "• Dò từng hóa đơn có tổng thanh toán từ 20 triệu đồng trở lên xem đã được chuyển khoản qua ngân hàng hay chưa.\n\n• Thường bị bỏ sót đối với các trường hợp thanh toán gộp nhiều hóa đơn hoặc cấn trừ công nợ.",
+          "• Sổ cái (General Ledger).\n\n• Bảng cân đối số phát sinh (Trial Balance).\n\n• Hóa đơn, hợp đồng chứng từ đính kèm.": "• Sổ chi tiết công nợ (AP ledger TK 331).\n\n• Sao kê tài khoản ngân hàng (TK 112).\n\n• Biên bản cấn trừ công nợ (nếu có).",
+          "• Chi phí không có hóa đơn/chứng từ hợp lệ: TK đối ứng không phải 111, 112, 331.\n\n• Khoản chi nhạy cảm: Từ khóa phạt vi phạm, bồi thường, biếu tặng, nghỉ mát, tài trợ.\n\n• Khống chế trần chi phí: Quỹ phúc lợi $\\le$ 1 tháng lương bình quân thực tế; trang phục $\\le$ 5 triệu/người/năm.\n\n• Lãi vay: Khống chế theo vốn điều lệ chưa góp đủ và trần 30% EBITDA (NĐ 132).": "• Mọi hóa đơn có giá trị từ 20 triệu đồng trở lên (đã bao gồm VAT) phải có chứng từ thanh toán không dùng tiền mặt mới đủ điều kiện khấu trừ VAT và tính chi phí được trừ TNDN.\n\n• Trường hợp bù trừ công nợ: Phải có thỏa thuận bằng văn bản và đối chiếu công nợ định kỳ.",
+          "• AI/NLP Text Classifier: Tự động đọc diễn giải và gán nhãn rủi ro (Được trừ / Không được trừ / Cần xem xét chứng từ).\n\n• Auto-Cap Calculator: Tự động tính toán các khoản chi vượt trần quy định.": "• Multi-Condition Matcher: Thuật toán tự động đối chiếu số tiền trên hóa đơn $\\ge$ 20 triệu với các giao dịch chi trên sao kê ngân hàng theo Mã NCC/Số hóa đơn.",
+          "Python (Pandas, NLP), Google Apps Script, LLM Prompting": "Power Query, Python (Merge & Fuzzy Match)"
+        },
+        {
+          "Thuế TNDN (CIT)": "Giao dịch liên kết (TP)",
+          "Rà soát Sổ cái chi phí (GL Deductibility Review)": "Bóc tách Dữ liệu & Lập Phụ lục 01 (NĐ 132/2020)",
+          "• Đọc và rà soát thủ công hàng chục nghìn dòng diễn giải (Narrative) trên các tài khoản 641, 642, 635, 811.\n\n• Diễn giải viết tắt, không chuẩn hóa.\n\n• Phải lọc nhiều lần để tìm chi phí nhạy cảm.": "• Lọc thủ công các giao dịch phát sinh với các Bên liên kết từ toàn bộ dữ liệu bán hàng, mua hàng, chi phí quản lý, vay mượn.\n\n• Tính toán phức tạp về trần lãi vay 30% EBITDA và theo dõi chuyển lãi vay kỳ sau.",
+          "• Sổ cái (General Ledger).\n\n• Bảng cân đối số phát sinh (Trial Balance).\n\n• Hóa đơn, hợp đồng chứng từ đính kèm.": "• Danh sách Bên liên kết (Associated Enterprises List).\n\n• Sổ cái chi tiết mua/bán (TK 511, 156, 154, 642, 635).\n\n• Báo cáo tài chính (P&L, Balance Sheet).",
+          "• Chi phí không có hóa đơn/chứng từ hợp lệ: TK đối ứng không phải 111, 112, 331.\n\n• Khoản chi nhạy cảm: Từ khóa phạt vi phạm, bồi thường, biếu tặng, nghỉ mát, tài trợ.\n\n• Khống chế trần chi phí: Quỹ phúc lợi $\\le$ 1 tháng lương bình quân thực tế; trang phục $\\le$ 5 triệu/người/năm.\n\n• Lãi vay: Khống chế theo vốn điều lệ chưa góp đủ và trần 30% EBITDA (NĐ 132).": "• Xác định bên liên kết: Theo các tiêu chí sở hữu vốn ($\\ge 25\\%$), bảo lãnh vay ($\\ge 25\\%$ vốn vay và $> 50\\%$ tổng nợ), quản lý điều hành.\n\n• Khống chế lãi vay thuần: Net Interest Expense $\\le 30\\%$ EBITDA.\n\n• Phần lãi vay vượt mức được chuyển sang kỳ tính thuế tiếp theo (tối đa không quá 5 năm).",
+          "• AI/NLP Text Classifier: Tự động đọc diễn giải và gán nhãn rủi ro (Được trừ / Không được trừ / Cần xem xét chứng từ).\n\n• Auto-Cap Calculator: Tự động tính toán các khoản chi vượt trần quy định.": "• TP Transaction Auto-Filter: Bảng mapping tự động nhận diện giao dịch với các bên liên kết dựa trên mã Vendor/Customer ID.\n\n• EBITDA & Interest Cap Calculator: File tính tự động kéo số liệu từ P&L để xác định số thuế TNDN bị ảnh hưởng do vượt trần lãi vay.",
+          "Python (Pandas, NLP), Google Apps Script, LLM Prompting": "Excel VBA, Python, Power BI"
+        },
+        {
+          "Thuế TNDN (CIT)": "Thuế TNCN (PIT)",
+          "Rà soát Sổ cái chi phí (GL Deductibility Review)": "Đối soát Bảng lương với Tờ khai Quyết toán TNCN",
+          "• Đọc và rà soát thủ công hàng chục nghìn dòng diễn giải (Narrative) trên các tài khoản 641, 642, 635, 811.\n\n• Diễn giải viết tắt, không chuẩn hóa.\n\n• Phải lọc nhiều lần để tìm chi phí nhạy cảm.": "• So khớp giữa Bảng tính lương tổng hợp cả năm với danh sách kê khai thuế TNCN của hàng trăm/hàng nghìn nhân viên.\n\n• Dễ sai lệch do các khoản phụ cấp không chịu thuế hoặc nhân viên làm việc không đủ 12 tháng.",
+          "• Sổ cái (General Ledger).\n\n• Bảng cân đối số phát sinh (Trial Balance).\n\n• Hóa đơn, hợp đồng chứng từ đính kèm.": "• Bảng lương 12 tháng (Payroll data).\n\n• Sổ cái chi phí lương (TK 334, 641, 642).\n\n• Tờ khai thuế TNCN tháng/quý và Mẫu 05/QTT-TNCN.",
+          "• Chi phí không có hóa đơn/chứng từ hợp lệ: TK đối ứng không phải 111, 112, 331.\n\n• Khoản chi nhạy cảm: Từ khóa phạt vi phạm, bồi thường, biếu tặng, nghỉ mát, tài trợ.\n\n• Khống chế trần chi phí: Quỹ phúc lợi $\\le$ 1 tháng lương bình quân thực tế; trang phục $\\le$ 5 triệu/người/năm.\n\n• Lãi vay: Khống chế theo vốn điều lệ chưa góp đủ và trần 30% EBITDA (NĐ 132).": "• Thu nhập miễn thuế/không tính thuế: Tiền ăn trưa, điện thoại, trang phục, làm thêm giờ ban đêm.\n\n• Người phụ thuộc: Kiểm tra trùng lặp mã số thuế người phụ thuộc giữa các nhân viên; kiểm tra đủ/thiếu số tháng đăng ký giảm trừ.\n\n• Điều kiện ủy quyền quyết toán: Chỉ có thu nhập tại 1 nơi hoặc có vãng lai không quá 10 triệu đã khấu trừ 10%.",
+          "• AI/NLP Text Classifier: Tự động đọc diễn giải và gán nhãn rủi ro (Được trừ / Không được trừ / Cần xem xét chứng từ).\n\n• Auto-Cap Calculator: Tự động tính toán các khoản chi vượt trần quy định.": "• Payroll-to-PIT Reconciler: Script tự động chạy lại biểu thuế lũy tiến từng phần cho toàn bộ nhân sự, so sánh với số thuế kế toán đã khấu trừ và xuất bảng chênh lệch.\n\n• Dependent Overlap Detector: Kiểm tra trùng MST người phụ thuộc tự động.",
+          "Python (Pandas, NLP), Google Apps Script, LLM Prompting": "Python (Pandas), Excel Power Query"
+        },
+        {
+          "Thuế TNDN (CIT)": "Thuế Nhà thầu (FCT)",
+          "Rà soát Sổ cái chi phí (GL Deductibility Review)": "Soát xét Hồi tố Dòng tiền Chuyển ra Nước ngoài",
+          "• Đọc và rà soát thủ công hàng chục nghìn dòng diễn giải (Narrative) trên các tài khoản 641, 642, 635, 811.\n\n• Diễn giải viết tắt, không chuẩn hóa.\n\n• Phải lọc nhiều lần để tìm chi phí nhạy cảm.": "• Rà soát toàn bộ các lệnh chuyển tiền quốc tế (Outward Telegraphic Transfer - TT) trong năm để tránh bỏ sót thuế nhà thầu.\n\n• Dữ liệu sao kê ngân hàng thường viết tắt tên nhà cung cấp và nội dung chi trả.",
+          "• Sổ cái (General Ledger).\n\n• Bảng cân đối số phát sinh (Trial Balance).\n\n• Hóa đơn, hợp đồng chứng từ đính kèm.": "• Sao kê tài khoản ngoại tệ (USD, EUR...).\n\n• Giấy báo Nợ ngân hàng / Điện chuyển tiền (Swift MT103).\n\n• Hợp đồng dịch vụ nhà thầu, hóa đơn thương mại (Invoice).",
+          "• Chi phí không có hóa đơn/chứng từ hợp lệ: TK đối ứng không phải 111, 112, 331.\n\n• Khoản chi nhạy cảm: Từ khóa phạt vi phạm, bồi thường, biếu tặng, nghỉ mát, tài trợ.\n\n• Khống chế trần chi phí: Quỹ phúc lợi $\\le$ 1 tháng lương bình quân thực tế; trang phục $\\le$ 5 triệu/người/năm.\n\n• Lãi vay: Khống chế theo vốn điều lệ chưa góp đủ và trần 30% EBITDA (NĐ 132).": "• Nhận diện đối tượng FCT: Mọi khoản chi trả dịch vụ phần mềm SaaS (Microsoft, Google, Zoom, AWS), quảng cáo số, hoa hồng môi giới, dịch vụ kỹ thuật tiêu dùng tại VN.\n\n• Phương pháp tính thuế: Phương pháp trực tiếp (Tỷ lệ % trên doanh thu tính thuế TNDN và VAT).\n\n• Thời hạn kê khai: Trong vòng 10 ngày kể từ ngày thanh toán hoặc kê khai theo tháng.",
+          "• AI/NLP Text Classifier: Tự động đọc diễn giải và gán nhãn rủi ro (Được trừ / Không được trừ / Cần xem xét chứng từ).\n\n• Auto-Cap Calculator: Tự động tính toán các khoản chi vượt trần quy định.": "• Outward Remittance Scanner: Module tương tự như quy trình FCT đã xây dựng: áp dụng Regex lọc tên vendor nước ngoài, đối chiếu với danh mục dịch vụ số/SaaS để tự động cảnh báo rủi ro FCT bị bỏ sót.",
+          "Python (Pandas, NLP), Google Apps Script, LLM Prompting": "Python (Regex), Excel Power Query"
+        },
+        {
+          "Thuế TNDN (CIT)": "Quyết toán TNDN",
+          "Rà soát Sổ cái chi phí (GL Deductibility Review)": "Lập Bảng đối chiếu Kế toán - Thuế (Book-to-Tax Bridge)",
+          "• Đọc và rà soát thủ công hàng chục nghìn dòng diễn giải (Narrative) trên các tài khoản 641, 642, 635, 811.\n\n• Diễn giải viết tắt, không chuẩn hóa.\n\n• Phải lọc nhiều lần để tìm chi phí nhạy cảm.": "• Tổng hợp các khoản điều chỉnh tăng/giảm lợi nhuận trước thuế để lên các chỉ tiêu từ B1 đến B14 trên Tờ khai 03/TNDN.\n\n• Phải nhặt tay từng khoản chênh lệch vĩnh viễn và chênh lệch tạm thời từ các file làm việc lẻ.",
+          "• Sổ cái (General Ledger).\n\n• Bảng cân đối số phát sinh (Trial Balance).\n\n• Hóa đơn, hợp đồng chứng từ đính kèm.": "• Báo cáo kết quả hoạt động kinh doanh (P&L).\n\n• Bảng cân đối số phát sinh (TB).\n\n• Các working paper soát xét chi phí (GL review, trích trước, dự phòng).",
+          "• Chi phí không có hóa đơn/chứng từ hợp lệ: TK đối ứng không phải 111, 112, 331.\n\n• Khoản chi nhạy cảm: Từ khóa phạt vi phạm, bồi thường, biếu tặng, nghỉ mát, tài trợ.\n\n• Khống chế trần chi phí: Quỹ phúc lợi $\\le$ 1 tháng lương bình quân thực tế; trang phục $\\le$ 5 triệu/người/năm.\n\n• Lãi vay: Khống chế theo vốn điều lệ chưa góp đủ và trần 30% EBITDA (NĐ 132).": "• Chênh lệch vĩnh viễn (Chỉ tiêu B4): Chi phí không được trừ theo Luật Thuế TNDN (phạt vi phạm, không hóa đơn, vượt trần phúc lợi...).\n\n• Chênh lệch tạm thời: Chi phí trích trước chưa có hóa đơn (TK 335), trích lập dự phòng nợ xấu (TK 229), chênh lệch tỷ giá chưa thực hiện của các khoản mục tiền tệ.",
+          "• AI/NLP Text Classifier: Tự động đọc diễn giải và gán nhãn rủi ro (Được trừ / Không được trừ / Cần xem xét chứng từ).\n\n• Auto-Cap Calculator: Tự động tính toán các khoản chi vượt trần quy định.": "• Automated Tax Bridge Template: Bảng tính tự động link số liệu từ bảng cân đối số phát sinh và các bảng rà soát chi phí chi tiết vào từng mã chỉ tiêu tương ứng của Tờ khai Mẫu 03/TNDN.",
+          "Python (Pandas, NLP), Google Apps Script, LLM Prompting": "Excel Dynamic Formulas, Google Sheets"
+        },
+        {
+          "Thuế TNDN (CIT)": "Quản lý Nghĩa vụ Thuế",
+          "Rà soát Sổ cái chi phí (GL Deductibility Review)": "Đối chiếu Sổ bộ Thuế & Trạng thái Nộp thuế (eTax Balance)",
+          "• Đọc và rà soát thủ công hàng chục nghìn dòng diễn giải (Narrative) trên các tài khoản 641, 642, 635, 811.\n\n• Diễn giải viết tắt, không chuẩn hóa.\n\n• Phải lọc nhiều lần để tìm chi phí nhạy cảm.": "• Đối chiếu giữa sổ sách kế toán (TK 333), chứng từ nộp tiền thực tế và Thông báo về tình hình nộp thuế do Cơ quan thuế gửi.\n\n• Thường xuyên phát sinh chênh lệch do nộp nhầm tiểu mục, nhầm chương hoặc hệ thống kho bạc cập nhật trễ.",
+          "• Sổ cái (General Ledger).\n\n• Bảng cân đối số phát sinh (Trial Balance).\n\n• Hóa đơn, hợp đồng chứng từ đính kèm.": "• Thư thông báo nghĩa vụ thuế từ cơ quan thuế (PDF/XML).\n\n• Giấy nộp tiền vào NSNN / Giấy báo Nợ ngân hàng.\n\n• Sổ chi tiết các tài khoản thuế (TK 3331, 3334, 3335, 3338).",
+          "• Chi phí không có hóa đơn/chứng từ hợp lệ: TK đối ứng không phải 111, 112, 331.\n\n• Khoản chi nhạy cảm: Từ khóa phạt vi phạm, bồi thường, biếu tặng, nghỉ mát, tài trợ.\n\n• Khống chế trần chi phí: Quỹ phúc lợi $\\le$ 1 tháng lương bình quân thực tế; trang phục $\\le$ 5 triệu/người/năm.\n\n• Lãi vay: Khống chế theo vốn điều lệ chưa góp đủ và trần 30% EBITDA (NĐ 132).": "• Đối chiếu 3 bên: Số thuế khai báo vs Số thuế cơ quan thuế ghi nhận vs Số thuế thực nộp.\n\n• Kiểm tra tiền chậm nộp: Tính lại số ngày phát sinh chậm nộp để xác định xem việc tính lãi phạt của cơ quan thuế có chính xác hay do lỗi nghẽn dữ liệu ngân hàng - kho bạc.",
+          "• AI/NLP Text Classifier: Tự động đọc diễn giải và gán nhãn rủi ro (Được trừ / Không được trừ / Cần xem xét chứng từ).\n\n• Auto-Cap Calculator: Tự động tính toán các khoản chi vượt trần quy định.": "• Tax Balance Reconciliation Tool: Tool tự động bóc tách thông tin từ file thông báo nợ thuế (PDF), so sánh với dữ liệu Ủy nhiệm chi nộp thuế nội bộ để hiển thị ngay báo cáo tình trạng nộp thuế sạch (Tax Health Report).",
+          "Python (Pandas, NLP), Google Apps Script, LLM Prompting": "Python (pdfplumber/PyPDF), Power Query"
+        }
+      ],
+      "children": [],
+      "confidence": 0.9,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW"
+      ]
+    },
+    {
+      "table_id": "tbl_004",
+      "title": "Giai đoạn Phát triển",
+      "level": 2,
+      "parent_id": "tbl_002",
+      "title_cell": {
+        "row": 43,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 43,
+        "start_col": 2,
+        "end_row": 45,
+        "end_col": 6
+      },
+      "header_row": 44,
+      "record_start_row": 45,
+      "record_end_row": 45,
+      "columns": [
+        "• Chuyển hóa bài toán kinh doanh trừu tượng thành khung logic phân tích định lượng 1 .\n\n• Thiết lập ranh giới dữ liệu và xác định các câu hỏi nghiệp vụ cốt lõi 2 .",
+        "• Phân tích đề bài kinh doanh kết hợp khảo sát lược đồ dữ liệu nguồn 2 .\n\n• Phân rã mục tiêu chiến lược thành cấu trúc cây chỉ số KPI phân cấp 2 .\n\n• Phân định rõ ràng các chỉ số dẫn dắt (Leading) và chỉ số trễ (Lagging) 2 .\n\n• Nhận diện bảng sự kiện (Fact) và các bảng chiều phân tích (Dimension) 2 .",
+        "• Mô hình ngôn ngữ lớn (GPT-4o, Claude 3.5 Sonnet) áp dụng kỹ thuật prompt Flipped Interaction.\n\n• Trợ lý Standalone Copilot trong môi trường Microsoft Fabric 4 .",
+        "• Tài liệu Đặc tả Yêu cầu Nghiệp vụ (BRD) chuẩn hóa.\n\n• Sơ đồ cây phân rã chỉ số KPI.\n\n• Từ điển dữ liệu sơ bộ (Data Dictionary)."
+      ],
+      "column_details": [
+        {
+          "key": "• Chuyển hóa bài toán kinh doanh trừu tượng thành khung logic phân tích định lượng 1 .\n\n• Thiết lập ranh giới dữ liệu và xác định các câu hỏi nghiệp vụ cốt lõi 2 .",
+          "label": "• Chuyển hóa bài toán kinh doanh trừu tượng thành khung logic phân tích định lượng 1 .\n\n• Thiết lập ranh giới dữ liệu và xác định các câu hỏi nghiệp vụ cốt lõi 2 .",
+          "col_index": 3
+        },
+        {
+          "key": "• Phân tích đề bài kinh doanh kết hợp khảo sát lược đồ dữ liệu nguồn 2 .\n\n• Phân rã mục tiêu chiến lược thành cấu trúc cây chỉ số KPI phân cấp 2 .\n\n• Phân định rõ ràng các chỉ số dẫn dắt (Leading) và chỉ số trễ (Lagging) 2 .\n\n• Nhận diện bảng sự kiện (Fact) và các bảng chiều phân tích (Dimension) 2 .",
+          "label": "• Phân tích đề bài kinh doanh kết hợp khảo sát lược đồ dữ liệu nguồn 2 .\n\n• Phân rã mục tiêu chiến lược thành cấu trúc cây chỉ số KPI phân cấp 2 .\n\n• Phân định rõ ràng các chỉ số dẫn dắt (Leading) và chỉ số trễ (Lagging) 2 .\n\n• Nhận diện bảng sự kiện (Fact) và các bảng chiều phân tích (Dimension) 2 .",
+          "col_index": 4
+        },
+        {
+          "key": "• Mô hình ngôn ngữ lớn (GPT-4o, Claude 3.5 Sonnet) áp dụng kỹ thuật prompt Flipped Interaction.\n\n• Trợ lý Standalone Copilot trong môi trường Microsoft Fabric 4 .",
+          "label": "• Mô hình ngôn ngữ lớn (GPT-4o, Claude 3.5 Sonnet) áp dụng kỹ thuật prompt Flipped Interaction.\n\n• Trợ lý Standalone Copilot trong môi trường Microsoft Fabric 4 .",
+          "col_index": 5
+        },
+        {
+          "key": "• Tài liệu Đặc tả Yêu cầu Nghiệp vụ (BRD) chuẩn hóa.\n\n• Sơ đồ cây phân rã chỉ số KPI.\n\n• Từ điển dữ liệu sơ bộ (Data Dictionary).",
+          "label": "• Tài liệu Đặc tả Yêu cầu Nghiệp vụ (BRD) chuẩn hóa.\n\n• Sơ đồ cây phân rã chỉ số KPI.\n\n• Từ điển dữ liệu sơ bộ (Data Dictionary).",
+          "col_index": 6
+        }
+      ],
+      "records": [],
+      "children": [],
+      "confidence": 0.8,
+      "warnings": [
+        "EMPTY_RECORDS"
+      ]
+    },
+    {
+      "table_id": "tbl_005",
+      "title": "1. Khám phá Yêu cầu & Cấu trúc Chỉ số",
+      "level": 2,
+      "parent_id": "tbl_002",
+      "title_cell": {
+        "row": 44,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 44,
+        "start_col": 2,
+        "end_row": 46,
+        "end_col": 6
+      },
+      "header_row": 45,
+      "record_start_row": 46,
+      "record_end_row": 46,
+      "columns": [
+        "• Làm sạch, chuẩn hóa và định hình dữ liệu dạng bảng có cấu trúc.\n\n• Tối ưu hóa hiệu năng truy vấn thông qua việc duy trì Query Folding 5 .",
+        "• Xử lý triệt để giá trị rỗng (Null), định dạng lỗi và các điểm ngoại lai.\n\n• Tách chiết các chuỗi phức tạp và giải mã các cấu trúc JSON lồng nhau 2 .\n\n• Hợp nhất và chuẩn hóa các bảng bằng kỹ thuật so khớp gần đúng.\n\n• Kiểm tra và tối ưu hóa câu lệnh nguồn để bảo toàn tính năng gập truy vấn 5 .",
+        "• Tính năng AI nội tại Power Query (Column from Examples, Fuzzy Merge).\n\n• LLMs hỗ trợ sinh và gỡ lỗi kịch bản mã M nâng cao 2 .",
+        "• Tập lệnh biến đổi dữ liệu M hoàn chỉnh và tối ưu.\n\n• Bộ bảng dữ liệu sạch, sẵn sàng nạp trực tiếp vào Data Model."
+      ],
+      "column_details": [
+        {
+          "key": "• Làm sạch, chuẩn hóa và định hình dữ liệu dạng bảng có cấu trúc.\n\n• Tối ưu hóa hiệu năng truy vấn thông qua việc duy trì Query Folding 5 .",
+          "label": "• Làm sạch, chuẩn hóa và định hình dữ liệu dạng bảng có cấu trúc.\n\n• Tối ưu hóa hiệu năng truy vấn thông qua việc duy trì Query Folding 5 .",
+          "col_index": 3
+        },
+        {
+          "key": "• Xử lý triệt để giá trị rỗng (Null), định dạng lỗi và các điểm ngoại lai.\n\n• Tách chiết các chuỗi phức tạp và giải mã các cấu trúc JSON lồng nhau 2 .\n\n• Hợp nhất và chuẩn hóa các bảng bằng kỹ thuật so khớp gần đúng.\n\n• Kiểm tra và tối ưu hóa câu lệnh nguồn để bảo toàn tính năng gập truy vấn 5 .",
+          "label": "• Xử lý triệt để giá trị rỗng (Null), định dạng lỗi và các điểm ngoại lai.\n\n• Tách chiết các chuỗi phức tạp và giải mã các cấu trúc JSON lồng nhau 2 .\n\n• Hợp nhất và chuẩn hóa các bảng bằng kỹ thuật so khớp gần đúng.\n\n• Kiểm tra và tối ưu hóa câu lệnh nguồn để bảo toàn tính năng gập truy vấn 5 .",
+          "col_index": 4
+        },
+        {
+          "key": "• Tính năng AI nội tại Power Query (Column from Examples, Fuzzy Merge).\n\n• LLMs hỗ trợ sinh và gỡ lỗi kịch bản mã M nâng cao 2 .",
+          "label": "• Tính năng AI nội tại Power Query (Column from Examples, Fuzzy Merge).\n\n• LLMs hỗ trợ sinh và gỡ lỗi kịch bản mã M nâng cao 2 .",
+          "col_index": 5
+        },
+        {
+          "key": "• Tập lệnh biến đổi dữ liệu M hoàn chỉnh và tối ưu.\n\n• Bộ bảng dữ liệu sạch, sẵn sàng nạp trực tiếp vào Data Model.",
+          "label": "• Tập lệnh biến đổi dữ liệu M hoàn chỉnh và tối ưu.\n\n• Bộ bảng dữ liệu sạch, sẵn sàng nạp trực tiếp vào Data Model.",
+          "col_index": 6
+        }
+      ],
+      "records": [],
+      "children": [],
+      "confidence": 0.8,
+      "warnings": [
+        "EMPTY_RECORDS"
+      ]
+    },
+    {
+      "table_id": "tbl_006",
+      "title": "2. Tiền xử lý & Chuyển đổi ETL",
+      "level": 2,
+      "parent_id": "tbl_002",
+      "title_cell": {
+        "row": 45,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 45,
+        "start_col": 2,
+        "end_row": 47,
+        "end_col": 6
+      },
+      "header_row": 46,
+      "record_start_row": 47,
+      "record_end_row": 47,
+      "columns": [
+        "• Xây dựng mô hình ngữ nghĩa chuẩn hình sao (Star Schema) 6 .\n\n• Thiết lập hệ thống thước đo tính toán đạt hiệu năng cao trên VertiPaq.",
+        "• Thiết lập các mối quan hệ chuẩn 1 - nhiều giữa Fact và Dimension 4 .\n\n• Xây dựng các thước đo tường minh (Explicit Measures) từ cơ bản đến nâng cao 7 .\n\n• Tạo các phép tính thời gian phức tạp (Time Intelligence) 8 .\n\n• Rà soát kế hoạch thực thi, thay thế hàm lặp và tái cấu trúc mã DAX.",
+        "• Copilot trong DAX Query View tích hợp phím tắt Ctrl + I.\n\n• LLMs ngoại vi hỗ trợ phân tích giải thuật và giải thích logic DAX 5 .",
+        "• Mô hình ngữ nghĩa chuẩn hình sao (Star Schema) hoàn thiện 4 .\n\n• Bảng lưu trữ thước đo tập trung (_Measures) kèm tài liệu chú thích logic 9 ."
+      ],
+      "column_details": [
+        {
+          "key": "• Xây dựng mô hình ngữ nghĩa chuẩn hình sao (Star Schema) 6 .\n\n• Thiết lập hệ thống thước đo tính toán đạt hiệu năng cao trên VertiPaq.",
+          "label": "• Xây dựng mô hình ngữ nghĩa chuẩn hình sao (Star Schema) 6 .\n\n• Thiết lập hệ thống thước đo tính toán đạt hiệu năng cao trên VertiPaq.",
+          "col_index": 3
+        },
+        {
+          "key": "• Thiết lập các mối quan hệ chuẩn 1 - nhiều giữa Fact và Dimension 4 .\n\n• Xây dựng các thước đo tường minh (Explicit Measures) từ cơ bản đến nâng cao 7 .\n\n• Tạo các phép tính thời gian phức tạp (Time Intelligence) 8 .\n\n• Rà soát kế hoạch thực thi, thay thế hàm lặp và tái cấu trúc mã DAX.",
+          "label": "• Thiết lập các mối quan hệ chuẩn 1 - nhiều giữa Fact và Dimension 4 .\n\n• Xây dựng các thước đo tường minh (Explicit Measures) từ cơ bản đến nâng cao 7 .\n\n• Tạo các phép tính thời gian phức tạp (Time Intelligence) 8 .\n\n• Rà soát kế hoạch thực thi, thay thế hàm lặp và tái cấu trúc mã DAX.",
+          "col_index": 4
+        },
+        {
+          "key": "• Copilot trong DAX Query View tích hợp phím tắt Ctrl + I.\n\n• LLMs ngoại vi hỗ trợ phân tích giải thuật và giải thích logic DAX 5 .",
+          "label": "• Copilot trong DAX Query View tích hợp phím tắt Ctrl + I.\n\n• LLMs ngoại vi hỗ trợ phân tích giải thuật và giải thích logic DAX 5 .",
+          "col_index": 5
+        },
+        {
+          "key": "• Mô hình ngữ nghĩa chuẩn hình sao (Star Schema) hoàn thiện 4 .\n\n• Bảng lưu trữ thước đo tập trung (_Measures) kèm tài liệu chú thích logic 9 .",
+          "label": "• Mô hình ngữ nghĩa chuẩn hình sao (Star Schema) hoàn thiện 4 .\n\n• Bảng lưu trữ thước đo tập trung (_Measures) kèm tài liệu chú thích logic 9 .",
+          "col_index": 6
+        }
+      ],
+      "records": [],
+      "children": [],
+      "confidence": 0.8,
+      "warnings": [
+        "EMPTY_RECORDS"
+      ]
+    },
+    {
+      "table_id": "tbl_007",
+      "title": "3. Mô hình hóa & Lập trình DAX",
+      "level": 2,
+      "parent_id": "tbl_002",
+      "title_cell": {
+        "row": 46,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 46,
+        "start_col": 2,
+        "end_row": 48,
+        "end_col": 6
+      },
+      "header_row": 47,
+      "record_start_row": 48,
+      "record_end_row": 48,
+      "columns": [
+        "• Lên ý tưởng trực quan và chốt bố cục giao diện dashboard nhanh chóng 10 .\n\n• Định hình trải nghiệm thị giác (UI/UX) theo tiêu chuẩn F-Pattern.\n\n• Đảm bảo tính nhất quán nhận diện thương hiệu và tiêu chuẩn tiếp cận.",
+        "• Sinh bản phác thảo concept giao diện dashboard bằng công cụ tạo ảnh AI 11 .\n\n• Cấu hình tỉ lệ 16:9 và phong cách UI tối giản để tái sử dụng bố cục 12 .\n\n• Xuất khung layout AI làm hình nền canvas (Canvas Background) cho Power BI 11 .\n\n• Xây dựng wireframe tương tác và phân bổ mật độ thông tin 3 tầng 13 .\n\n• Khởi tạo tệp cấu hình màu sắc, phông chữ và định dạng container.",
+        "• Công cụ tạo ảnh AI: Midjourney, DALL-E 3, Adobe Firefly 14 .\n\n• Nền tảng wireframe BI chuyên dụng Mokkup.ai 15 .\n\n• LLMs hỗ trợ viết tệp cấu hình giao diện CustomTheme.json.",
+        "• Bản hình ảnh mockup/phác thảo giao diện dashboard độ phân giải cao 16 .\n\n• Tệp đồ họa Canvas Background (SVG/PNG) chứa các khung container định vị sẵn 11 .\n\n• Bản wireframe chi tiết được các bên liên quan phê duyệt.\n\n• Tệp cấu hình giao diện chuẩn hóa CustomTheme.json."
+      ],
+      "column_details": [
+        {
+          "key": "• Lên ý tưởng trực quan và chốt bố cục giao diện dashboard nhanh chóng 10 .\n\n• Định hình trải nghiệm thị giác (UI/UX) theo tiêu chuẩn F-Pattern.\n\n• Đảm bảo tính nhất quán nhận diện thương hiệu và tiêu chuẩn tiếp cận.",
+          "label": "• Lên ý tưởng trực quan và chốt bố cục giao diện dashboard nhanh chóng 10 .\n\n• Định hình trải nghiệm thị giác (UI/UX) theo tiêu chuẩn F-Pattern.\n\n• Đảm bảo tính nhất quán nhận diện thương hiệu và tiêu chuẩn tiếp cận.",
+          "col_index": 3
+        },
+        {
+          "key": "• Sinh bản phác thảo concept giao diện dashboard bằng công cụ tạo ảnh AI 11 .\n\n• Cấu hình tỉ lệ 16:9 và phong cách UI tối giản để tái sử dụng bố cục 12 .\n\n• Xuất khung layout AI làm hình nền canvas (Canvas Background) cho Power BI 11 .\n\n• Xây dựng wireframe tương tác và phân bổ mật độ thông tin 3 tầng 13 .\n\n• Khởi tạo tệp cấu hình màu sắc, phông chữ và định dạng container.",
+          "label": "• Sinh bản phác thảo concept giao diện dashboard bằng công cụ tạo ảnh AI 11 .\n\n• Cấu hình tỉ lệ 16:9 và phong cách UI tối giản để tái sử dụng bố cục 12 .\n\n• Xuất khung layout AI làm hình nền canvas (Canvas Background) cho Power BI 11 .\n\n• Xây dựng wireframe tương tác và phân bổ mật độ thông tin 3 tầng 13 .\n\n• Khởi tạo tệp cấu hình màu sắc, phông chữ và định dạng container.",
+          "col_index": 4
+        },
+        {
+          "key": "• Công cụ tạo ảnh AI: Midjourney, DALL-E 3, Adobe Firefly 14 .\n\n• Nền tảng wireframe BI chuyên dụng Mokkup.ai 15 .\n\n• LLMs hỗ trợ viết tệp cấu hình giao diện CustomTheme.json.",
+          "label": "• Công cụ tạo ảnh AI: Midjourney, DALL-E 3, Adobe Firefly 14 .\n\n• Nền tảng wireframe BI chuyên dụng Mokkup.ai 15 .\n\n• LLMs hỗ trợ viết tệp cấu hình giao diện CustomTheme.json.",
+          "col_index": 5
+        },
+        {
+          "key": "• Bản hình ảnh mockup/phác thảo giao diện dashboard độ phân giải cao 16 .\n\n• Tệp đồ họa Canvas Background (SVG/PNG) chứa các khung container định vị sẵn 11 .\n\n• Bản wireframe chi tiết được các bên liên quan phê duyệt.\n\n• Tệp cấu hình giao diện chuẩn hóa CustomTheme.json.",
+          "label": "• Bản hình ảnh mockup/phác thảo giao diện dashboard độ phân giải cao 16 .\n\n• Tệp đồ họa Canvas Background (SVG/PNG) chứa các khung container định vị sẵn 11 .\n\n• Bản wireframe chi tiết được các bên liên quan phê duyệt.\n\n• Tệp cấu hình giao diện chuẩn hóa CustomTheme.json.",
+          "col_index": 6
+        }
+      ],
+      "records": [],
+      "children": [],
+      "confidence": 0.8,
+      "warnings": [
+        "EMPTY_RECORDS"
+      ]
+    },
+    {
+      "table_id": "tbl_008",
+      "title": "4. Thiết kế Mockup, Wireframe & Hệ Thống Theme",
+      "level": 2,
+      "parent_id": "tbl_002",
+      "title_cell": {
+        "row": 47,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 47,
+        "start_col": 2,
+        "end_row": 49,
+        "end_col": 6
+      },
+      "header_row": 48,
+      "record_start_row": 49,
+      "record_end_row": 49,
+      "columns": [
+        "• Chuyển hóa dữ liệu thành các biểu đồ có tính tương tác cao.\n\n• Khai mở năng lực tự động phân tích và chẩn đoán nguyên nhân biến động 17 .",
+        "• Đặt các biểu đồ chuẩn lên đúng vị trí khung container trên hình nền canvas 11 .\n\n• Cấu hình AI Visual để bóc tách các nhân tố ảnh hưởng chính đến KPI 18 .\n\n• Thiết lập Decomposition Tree để phân rã nguyên nhân gốc rễ đa chiều 19 .\n\n• Kích hoạt phát hiện dị biệt (Anomaly Detection) trên chuỗi thời gian.\n\n• Tích hợp khối văn bản tóm tắt tự động điều chỉnh theo bộ lọc 18 .",
+        "• Bộ AI Visuals nội tại: Key Influencers, Decomposition Tree, Smart Narrative 20 .\n\n• Tính năng học máy Anomaly Detection trên biểu đồ đường.\n\n• Copilot pane hỗ trợ tạo nhanh trang báo cáo từ văn bản.",
+        "• Dashboard hoàn chỉnh với năng lực tương tác và lọc chéo đa chiều.\n\n• Hệ thống chẩn đoán biến động vận hành tự động 21 .\n\n• Khối văn bản tóm tắt insight điều hành theo thời gian thực 18 ."
+      ],
+      "column_details": [
+        {
+          "key": "• Chuyển hóa dữ liệu thành các biểu đồ có tính tương tác cao.\n\n• Khai mở năng lực tự động phân tích và chẩn đoán nguyên nhân biến động 17 .",
+          "label": "• Chuyển hóa dữ liệu thành các biểu đồ có tính tương tác cao.\n\n• Khai mở năng lực tự động phân tích và chẩn đoán nguyên nhân biến động 17 .",
+          "col_index": 3
+        },
+        {
+          "key": "• Đặt các biểu đồ chuẩn lên đúng vị trí khung container trên hình nền canvas 11 .\n\n• Cấu hình AI Visual để bóc tách các nhân tố ảnh hưởng chính đến KPI 18 .\n\n• Thiết lập Decomposition Tree để phân rã nguyên nhân gốc rễ đa chiều 19 .\n\n• Kích hoạt phát hiện dị biệt (Anomaly Detection) trên chuỗi thời gian.\n\n• Tích hợp khối văn bản tóm tắt tự động điều chỉnh theo bộ lọc 18 .",
+          "label": "• Đặt các biểu đồ chuẩn lên đúng vị trí khung container trên hình nền canvas 11 .\n\n• Cấu hình AI Visual để bóc tách các nhân tố ảnh hưởng chính đến KPI 18 .\n\n• Thiết lập Decomposition Tree để phân rã nguyên nhân gốc rễ đa chiều 19 .\n\n• Kích hoạt phát hiện dị biệt (Anomaly Detection) trên chuỗi thời gian.\n\n• Tích hợp khối văn bản tóm tắt tự động điều chỉnh theo bộ lọc 18 .",
+          "col_index": 4
+        },
+        {
+          "key": "• Bộ AI Visuals nội tại: Key Influencers, Decomposition Tree, Smart Narrative 20 .\n\n• Tính năng học máy Anomaly Detection trên biểu đồ đường.\n\n• Copilot pane hỗ trợ tạo nhanh trang báo cáo từ văn bản.",
+          "label": "• Bộ AI Visuals nội tại: Key Influencers, Decomposition Tree, Smart Narrative 20 .\n\n• Tính năng học máy Anomaly Detection trên biểu đồ đường.\n\n• Copilot pane hỗ trợ tạo nhanh trang báo cáo từ văn bản.",
+          "col_index": 5
+        },
+        {
+          "key": "• Dashboard hoàn chỉnh với năng lực tương tác và lọc chéo đa chiều.\n\n• Hệ thống chẩn đoán biến động vận hành tự động 21 .\n\n• Khối văn bản tóm tắt insight điều hành theo thời gian thực 18 .",
+          "label": "• Dashboard hoàn chỉnh với năng lực tương tác và lọc chéo đa chiều.\n\n• Hệ thống chẩn đoán biến động vận hành tự động 21 .\n\n• Khối văn bản tóm tắt insight điều hành theo thời gian thực 18 .",
+          "col_index": 6
+        }
+      ],
+      "records": [],
+      "children": [],
+      "confidence": 0.8,
+      "warnings": [
+        "EMPTY_RECORDS"
+      ]
+    },
+    {
+      "table_id": "tbl_009",
+      "title": "5. Trực quan hóa & Tích hợp AI Visuals",
+      "level": 2,
+      "parent_id": "tbl_002",
+      "title_cell": {
+        "row": 48,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 48,
+        "start_col": 2,
+        "end_row": 50,
+        "end_col": 6
+      },
+      "header_row": 49,
+      "record_start_row": 50,
+      "record_end_row": 50,
+      "columns": [
+        "• Loại trừ triệt để nguy cơ ảo giác thông tin và sai lệch số học của AI 22 .\n\n• Thiết lập an toàn bảo mật và phát hành giải pháp vào vận hành thực tế 23 .",
+        "• Thiết lập AI Data Schema để ẩn các trường kỹ thuật và cột gây nhiễu 4 .\n\n• Nhập AI Instructions định nghĩa bối cảnh kinh doanh và thuật ngữ ngành.\n\n• Khóa cứng các câu trả lời đã kiểm định (Verified Answers) cho KPI cốt lõi 4 .\n\n• Cấu hình bảo mật cấp hàng (RLS) và bảo mật cấp đối tượng (OLS) 23 .\n\n• Đánh dấu trạng thái phê duyệt mô hình và phát hành báo cáo 22 .",
+        "• Khung công cụ Prep Data for AI (AI Data Schema, AI Instructions, Verified Answers) 24 .\n\n• Hệ sinh thái quản trị bảo mật và Fabric Capacity 23 .",
+        "• Semantic Model đạt chứng nhận Approved for Copilot 12 .\n\n• Báo cáo phân tích hoàn thiện được phát hành chính thức trên Fabric App 25"
+      ],
+      "column_details": [
+        {
+          "key": "• Loại trừ triệt để nguy cơ ảo giác thông tin và sai lệch số học của AI 22 .\n\n• Thiết lập an toàn bảo mật và phát hành giải pháp vào vận hành thực tế 23 .",
+          "label": "• Loại trừ triệt để nguy cơ ảo giác thông tin và sai lệch số học của AI 22 .\n\n• Thiết lập an toàn bảo mật và phát hành giải pháp vào vận hành thực tế 23 .",
+          "col_index": 3
+        },
+        {
+          "key": "• Thiết lập AI Data Schema để ẩn các trường kỹ thuật và cột gây nhiễu 4 .\n\n• Nhập AI Instructions định nghĩa bối cảnh kinh doanh và thuật ngữ ngành.\n\n• Khóa cứng các câu trả lời đã kiểm định (Verified Answers) cho KPI cốt lõi 4 .\n\n• Cấu hình bảo mật cấp hàng (RLS) và bảo mật cấp đối tượng (OLS) 23 .\n\n• Đánh dấu trạng thái phê duyệt mô hình và phát hành báo cáo 22 .",
+          "label": "• Thiết lập AI Data Schema để ẩn các trường kỹ thuật và cột gây nhiễu 4 .\n\n• Nhập AI Instructions định nghĩa bối cảnh kinh doanh và thuật ngữ ngành.\n\n• Khóa cứng các câu trả lời đã kiểm định (Verified Answers) cho KPI cốt lõi 4 .\n\n• Cấu hình bảo mật cấp hàng (RLS) và bảo mật cấp đối tượng (OLS) 23 .\n\n• Đánh dấu trạng thái phê duyệt mô hình và phát hành báo cáo 22 .",
+          "col_index": 4
+        },
+        {
+          "key": "• Khung công cụ Prep Data for AI (AI Data Schema, AI Instructions, Verified Answers) 24 .\n\n• Hệ sinh thái quản trị bảo mật và Fabric Capacity 23 .",
+          "label": "• Khung công cụ Prep Data for AI (AI Data Schema, AI Instructions, Verified Answers) 24 .\n\n• Hệ sinh thái quản trị bảo mật và Fabric Capacity 23 .",
+          "col_index": 5
+        },
+        {
+          "key": "• Semantic Model đạt chứng nhận Approved for Copilot 12 .\n\n• Báo cáo phân tích hoàn thiện được phát hành chính thức trên Fabric App 25",
+          "label": "• Semantic Model đạt chứng nhận Approved for Copilot 12 .\n\n• Báo cáo phân tích hoàn thiện được phát hành chính thức trên Fabric App 25",
+          "col_index": 6
+        }
+      ],
+      "records": [],
+      "children": [],
+      "confidence": 0.7,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW",
+        "EMPTY_RECORDS"
+      ]
+    },
+    {
+      "table_id": "tbl_011",
+      "title": "Bảng 2: Phân tích đối chiếu đặc thù quản trị giữa Thương hiệu Sản phẩm và Thương hiệu Cá nhân",
+      "level": 2,
+      "parent_id": "tbl_010",
+      "title_cell": {
+        "row": 63,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 63,
+        "start_col": 2,
+        "end_row": 71,
+        "end_col": 7
+      },
+      "header_row": 64,
+      "record_start_row": 65,
+      "record_end_row": 71,
+      "columns": [
+        "STT",
+        "Tiêu chí so sánh",
+        "Thương hiệu Sản phẩm (Product Brand)",
+        "Thương hiệu Cá nhân (Personal Brand)",
+        "Cơ chế tương hỗ và Lưu ý quản trị"
+      ],
+      "column_details": [
+        {
+          "key": "STT",
+          "label": "STT",
+          "col_index": 3
+        },
+        {
+          "key": "Tiêu chí so sánh",
+          "label": "Tiêu chí so sánh",
+          "col_index": 4
+        },
+        {
+          "key": "Thương hiệu Sản phẩm (Product Brand)",
+          "label": "Thương hiệu Sản phẩm (Product Brand)",
+          "col_index": 5
+        },
+        {
+          "key": "Thương hiệu Cá nhân (Personal Brand)",
+          "label": "Thương hiệu Cá nhân (Personal Brand)",
+          "col_index": 6
+        },
+        {
+          "key": "Cơ chế tương hỗ và Lưu ý quản trị",
+          "label": "Cơ chế tương hỗ và Lưu ý quản trị",
+          "col_index": 7
+        }
+      ],
+      "records": [
+        {
+          "STT": 1,
+          "Tiêu chí so sánh": "Bản chất chủ thể",
+          "Thương hiệu Sản phẩm (Product Brand)": "Thực thể nhân tạo, tài sản thương mại vô hình thuộc quyền sở hữu của tổ chức doanh nghiệp.",
+          "Thương hiệu Cá nhân (Personal Brand)": "Thể nhân sinh học mang tâm lý, cảm xúc, hệ giá trị đạo đức và tính biến thiên xã hội.",
+          "Cơ chế tương hỗ và Lưu ý quản trị": "Sản phẩm cần được nhân bản hóa (Humanize), còn cá nhân cần được chuyên nghiệp hóa và thể chế hóa uy tín."
+        },
+        {
+          "STT": 2,
+          "Tiêu chí so sánh": "Nguồn gốc tính xác thực (Authenticity)",
+          "Thương hiệu Sản phẩm (Product Brand)": "Thiết lập qua quy chuẩn kiểm soát chất lượng, R&D, tiêu chuẩn kỹ thuật và định vị tiếp thị.",
+          "Thương hiệu Cá nhân (Personal Brand)": "Bắt nguồn từ sự đồng nhất hữu cơ giữa niềm tin nội tâm, phát ngôn và hành vi ứng xử thực tế.",
+          "Cơ chế tương hỗ và Lưu ý quản trị": "Khi sử dụng mô hình Founder-led, sự chân thật của nhà sáng lập đóng vai trò bảo chứng chất lượng trực tiếp cho sản phẩm."
+        },
+        {
+          "STT": 3,
+          "Tiêu chí so sánh": "Mức độ kiểm soát & Tiêu chuẩn hóa",
+          "Thương hiệu Sản phẩm (Product Brand)": "Rất cao; quy trình sản xuất, thông điệp truyền thông và dịch vụ được chuẩn hóa hàng loạt.",
+          "Thương hiệu Cá nhân (Personal Brand)": "Thấp; dễ bị tác động bởi cảm xúc cá nhân, biến cố đời tư và phát ngôn bộc phát ngoài công việc.",
+          "Cơ chế tương hỗ và Lưu ý quản trị": "Thương hiệu cá nhân đòi hỏi tính tự kỷ luật rất cao để tránh các phát ngôn cảm tính gây hại cho tổ chức."
+        },
+        {
+          "STT": 4,
+          "Tiêu chí so sánh": "Vòng đời & Khả năng chuyển nhượng",
+          "Thương hiệu Sản phẩm (Product Brand)": "Có thể tồn tại vĩnh viễn, định giá độc lập, mua bán, chuyển nhượng hoặc nhượng quyền thương mại.",
+          "Thương hiệu Cá nhân (Personal Brand)": "Gắn liền trực tiếp với thể nhân; không thể chuyển nhượng toàn phần và chấm dứt theo vòng đời sinh học.",
+          "Cơ chế tương hỗ và Lưu ý quản trị": "Doanh nghiệp cần lộ trình phân tách nhận thức (Decoupling) để giảm bớt sự lệ thuộc vào uy tín một người."
+        },
+        {
+          "STT": 5,
+          "Tiêu chí so sánh": "Tính linh hoạt định vị",
+          "Thương hiệu Sản phẩm (Product Brand)": "Tái định vị phức tạp, đòi hỏi thay đổi vận hành chuỗi cung ứng và đối mặt rủi ro pha loãng thương hiệu.",
+          "Thương hiệu Cá nhân (Personal Brand)": "Linh hoạt thích ứng cao độ theo từng giai đoạn trưởng thành nghề nghiệp và trải nghiệm sống của cá nhân.",
+          "Cơ chế tương hỗ và Lưu ý quản trị": "Sự linh hoạt của cá nhân giúp mở đường cho việc thử nghiệm các sản phẩm mới trước khi đầu tư lớn."
+        },
+        {
+          "STT": 6,
+          "Tiêu chí so sánh": "Tâm lý tiếp nhận của công chúng",
+          "Thương hiệu Sản phẩm (Product Brand)": "Khách hàng đánh giá dựa trên công năng sử dụng, giá trị cảm xúc, tỷ lệ giá thành và cam kết bảo hành.",
+          "Thương hiệu Cá nhân (Personal Brand)": "Đánh giá qua sự thấu cảm nhân cách, mức độ chính trực, tính khiêm tốn và thẩm quyền tư tưởng.",
+          "Cơ chế tương hỗ và Lưu ý quản trị": "Người tiêu dùng có xu hướng đặt niềm tin vào con người cụ thể cao hơn các logo doanh nghiệp trừu tượng."
+        },
+        {
+          "STT": 7,
+          "Tiêu chí so sánh": "Rủi ro lây nhiễm (Brand Contagion)",
+          "Thương hiệu Sản phẩm (Product Brand)": "Khủng hoảng sản phẩm ảnh hưởng đến doanh thu nhưng có thể khắc phục bằng cách thu hồi hoặc đổi mẫu mã.",
+          "Thương hiệu Cá nhân (Personal Brand)": "Bê bối cá nhân của lãnh đạo/đại sứ lây nhiễm trực tiếp sang uy tín và giá trị vốn hóa của sản phẩm.",
+          "Cơ chế tương hỗ và Lưu ý quản trị": "Cần hợp đồng đại sứ chặt chẽ với điều khoản đạo đức và quy trình ứng phó khủng hoảng trong vòng 24–48 giờ."
+        }
+      ],
+      "children": [],
+      "confidence": 0.9,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW"
+      ]
+    },
+    {
+      "table_id": "tbl_012",
+      "title": "Bảng 3: Quy trình chuẩn mực 4 giai đoạn xây dựng thương hiệu cá nhân",
+      "level": 2,
+      "parent_id": "tbl_010",
+      "title_cell": {
+        "row": 73,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 73,
+        "start_col": 2,
+        "end_row": 78,
+        "end_col": 7
+      },
+      "header_row": 74,
+      "record_start_row": 75,
+      "record_end_row": 78,
+      "columns": [
+        "STT",
+        "Giai đoạn",
+        "Mục tiêu chiến lược",
+        "Hoạt động triển khai then chốt",
+        "Công cụ & Đầu ra chiến lược (Deliverables)"
+      ],
+      "column_details": [
+        {
+          "key": "STT",
+          "label": "STT",
+          "col_index": 3
+        },
+        {
+          "key": "Giai đoạn",
+          "label": "Giai đoạn",
+          "col_index": 4
+        },
+        {
+          "key": "Mục tiêu chiến lược",
+          "label": "Mục tiêu chiến lược",
+          "col_index": 5
+        },
+        {
+          "key": "Hoạt động triển khai then chốt",
+          "label": "Hoạt động triển khai then chốt",
+          "col_index": 6
+        },
+        {
+          "key": "Công cụ & Đầu ra chiến lược (Deliverables)",
+          "label": "Công cụ & Đầu ra chiến lược (Deliverables)",
+          "col_index": 7
+        }
+      ],
+      "records": [
+        {
+          "STT": 1,
+          "Giai đoạn": "Giai đoạn 1: Thấu hiểu bản thân & Định vị giá trị",
+          "Mục tiêu chiến lược": "Xác lập bản sắc chuyên môn độc bản, bảo đảm nguyên tắc tiếp cận từ trong ra ngoài (Inside-Out).",
+          "Hoạt động triển khai then chốt": "* Tự kiểm kê nguồn lực (Self-Audit): Năng lực chuyên môn, đam mê bền vững, ranh giới đạo đức. \n\n\n\n* Xác định Điểm tương đồng ngành (POP) và Điểm khác biệt độc nhất (POD).",
+          "Công cụ & Đầu ra chiến lược (Deliverables)": "Tuyên ngôn định vị cá nhân (Personal Positioning Pitch) nêu rõ giá trị cung cấp, đối tượng phục vụ và phương pháp luận."
+        },
+        {
+          "STT": 2,
+          "Giai đoạn": "Giai đoạn 2: Xác định công chúng & Kênh chủ lực",
+          "Mục tiêu chiến lược": "Tập trung tài nguyên vào nhóm khán giả mục tiêu mang lại tác động chiến lược cao nhất.",
+          "Hoạt động triển khai then chốt": "* Phân tầng đối tượng: Người ra quyết định (Decision Makers), Đồng nghiệp (Peers), Người theo dõi (Followers).\n\n* Chọn nền tảng chủ lực: LinkedIn (B2B/Chuyên gia) hoặc TikTok/Instagram (B2C/Sáng tạo).",
+          "Công cụ & Đầu ra chiến lược (Deliverables)": "Ma trận kênh truyền thông; Thiết lập kênh thuộc quyền sở hữu độc lập (Bản tin Newsletter, Blog cá nhân, Podcast)."
+        },
+        {
+          "STT": 3,
+          "Giai đoạn": "Giai đoạn 3: Chiến lược nội dung & Giọng điệu",
+          "Mục tiêu chiến lược": "Cụ thể hóa năng lực chuyên môn và nhân cách thành giá trị hữu hình cho cộng đồng tiếp nhận.",
+          "Hoạt động triển khai then chốt": "* Phân bổ nội dung theo tỷ lệ: 60% Chuyên môn sâu, 25% Trải nghiệm thực chiến/bài học, 15% Góc nhìn triết lý cá nhân.\n\n* Thiết lập và chuẩn hóa giọng điệu truyền thông (Tone of Voice) đồng nhất.",
+          "Công cụ & Đầu ra chiến lược (Deliverables)": "Lịch xuất bản nội dung định kỳ; Bộ hướng dẫn phong cách biểu đạt cá nhân (ngôn từ, hình ảnh nhận diện)."
+        },
+        {
+          "STT": 4,
+          "Giai đoạn": "Giai đoạn 4: Quản trị mạng lưới & Uy tín chuyên môn",
+          "Mục tiêu chiến lược": "Bảo chứng tính xác thực của năng lực truyền thông số thông qua sự công nhận trong đời thực (Offline validity).",
+          "Hoạt động triển khai then chốt": "* Tham gia mạng lưới theo nguyên tắc \"Tương hỗ giá trị\" (Reciprocal Value): Hiệp hội, hội thảo, cố vấn chính sách.\n\n* Tìm kiếm sự bảo chứng từ bên thứ ba (Báo chí chính luận, trích dẫn học thuật, giải thưởng uy tín).",
+          "Công cụ & Đầu ra chiến lược (Deliverables)": "Hồ sơ năng lực cá nhân (Speaker Profile/Media Kit); Mạng lưới đối tác chiến lược và các liên kết Vốn Xã hội bền vững."
+        }
+      ],
+      "children": [],
+      "confidence": 1,
+      "warnings": []
+    },
+    {
+      "table_id": "tbl_013",
+      "title": "Bảng 4: Quy trình chuẩn mực 4 giai đoạn xây dựng thương hiệu sản phẩm",
+      "level": 2,
+      "parent_id": "tbl_010",
+      "title_cell": {
+        "row": 79,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 79,
+        "start_col": 2,
+        "end_row": 84,
+        "end_col": 7
+      },
+      "header_row": 80,
+      "record_start_row": 81,
+      "record_end_row": 84,
+      "columns": [
+        "STT",
+        "Giai đoạn",
+        "Mục tiêu chiến lược",
+        "Hoạt động triển khai then chốt",
+        "Công cụ & Đầu ra chiến lược (Deliverables)"
+      ],
+      "column_details": [
+        {
+          "key": "STT",
+          "label": "STT",
+          "col_index": 3
+        },
+        {
+          "key": "Giai đoạn",
+          "label": "Giai đoạn",
+          "col_index": 4
+        },
+        {
+          "key": "Mục tiêu chiến lược",
+          "label": "Mục tiêu chiến lược",
+          "col_index": 5
+        },
+        {
+          "key": "Hoạt động triển khai then chốt",
+          "label": "Hoạt động triển khai then chốt",
+          "col_index": 6
+        },
+        {
+          "key": "Công cụ & Đầu ra chiến lược (Deliverables)",
+          "label": "Công cụ & Đầu ra chiến lược (Deliverables)",
+          "col_index": 7
+        }
+      ],
+      "records": [
+        {
+          "STT": 1,
+          "Giai đoạn": "Giai đoạn 1: Nghiên cứu thị trường & Thấu cảm khách hàng",
+          "Mục tiêu chiến lược": "Nhận diện cơ hội kinh doanh và tìm ra khoảng trống thị trường (White Spaces) chưa được khai thác.",
+          "Hoạt động triển khai then chốt": "* Phân tích môi trường kinh doanh qua mô hình 3C (Company, Customer, Competitor) và dung lượng TAM-SAM-SOM.\n\n* Khai phá Sự thật ngầm hiểu (Customer Insight) và Nỗi đau nhức nhối (Pain Points).",
+          "Công cụ & Đầu ra chiến lược (Deliverables)": "Hồ sơ chân dung khách hàng mục tiêu (Buyer Persona); Bản đồ định vị cạnh tranh ngành hàng."
+        },
+        {
+          "STT": 2,
+          "Giai đoạn": "Giai đoạn 2: Xác định USP & Định vị cạnh tranh",
+          "Mục tiêu chiến lược": "Xác lập vị thế độc nhất và có giá trị bền vững trong tâm trí người tiêu dùng mục tiêu.",
+          "Hoạt động triển khai then chốt": "* Xây dựng Đề xuất Giá trị Độc nhất (USP) dựa trên năng lực vượt trội của sản phẩm và điểm yếu đối thủ.\n\n* Xây dựng Lý do xác thực để tin tưởng (Reason to Believe - RTB).",
+          "Công cụ & Đầu ra chiến lược (Deliverables)": "Tuyên ngôn Định vị Chiến lược (Positioning Statement) theo công thức chuẩn mực làm kim chỉ nam vận hành."
+        },
+        {
+          "STT": 3,
+          "Giai đoạn": "Giai đoạn 3: Phát triển bộ nhận diện & Câu chuyện sản phẩm",
+          "Mục tiêu chiến lược": "Cụ thể hóa định vị trừu tượng thành hệ thống tín hiệu giác quan và mối liên kết cảm xúc.",
+          "Hoạt động triển khai then chốt": "* Thiết kế hệ thống thị giác đa giác quan: Logo, bảng màu, typography, bao bì sản phẩm, âm thanh.\n\n* Xây dựng câu chuyện thương hiệu theo mô hình \"Hành trình của người anh hùng\" (Sản phẩm là người dẫn đường).",
+          "Công cụ & Đầu ra chiến lược (Deliverables)": "Bộ quy chuẩn nhận diện thương hiệu (Brand Guidelines); Kịch bản câu chuyện cốt lõi (Core Brand Story)."
+        },
+        {
+          "STT": 4,
+          "Giai đoạn": "Giai đoạn 4: Triển khai GTM & Quản trị tăng trưởng",
+          "Mục tiêu chiến lược": "Chuyển dịch nhận thức của khách hàng thành hành vi mua thử, dùng lại và gắn kết trung thành.",
+          "Hoạt động triển khai then chốt": "* Tiền ra mắt (Teasing): Kích hoạt tranh luận về insight, thử nghiệm với nhóm sáng tạo nội dung.\n\n* Bùng nổ (Launch): Truyền thông đa kênh đồng loạt, kích hoạt điểm bán và đại sứ.\n\n* Duy trì (Sustain): Tối ưu trải nghiệm khách hàng, xây dựng cộng đồng người dùng.",
+          "Công cụ & Đầu ra chiến lược (Deliverables)": "Kế hoạch tiếp cận thị trường (Go-To-Market Master Plan); Dashboard theo dõi hiệu quả kinh doanh và tình cảm thương hiệu."
+        }
+      ],
+      "children": [],
+      "confidence": 1,
+      "warnings": []
+    },
+    {
+      "table_id": "tbl_014",
+      "title": "Bảng 5: Phân loại 12 Hình mẫu thương hiệu (Brand Archetypes) theo động lực tâm lý",
+      "level": 2,
+      "parent_id": "tbl_010",
+      "title_cell": {
+        "row": 85,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 85,
+        "start_col": 2,
+        "end_row": 98,
+        "end_col": 8
+      },
+      "header_row": 86,
+      "record_start_row": 87,
+      "record_end_row": 98,
+      "columns": [
+        "STT",
+        "Trục động lực tâm lý",
+        "Hình mẫu (Archetype)",
+        "Động lực & Giá trị cốt lõi",
+        "Biểu hiện trong Thương hiệu Sản phẩm",
+        "Biểu hiện trong Thương hiệu Cá nhân"
+      ],
+      "column_details": [
+        {
+          "key": "STT",
+          "label": "STT",
+          "col_index": 3
+        },
+        {
+          "key": "Trục động lực tâm lý",
+          "label": "Trục động lực tâm lý",
+          "col_index": 4
+        },
+        {
+          "key": "Hình mẫu (Archetype)",
+          "label": "Hình mẫu (Archetype)",
+          "col_index": 5
+        },
+        {
+          "key": "Động lực & Giá trị cốt lõi",
+          "label": "Động lực & Giá trị cốt lõi",
+          "col_index": 6
+        },
+        {
+          "key": "Biểu hiện trong Thương hiệu Sản phẩm",
+          "label": "Biểu hiện trong Thương hiệu Sản phẩm",
+          "col_index": 7
+        },
+        {
+          "key": "Biểu hiện trong Thương hiệu Cá nhân",
+          "label": "Biểu hiện trong Thương hiệu Cá nhân",
+          "col_index": 8
+        }
+      ],
+      "records": [
+        {
+          "STT": 1,
+          "Trục động lực tâm lý": "Tự do & Ý nghĩa",
+          "Hình mẫu (Archetype)": "The Innocent (Ngây thơ)",
+          "Động lực & Giá trị cốt lõi": "Thuần khiết, lạc quan, đơn giản, đạo đức.",
+          "Biểu hiện trong Thương hiệu Sản phẩm": "Dove, Burt's Bees (sản phẩm lành tính, minh bạch thành phần).",
+          "Biểu hiện trong Thương hiệu Cá nhân": "Chuyên gia theo đuổi sự chân thật, minh bạch, lối sống tối giản."
+        },
+        {
+          "STT": 2,
+          "Trục động lực tâm lý": "Tự do & Ý nghĩa",
+          "Hình mẫu (Archetype)": "The Explorer (Khám phá)",
+          "Động lực & Giá trị cốt lõi": "Tự do, tiên phong, trải nghiệm, tính tự chủ.",
+          "Biểu hiện trong Thương hiệu Sản phẩm": "The North Face, Jeep (chinh phục mọi ranh giới tự nhiên).",
+          "Biểu hiện trong Thương hiệu Cá nhân": "Chuyên gia công nghệ tiên phong, diễn giả truyền cảm hứng đổi mới."
+        },
+        {
+          "STT": 3,
+          "Trục động lực tâm lý": "Tự do & Ý nghĩa",
+          "Hình mẫu (Archetype)": "The Sage (Thông thái)",
+          "Động lực & Giá trị cốt lõi": "Tri thức, sự thật khách quan, trí tuệ phân tích.",
+          "Biểu hiện trong Thương hiệu Sản phẩm": "Google, BBC (nguồn thông tin tin cậy, nghiên cứu chuyên sâu).",
+          "Biểu hiện trong Thương hiệu Cá nhân": "Học giả, chuyên gia phân tích dữ liệu, cố vấn chiến lược cấp cao."
+        },
+        {
+          "STT": 4,
+          "Trục động lực tâm lý": "Làm chủ & Quyền năng",
+          "Hình mẫu (Archetype)": "The Hero (Anh hùng)",
+          "Động lực & Giá trị cốt lõi": "Quả cảm, kiên cường, vượt qua nghịch cảnh.",
+          "Biểu hiện trong Thương hiệu Sản phẩm": "Nike (cổ vũ ý chí vượt qua giới hạn cá nhân với \"Just Do It\").",
+          "Biểu hiện trong Thương hiệu Cá nhân": "Lãnh đạo dẫn dắt doanh nghiệp qua khủng hoảng, vận động viên thể thao."
+        },
+        {
+          "STT": 5,
+          "Trục động lực tâm lý": "Làm chủ & Quyền năng",
+          "Hình mẫu (Archetype)": "The Outlaw (Nổi loạn)",
+          "Động lực & Giá trị cốt lõi": "Phá cách, giải phóng, lật đổ các quy ước cũ.",
+          "Biểu hiện trong Thương hiệu Sản phẩm": "Harley-Davidson, Virgin (thách thức định kiến truyền thống).",
+          "Biểu hiện trong Thương hiệu Cá nhân": "Nhà sáng lập khởi nghiệp đột phá, nhân vật cổ xúy tư duy dị biệt."
+        },
+        {
+          "STT": 6,
+          "Trục động lực tâm lý": "Làm chủ & Quyền năng",
+          "Hình mẫu (Archetype)": "The Magician (Ảo thuật)",
+          "Động lực & Giá trị cốt lõi": "Chuyển hóa thực tại, hiện thực hóa ước mơ.",
+          "Biểu hiện trong Thương hiệu Sản phẩm": "Apple, Disney (kiến tạo trải nghiệm thần kỳ và đột phá công nghệ).",
+          "Biểu hiện trong Thương hiệu Cá nhân": "Nhà sáng tạo công nghệ tầm nhìn tương lai, chuyên gia tâm lý học."
+        },
+        {
+          "STT": 7,
+          "Trục động lực tâm lý": "Gắn kết & Cộng đồng",
+          "Hình mẫu (Archetype)": "The Everyman (Bình dị)",
+          "Động lực & Giá trị cốt lõi": "Bình đẳng, gắn kết, thực tế, sự đồng cảm sâu sắc.",
+          "Biểu hiện trong Thương hiệu Sản phẩm": "IKEA, eBay (thực dụng, thân thuộc, tiếp cận đại chúng).",
+          "Biểu hiện trong Thương hiệu Cá nhân": "Chuyên gia giải thích vấn đề chuyên môn bằng phong cách gần gũi."
+        },
+        {
+          "STT": 8,
+          "Trục động lực tâm lý": "Gắn kết & Cộng đồng",
+          "Hình mẫu (Archetype)": "The Lover (Tình si)",
+          "Động lực & Giá trị cốt lõi": "Đam mê, quyến rũ, thẩm mỹ cao cấp, xúc cảm.",
+          "Biểu hiện trong Thương hiệu Sản phẩm": "Chanel, Alfa Romeo (tôn vinh vẻ đẹp sang trọng và sự rung cảm).",
+          "Biểu hiện trong Thương hiệu Cá nhân": "Chuyên gia thẩm mỹ, giám đốc sáng tạo, cố vấn nghệ thuật và lối sống."
+        },
+        {
+          "STT": 9,
+          "Trục động lực tâm lý": "Gắn kết & Cộng đồng",
+          "Hình mẫu (Archetype)": "The Jester (Gã hề)",
+          "Động lực & Giá trị cốt lõi": "Hài hước, lạc quan, nghịch ngợm, tận hưởng hiện tại.",
+          "Biểu hiện trong Thương hiệu Sản phẩm": "M&M's, Old Spice (tiếp thị trào phúng, gây bất ngờ hóm hỉnh).",
+          "Biểu hiện trong Thương hiệu Cá nhân": "Nhà sáng tạo nội dung giải trí, diễn giả ứng dụng châm biếm thông minh."
+        },
+        {
+          "STT": 10,
+          "Trục động lực tâm lý": "Cấu trúc & Trật tự",
+          "Hình mẫu (Archetype)": "The Caregiver (Chở che)",
+          "Động lực & Giá trị cốt lõi": "Lòng trắc ẩn, sự bảo trợ, nuôi dưỡng, an toàn.",
+          "Biểu hiện trong Thương hiệu Sản phẩm": "Johnson & Johnson, Volvo (đặt sinh mạng và an toàn lên trên hết).",
+          "Biểu hiện trong Thương hiệu Cá nhân": "Y bác sĩ, chuyên gia tâm lý giáo dục, nhà hoạt động xã hội cộng đồng."
+        },
+        {
+          "STT": 11,
+          "Trục động lực tâm lý": "Cấu trúc & Trật tự",
+          "Hình mẫu (Archetype)": "The Creator (Sáng tạo)",
+          "Động lực & Giá trị cốt lõi": "Đổi mới, tầm nhìn độc bản, hoàn mỹ về thiết kế.",
+          "Biểu hiện trong Thương hiệu Sản phẩm": "Lego, Adobe (cung cấp nền tảng phát triển tiềm năng sáng tạo).",
+          "Biểu hiện trong Thương hiệu Cá nhân": "Kiến trúc sư, nhà thiết kế sản phẩm, chuyên gia giải pháp công nghệ."
+        },
+        {
+          "STT": 12,
+          "Trục động lực tâm lý": "Cấu trúc & Trật tự",
+          "Hình mẫu (Archetype)": "The Ruler (Cai trị)",
+          "Động lực & Giá trị cốt lõi": "Quyền lực, trật tự, chuẩn mực, vị thế dẫn đầu.",
+          "Biểu hiện trong Thương hiệu Sản phẩm": "Mercedes-Benz, Rolex (biểu trưng của đẳng cấp và thành công tột bậc).",
+          "Biểu hiện trong Thương hiệu Cá nhân": "Chủ tịch tập đoàn kinh tế, chính khách định hình thể chế chính sách."
+        }
+      ],
+      "children": [],
+      "confidence": 1,
+      "warnings": []
+    },
+    {
+      "table_id": "tbl_015",
+      "title": "Bảng 6: Cấu trúc 6 khía cạnh của Lăng kính Bản sắc Thương hiệu (Brand Identity Prism)",
+      "level": 2,
+      "parent_id": "tbl_010",
+      "title_cell": {
+        "row": 99,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 99,
+        "start_col": 2,
+        "end_row": 106,
+        "end_col": 8
+      },
+      "header_row": 100,
+      "record_start_row": 101,
+      "record_end_row": 106,
+      "columns": [
+        "STT",
+        "Khía cạnh bản sắc",
+        "Vị trí trên trục phân định",
+        "Bản chất định nghĩa",
+        "Ứng dụng trong Thương hiệu Sản phẩm",
+        "Ứng dụng trong Thương hiệu Cá nhân"
+      ],
+      "column_details": [
+        {
+          "key": "STT",
+          "label": "STT",
+          "col_index": 3
+        },
+        {
+          "key": "Khía cạnh bản sắc",
+          "label": "Khía cạnh bản sắc",
+          "col_index": 4
+        },
+        {
+          "key": "Vị trí trên trục phân định",
+          "label": "Vị trí trên trục phân định",
+          "col_index": 5
+        },
+        {
+          "key": "Bản chất định nghĩa",
+          "label": "Bản chất định nghĩa",
+          "col_index": 6
+        },
+        {
+          "key": "Ứng dụng trong Thương hiệu Sản phẩm",
+          "label": "Ứng dụng trong Thương hiệu Sản phẩm",
+          "col_index": 7
+        },
+        {
+          "key": "Ứng dụng trong Thương hiệu Cá nhân",
+          "label": "Ứng dụng trong Thương hiệu Cá nhân",
+          "col_index": 8
+        }
+      ],
+      "records": [
+        {
+          "STT": 1,
+          "Khía cạnh bản sắc": "Physique (Diện mạo vật lý)",
+          "Vị trí trên trục phân định": "Bên phát / Biểu hiện bên ngoài",
+          "Bản chất định nghĩa": "Tập hợp các đặc trưng giác quan hữu hình có thể nhìn thấy, chạm vào hoặc nhận diện ngay lập tức.",
+          "Ứng dụng trong Thương hiệu Sản phẩm": "Bao bì, bảng màu, phông chữ, kiểu dáng công nghiệp, giao diện sản phẩm số.",
+          "Ứng dụng trong Thương hiệu Cá nhân": "Phong cách ăn mặc, tác phong xuất hiện, ngôn ngữ hình thể và bộ nhận diện cá nhân số."
+        },
+        {
+          "STT": 2,
+          "Khía cạnh bản sắc": "Personality (Cá tính)",
+          "Vị trí trên trục phân định": "Bên phát / Căn tính bên trong",
+          "Bản chất định nghĩa": "Những nét tính cách con người được gắn cho thực thể nhằm định hình giọng điệu và phong thái.",
+          "Ứng dụng trong Thương hiệu Sản phẩm": "Giọng văn tiếp thị, cách trò chuyện của bot hỗ trợ, thái độ của thương hiệu với thị trường.",
+          "Ứng dụng trong Thương hiệu Cá nhân": "Tính cách cá nhân thể hiện qua phát ngôn, cách phản biện và phong cách làm việc."
+        },
+        {
+          "STT": 3,
+          "Khía cạnh bản sắc": "Culture (Văn hóa & Giá trị)",
+          "Vị trí trên trục phân định": "Trung tâm / Căn tính bên trong",
+          "Bản chất định nghĩa": "Hệ giá trị dẫn đường, cội nguồn văn hóa, triết lý vận hành không thể thỏa hiệp của tổ chức.",
+          "Ứng dụng trong Thương hiệu Sản phẩm": "Văn hóa đổi mới sáng tạo, trách nhiệm môi trường hoặc sự chuẩn mực kỹ thuật.",
+          "Ứng dụng trong Thương hiệu Cá nhân": "Nguyên tắc nghề nghiệp, đạo đức cá nhân, thế giới quan và lý tưởng phục vụ cộng đồng."
+        },
+        {
+          "STT": 4,
+          "Khía cạnh bản sắc": "Relationship (Mối quan hệ)",
+          "Vị trí trên trục phân định": "Giao điểm / Biểu hiện bên ngoài",
+          "Bản chất định nghĩa": "Bản chất tương tác xã hội giữa thương hiệu và khách hàng qua các điểm tiếp xúc dịch vụ.",
+          "Ứng dụng trong Thương hiệu Sản phẩm": "Mối quan hệ đối tác tin cậy, quan hệ phụng sự chu đáo hoặc quan hệ dẫn đường công nghệ.",
+          "Ứng dụng trong Thương hiệu Cá nhân": "Mối quan hệ giữa người thầy và học trò, bạn đồng hành tin cậy hoặc cố vấn chiến lược."
+        },
+        {
+          "STT": 5,
+          "Khía cạnh bản sắc": "Reflection (Hình mẫu phản chiếu)",
+          "Vị trí trên trục phân định": "Bên nhận / Biểu hiện bên ngoài",
+          "Bản chất định nghĩa": "Hình tượng khách hàng mục tiêu lý tưởng mà thương hiệu khắc họa trong các chiến dịch truyền thông.",
+          "Ứng dụng trong Thương hiệu Sản phẩm": "Hình ảnh người trẻ năng động, nhà quản lý thành đạt được thương hiệu mô tả.",
+          "Ứng dụng trong Thương hiệu Cá nhân": "Chân dung đối tác hoặc cộng đồng học hỏi lý tưởng mà cá nhân muốn đồng hành."
+        },
+        {
+          "STT": 6,
+          "Khía cạnh bản sắc": "Self-Image (Hình ảnh tự thân)",
+          "Vị trí trên trục phân định": "Bên nhận / Căn tính bên trong",
+          "Bản chất định nghĩa": "Cảm xúc và nhận thức nội tâm của người dùng về chính bản thân mình khi họ sử dụng thương hiệu.",
+          "Ứng dụng trong Thương hiệu Sản phẩm": "Người dùng cảm thấy tự tin, văn minh hoặc đẳng cấp hơn khi sở hữu sản phẩm.",
+          "Ứng dụng trong Thương hiệu Cá nhân": "Người theo dõi cảm thấy được nâng cao giá trị bản thân, thông thái hơn khi tiếp thu chia sẻ."
+        }
+      ],
+      "children": [],
+      "confidence": 1,
+      "warnings": []
+    },
+    {
+      "table_id": "tbl_016",
+      "title": "Bảng 7: Các mô hình Kiến trúc thương hiệu (Brand Architecture)",
+      "level": 2,
+      "parent_id": "tbl_010",
+      "title_cell": {
+        "row": 107,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 107,
+        "start_col": 2,
+        "end_row": 112,
+        "end_col": 8
+      },
+      "header_row": 108,
+      "record_start_row": 109,
+      "record_end_row": 112,
+      "columns": [
+        "STT",
+        "Mô hình kiến trúc",
+        "Cấu trúc quan hệ thương hiệu",
+        "Lợi thế kinh tế & Uy tín",
+        "Thách thức & Rủi ro quản trị",
+        "Doanh nghiệp điển hình"
+      ],
+      "column_details": [
+        {
+          "key": "STT",
+          "label": "STT",
+          "col_index": 3
+        },
+        {
+          "key": "Mô hình kiến trúc",
+          "label": "Mô hình kiến trúc",
+          "col_index": 4
+        },
+        {
+          "key": "Cấu trúc quan hệ thương hiệu",
+          "label": "Cấu trúc quan hệ thương hiệu",
+          "col_index": 5
+        },
+        {
+          "key": "Lợi thế kinh tế & Uy tín",
+          "label": "Lợi thế kinh tế & Uy tín",
+          "col_index": 6
+        },
+        {
+          "key": "Thách thức & Rủi ro quản trị",
+          "label": "Thách thức & Rủi ro quản trị",
+          "col_index": 7
+        },
+        {
+          "key": "Doanh nghiệp điển hình",
+          "label": "Doanh nghiệp điển hình",
+          "col_index": 8
+        }
+      ],
+      "records": [
+        {
+          "STT": 1,
+          "Mô hình kiến trúc": "Branded House (Ngôi nhà một thương hiệu)",
+          "Cấu trúc quan hệ thương hiệu": "Thương hiệu mẹ duy nhất đứng đầu và xuất hiện trên toàn bộ các dòng sản phẩm, dịch vụ.",
+          "Lợi thế kinh tế & Uy tín": "Tiết kiệm 40–70% chi phí tiếp thị; hiệu ứng chuyển giao uy tín sang sản phẩm mới diễn ra lập tức.",
+          "Thách thức & Rủi ro quản trị": "Rủi ro lây nhiễm cao; một sự cố sản phẩm có thể đe dọa toàn bộ danh mục của tập đoàn.",
+          "Doanh nghiệp điển hình": "Apple (iPhone, Mac, iPad), Google, FedEx."
+        },
+        {
+          "STT": 2,
+          "Mô hình kiến trúc": "House of Brands (Ngôi nhà các thương hiệu)",
+          "Cấu trúc quan hệ thương hiệu": "Tập đoàn mẹ sở hữu nhiều thương hiệu con hoàn toàn độc lập; pháp nhân mẹ ẩn danh với thị trường.",
+          "Lợi thế kinh tế & Uy tín": "Tối ưu hóa việc thâm nhập đa phân khúc; cách ly hoàn toàn khủng hoảng giữa các nhãn hàng.",
+          "Thách thức & Rủi ro quản trị": "Chi phí tiếp thị và vận hành rất lớn do mỗi nhãn hàng phải đầu tư ngân sách riêng.",
+          "Doanh nghiệp điển hình": "Unilever (Dove, Axe, Omo), P&G, LVMH."
+        },
+        {
+          "STT": 3,
+          "Mô hình kiến trúc": "Endorsed Brand (Thương hiệu được bảo chứng)",
+          "Cấu trúc quan hệ thương hiệu": "Nhãn hàng con sở hữu bản sắc riêng biệt nhưng gắn kèm dấu ấn bảo chứng của thương hiệu mẹ.",
+          "Lợi thế kinh tế & Uy tín": "Giúp sản phẩm mới nhanh chóng có được niềm tin thị trường trong khi vẫn tự do xây dựng cá tính riêng.",
+          "Thách thức & Rủi ro quản trị": "Vẫn tồn tại rủi ro ràng buộc danh tiếng nhất định; đòi hỏi kiểm soát chất lượng đồng nhất.",
+          "Doanh nghiệp điển hình": "Courtyard by Marriott, KitKat của Nestlé."
+        },
+        {
+          "STT": 4,
+          "Mô hình kiến trúc": "Hybrid Model (Kiến trúc thương hiệu lai ghép)",
+          "Cấu trúc quan hệ thương hiệu": "Kết hợp linh hoạt các mô hình trên do kết quả của việc mở rộng danh mục và các thương vụ M&A.",
+          "Lợi thế kinh tế & Uy tín": "Tối đa hóa tính thích ứng thị trường; bảo tồn nguyên vẹn tài sản thương hiệu của các công ty sáp nhập.",
+          "Thách thức & Rủi ro quản trị": "Cấu trúc quản trị phức tạp, dễ gây nhầm lẫn nhận diện nếu thiếu nguyên tắc định tuyến danh mục.",
+          "Doanh nghiệp điển hình": "Coca-Cola, Microsoft."
+        }
+      ],
+      "children": [],
+      "confidence": 1,
+      "warnings": []
+    },
+    {
+      "table_id": "tbl_017",
+      "title": "Bảng 8: Ma trận chỉ số đo lường hiệu quả (KPIs)",
+      "level": 2,
+      "parent_id": "tbl_010",
+      "title_cell": {
+        "row": 113,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 113,
+        "start_col": 2,
+        "end_row": 117,
+        "end_col": 7
+      },
+      "header_row": 114,
+      "record_start_row": 115,
+      "record_end_row": 117,
+      "columns": [
+        "STT",
+        "Chiều kích đo lường",
+        "Chỉ số đánh giá Thương hiệu Sản phẩm",
+        "Chỉ số đánh giá Thương hiệu Cá nhân",
+        "Phương pháp & Công cụ thu thập dữ liệu"
+      ],
+      "column_details": [
+        {
+          "key": "STT",
+          "label": "STT",
+          "col_index": 3
+        },
+        {
+          "key": "Chiều kích đo lường",
+          "label": "Chiều kích đo lường",
+          "col_index": 4
+        },
+        {
+          "key": "Chỉ số đánh giá Thương hiệu Sản phẩm",
+          "label": "Chỉ số đánh giá Thương hiệu Sản phẩm",
+          "col_index": 5
+        },
+        {
+          "key": "Chỉ số đánh giá Thương hiệu Cá nhân",
+          "label": "Chỉ số đánh giá Thương hiệu Cá nhân",
+          "col_index": 6
+        },
+        {
+          "key": "Phương pháp & Công cụ thu thập dữ liệu",
+          "label": "Phương pháp & Công cụ thu thập dữ liệu",
+          "col_index": 7
+        }
+      ],
+      "records": [
+        {
+          "STT": 1,
+          "Chiều kích đo lường": "Mức độ Nhận biết (Brand Awareness)",
+          "Chỉ số đánh giá Thương hiệu Sản phẩm": "* Tỷ lệ nhắc nhớ đầu tiên (Top-of-Mind - TOM).\n\n* Nhận biết có nhắc nhở (Aided Recall).\n\n* Tỷ lệ thảo luận trên thị trường (Share of Voice - SOV).",
+          "Chỉ số đánh giá Thương hiệu Cá nhân": "* Khối lượng tìm kiếm tên cá nhân (Search Volume).\n\n* Lượt xem hồ sơ nghề nghiệp (Profile Views).\n\n* Tần suất xuất hiện trên các ấn phẩm báo chí chuyên ngành.",
+          "Phương pháp & Công cụ thu thập dữ liệu": "Khảo sát thị trường chuyên sâu; Báo cáo lắng nghe mạng xã hội (Social Listening); Google Trends."
+        },
+        {
+          "STT": 2,
+          "Chiều kích đo lường": "Mức độ Gắn kết & Cảm xúc (Engagement & Equity)",
+          "Chỉ số đánh giá Thương hiệu Sản phẩm": "* Điểm hài lòng khách hàng (Net Promoter Score - NPS).\n\n* Chỉ số cảm xúc ròng (Net Sentiment Score - NSS).\n\n* Mức giá thặng dư sẵn sàng chi trả (Price Premium).",
+          "Chỉ số đánh giá Thương hiệu Cá nhân": "* Tỷ lệ tương tác thảo luận chuyên môn (Engagement Rate).\n\n* Lời mời tham dự hội thảo với vai trò diễn giả.\n\n* Điểm đo lường tài sản cá nhân (PBES: Sức hút & Khác biệt).",
+          "Phương pháp & Công cụ thu thập dữ liệu": "Công cụ phân tích cảm xúc dữ liệu lớn; Báo cáo phân tích chuyên sâu của LinkedIn Analytics."
+        },
+        {
+          "STT": 3,
+          "Chiều kích đo lường": "Hiệu quả Chuyển đổi & Kinh tế (Economic Impact)",
+          "Chỉ số đánh giá Thương hiệu Sản phẩm": "* Tỷ lệ chuyển đổi đơn hàng (Conversion Rate).\n\n* Giá trị vòng đời khách hàng (Customer Lifetime Value - CLV).\n\n* Tốc độ tăng trưởng thị phần bán lẻ thực tế.",
+          "Chỉ số đánh giá Thương hiệu Cá nhân": "* Số lượng cơ hội hợp tác kinh doanh tự tìm đến.\n\n* Mức phí tư vấn chuyên môn theo giờ (Hourly Rate).\n\n* Doanh thu phát sinh trực tiếp từ chiến dịch Founder-led.",
+          "Phương pháp & Công cụ thu thập dữ liệu": "Báo cáo tài chính doanh nghiệp; Hệ thống quản trị quan hệ khách hàng và đối tác B2B (CRM)."
+        }
+      ],
+      "children": [],
+      "confidence": 1,
+      "warnings": []
+    },
+    {
+      "table_id": "tbl_018",
+      "title": "Bảng 9: Ma trận quản trị khủng hoảng danh tiếng theo thuyết SCCT",
+      "level": 2,
+      "parent_id": "tbl_010",
+      "title_cell": {
+        "row": 118,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 118,
+        "start_col": 2,
+        "end_row": 122,
+        "end_col": 7
+      },
+      "header_row": 119,
+      "record_start_row": 120,
+      "record_end_row": 122,
+      "columns": [
+        "STT",
+        "Cụm khủng hoảng (Crisis Clusters)",
+        "Mức độ quy gán trách nhiệm",
+        "Chiến lược phản hồi chủ đạo (SCCT)",
+        "Quy chuẩn hành vi và Kỹ thuật thực thi"
+      ],
+      "column_details": [
+        {
+          "key": "STT",
+          "label": "STT",
+          "col_index": 3
+        },
+        {
+          "key": "Cụm khủng hoảng (Crisis Clusters)",
+          "label": "Cụm khủng hoảng (Crisis Clusters)",
+          "col_index": 4
+        },
+        {
+          "key": "Mức độ quy gán trách nhiệm",
+          "label": "Mức độ quy gán trách nhiệm",
+          "col_index": 5
+        },
+        {
+          "key": "Chiến lược phản hồi chủ đạo (SCCT)",
+          "label": "Chiến lược phản hồi chủ đạo (SCCT)",
+          "col_index": 6
+        },
+        {
+          "key": "Quy chuẩn hành vi và Kỹ thuật thực thi",
+          "label": "Quy chuẩn hành vi và Kỹ thuật thực thi",
+          "col_index": 7
+        }
+      ],
+      "records": [
+        {
+          "STT": 1,
+          "Cụm khủng hoảng (Crisis Clusters)": "Cụm Nạn nhân (Victim Cluster)",
+          "Mức độ quy gán trách nhiệm": "Thấp (Chủ thể thương hiệu cũng là nạn nhân: tin đồn vô căn cứ, đối thủ bôi nhọ, thiên tai).",
+          "Chiến lược phản hồi chủ đạo (SCCT)": "Chiến lược Từ chối (Deny):\n\n* Bác bỏ cáo buộc sai sự thật.\n\n* Công kích nguồn tin bịa đặt.\n\n* Khẳng định ranh giới pháp lý.",
+          "Quy chuẩn hành vi và Kỹ thuật thực thi": "Minh bạch hóa dữ liệu kỹ thuật, mời cơ quan giám định độc lập xác thực và can thiệp pháp lý để bảo vệ danh dự. Tuyệt đối không xin lỗi nhận lỗi khi bản thân hoàn toàn vô can."
+        },
+        {
+          "STT": 2,
+          "Cụm khủng hoảng (Crisis Clusters)": "Cụm Tai nạn (Accidental Cluster)",
+          "Mức độ quy gán trách nhiệm": "Trung bình (Sự cố phát sinh ngoài ý muốn chủ quan: trục trặc kỹ thuật, lỗi hệ thống máy móc).",
+          "Chiến lược phản hồi chủ đạo (SCCT)": "Chiến lược Giảm thiểu (Diminish):\n\n* Giải thích bối cảnh kỹ thuật phát sinh.\n\n* Giảm nhẹ mức độ thiệt hại qua giải pháp khắc phục.",
+          "Quy chuẩn hành vi và Kỹ thuật thực thi": "Thể hiện sự thấu cảm chân thành với tổn thất của khách hàng, công khai lộ trình sửa chữa kỹ thuật và bồi hoàn dịch vụ công bằng, không đùn đẩy trách nhiệm."
+        },
+        {
+          "STT": 3,
+          "Cụm khủng hoảng (Crisis Clusters)": "Cụm Ngăn chặn được (Preventable Cluster)",
+          "Mức độ quy gán trách nhiệm": "Rất cao (Cố ý vi phạm đạo đức, gian dối chất lượng hoặc quản trị cẩu thả dẫn đến hậu quả).",
+          "Chiến lược phản hồi chủ đạo (SCCT)": "Chiến lược Tái thiết (Rebuild):\n\n* Xin lỗi toàn diện không điều kiện.\n\n* Bồi thường vật chất và tinh thần thỏa đáng.\n\n* Cải tổ triệt để quy trình nội bộ.",
+          "Quy chuẩn hành vi và Kỹ thuật thực thi": "Người đại diện cao nhất phải trực tiếp đối thoại, nhận trách nhiệm cá nhân, không ngụy biện. Áp dụng chiến lược \"Stealing Thunder\" (chủ động thừa nhận trước khi bị phát giác) để giảm thiểu thiệt hại cổ phiếu và niềm tin dư luận."
+        }
+      ],
+      "children": [],
+      "confidence": 0.9,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW"
+      ]
+    },
+    {
+      "table_id": "tbl_019",
+      "title": "1. So sánh kiến trúc kỹ thuật và triết lý phát triển",
+      "level": 2,
+      "parent_id": "tbl_010",
+      "title_cell": {
+        "row": 127,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 127,
+        "start_col": 2,
+        "end_row": 133,
+        "end_col": 6
+      },
+      "header_row": 128,
+      "record_start_row": 129,
+      "record_end_row": 133,
+      "columns": [
+        "Tiêu chí",
+        "Microsoft Copilot Studio",
+        "Google Gemini (AI Studio & Vertex AI)",
+        "Anthropic Claude (Console & Claude Code)"
+      ],
+      "column_details": [
+        {
+          "key": "Tiêu chí",
+          "label": "Tiêu chí",
+          "col_index": 3
+        },
+        {
+          "key": "Microsoft Copilot Studio",
+          "label": "Microsoft Copilot Studio",
+          "col_index": 4
+        },
+        {
+          "key": "Google Gemini (AI Studio & Vertex AI)",
+          "label": "Google Gemini (AI Studio & Vertex AI)",
+          "col_index": 5
+        },
+        {
+          "key": "Anthropic Claude (Console & Claude Code)",
+          "label": "Anthropic Claude (Console & Claude Code)",
+          "col_index": 6
+        }
+      ],
+      "records": [
+        {
+          "Tiêu chí": "Triết lý phát triển",
+          "Microsoft Copilot Studio": "Low-code / No-code kết hợp mở rộng logic bằng ngôn ngữ Power Fx.",
+          "Google Gemini (AI Studio & Vertex AI)": "Lưỡng tính: Web Playground (AI Studio) kết hợp bộ công cụ code-first ADK và Agent Designer (Vertex AI).",
+          "Anthropic Claude (Console & Claude Code)": "Code-first chuyên sâu: Điều khiển qua dòng lệnh CLI, tập tin cấu hình mã nguồn và REST API."
+        },
+        {
+          "Tiêu chí": "Đối tượng người dùng chính",
+          "Microsoft Copilot Studio": "Chuyên viên phân tích nghiệp vụ, Citizen Developers, quản trị viên Microsoft 365.",
+          "Google Gemini (AI Studio & Vertex AI)": "Lập trình viên AI/ML, kỹ sư dữ liệu, kiến trúc sư giải pháp hạ tầng đám mây Google Cloud.",
+          "Anthropic Claude (Console & Claude Code)": "Kỹ sư phần mềm, lập trình viên hệ thống, đội ngũ DevOps và nghiên cứu kỹ thuật."
+        },
+        {
+          "Tiêu chí": "Cơ chế điều phối (Orchestration)",
+          "Microsoft Copilot Studio": "Generative Orchestration: Bộ lập kế hoạch tự động kết hợp ngữ cảnh 10 lượt hội thoại để gọi công cụ/tác tử.",
+          "Google Gemini (AI Studio & Vertex AI)": "Vertex AI Agent Engine: Quản lý vòng đời tác tử, điều phối trạng thái phiên và bộ nhớ đa kênh.",
+          "Anthropic Claude (Console & Claude Code)": "Agentic Loop: Vòng lặp tự động đọc mã, lập kế hoạch, chạy lệnh hệ điều hành và kiểm tra kết quả."
+        },
+        {
+          "Tiêu chí": "Mô hình tác tử",
+          "Microsoft Copilot Studio": "Liên kết đa tác tử (Multi-agent federation) phân tách giữa Orchestrator và Specialized Agents.",
+          "Google Gemini (AI Studio & Vertex AI)": "Multi-agent orchestration dựa trên khung ADK nguồn mở và giao thức Agent2Agent (A2A).",
+          "Anthropic Claude (Console & Claude Code)": "Subagents chuyên trách kết hợp cơ chế Hooks can thiệp vòng đời thực thi."
+        },
+        {
+          "Tiêu chí": "Môi trường tác nghiệp",
+          "Microsoft Copilot Studio": "Giao diện kéo-thả đồ họa (Visual Canvas), trình gỡ lỗi hội thoại trực quan.",
+          "Google Gemini (AI Studio & Vertex AI)": "Trình duyệt web (AI Studio) hoặc Google Cloud Console / Agent Studio.",
+          "Anthropic Claude (Console & Claude Code)": "Giao diện dòng lệnh Terminal (claude), môi trường phát triển IDE hoặc Claude Console."
+        }
+      ],
+      "children": [],
+      "confidence": 0.9,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW"
+      ]
+    },
+    {
+      "table_id": "tbl_020",
+      "title": "2. So sánh năng lực RAG, kết nối dữ liệu và chuẩn tích hợp",
+      "level": 2,
+      "parent_id": "tbl_010",
+      "title_cell": {
+        "row": 137,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 137,
+        "start_col": 2,
+        "end_row": 142,
+        "end_col": 6
+      },
+      "header_row": 138,
+      "record_start_row": 139,
+      "record_end_row": 142,
+      "columns": [
+        "Khía cạnh RAG & Tích hợp",
+        "Microsoft Copilot Studio",
+        "Google Gemini & Vertex AI",
+        "Anthropic Claude"
+      ],
+      "column_details": [
+        {
+          "key": "Khía cạnh RAG & Tích hợp",
+          "label": "Khía cạnh RAG & Tích hợp",
+          "col_index": 3
+        },
+        {
+          "key": "Microsoft Copilot Studio",
+          "label": "Microsoft Copilot Studio",
+          "col_index": 4
+        },
+        {
+          "key": "Google Gemini & Vertex AI",
+          "label": "Google Gemini & Vertex AI",
+          "col_index": 5
+        },
+        {
+          "key": "Anthropic Claude",
+          "label": "Anthropic Claude",
+          "col_index": 6
+        }
+      ],
+      "records": [
+        {
+          "Khía cạnh RAG & Tích hợp": "Tiếp đất dữ liệu nội bộ (Enterprise RAG)",
+          "Microsoft Copilot Studio": "Microsoft 365 Graph Grounding: Tự động kế thừa toàn bộ phân quyền tệp tin SharePoint, OneDrive, Teams.",
+          "Google Gemini & Vertex AI": "Vertex AI Search: Tự động đánh chỉ mục tài liệu, hỗ trợ lưu trữ vector mở rộng trên BigQuery và Cloud Storage.",
+          "Anthropic Claude": "Hỗ trợ cửa sổ ngữ cảnh cực lớn (lên tới 1.000.000 tokens), nạp tệp tin trực tiếp từ kho mã nguồn hoặc hệ thống tệp."
+        },
+        {
+          "Khía cạnh RAG & Tích hợp": "Tiếp đất dữ liệu thời gian thực (Web Grounding)",
+          "Microsoft Copilot Studio": "Tích hợp chỉ mục Bing Search hoặc kết nối chỉ mục tùy chỉnh qua Azure AI Search.",
+          "Google Gemini & Vertex AI": "Google Search Grounding với cơ chế Dynamic Retrieval tự động nhận biết khi nào cần tra cứu.",
+          "Anthropic Claude": "Sử dụng công cụ WebFetch hoặc kết nối qua các máy chủ MCP tra cứu dữ liệu ngoại vi."
+        },
+        {
+          "Khía cạnh RAG & Tích hợp": "Hệ sinh thái đầu nối (Connectors)",
+          "Microsoft Copilot Studio": "Hơn 1.000 đầu nối chuẩn hóa của Power Platform (SAP, Salesforce, Dynamics 365, ServiceNow).",
+          "Google Gemini & Vertex AI": "Hơn 100 đầu nối ứng dụng doanh nghiệp và tích hợp cổng quản lý API qua Apigee.",
+          "Anthropic Claude": "Phụ thuộc hoàn toàn vào chuẩn giao thức mở MCP hoặc API do kỹ sư tự lập trình kết nối."
+        },
+        {
+          "Khía cạnh RAG & Tích hợp": "Chuẩn kết nối mở (Open Protocols)",
+          "Microsoft Copilot Studio": "Hỗ trợ cấu hình máy chủ Model Context Protocol (MCP) và Agent2Agent (A2A) qua giao diện.",
+          "Google Gemini & Vertex AI": "Tích hợp chuẩn giao thức mở MCP thông qua ADK và hỗ trợ giao thức A2A với hơn 50 đối tác.",
+          "Anthropic Claude": "Đơn vị sáng lập và phát triển đặc tả Model Context Protocol (MCP: Tools, Resources, Prompts)."
+        }
+      ],
+      "children": [],
+      "confidence": 0.9,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW"
+      ]
+    },
+    {
+      "table_id": "tbl_021",
+      "title": "3. So sánh an toàn, bảo mật, định danh và tuân thủ",
+      "level": 2,
+      "parent_id": "tbl_010",
+      "title_cell": {
+        "row": 145,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 145,
+        "start_col": 2,
+        "end_row": 151,
+        "end_col": 6
+      },
+      "header_row": 146,
+      "record_start_row": 147,
+      "record_end_row": 151,
+      "columns": [
+        "Tiêu chuẩn an toàn & Pháp lý",
+        "Microsoft Copilot Studio",
+        "Google Vertex AI",
+        "Anthropic Claude Enterprise"
+      ],
+      "column_details": [
+        {
+          "key": "Tiêu chuẩn an toàn & Pháp lý",
+          "label": "Tiêu chuẩn an toàn & Pháp lý",
+          "col_index": 3
+        },
+        {
+          "key": "Microsoft Copilot Studio",
+          "label": "Microsoft Copilot Studio",
+          "col_index": 4
+        },
+        {
+          "key": "Google Vertex AI",
+          "label": "Google Vertex AI",
+          "col_index": 5
+        },
+        {
+          "key": "Anthropic Claude Enterprise",
+          "label": "Anthropic Claude Enterprise",
+          "col_index": 6
+        }
+      ],
+      "records": [
+        {
+          "Tiêu chuẩn an toàn & Pháp lý": "Quản trị định danh (IAM)",
+          "Microsoft Copilot Studio": "Microsoft Entra ID; cấp phát định danh độc lập Entra Agent ID cho từng tác tử.",
+          "Google Vertex AI": "Google Cloud IAM; kiểm soát đặc quyền chi tiết theo từng Service Account.",
+          "Anthropic Claude Enterprise": "Xác thực tập trung thông qua SSO/SAML; phân quyền theo cấp độ Workspace."
+        },
+        {
+          "Tiêu chuẩn an toàn & Pháp lý": "Cách ly mạng hạ tầng",
+          "Microsoft Copilot Studio": "Power Platform On-premises Data Gateway cho kiến trúc đám mây lai (Hybrid Cloud).",
+          "Google Vertex AI": "VPC Service Controls (VPC-SC) thiết lập ranh giới mạng cô lập tuyệt đối.",
+          "Anthropic Claude Enterprise": "Kiểm soát lưu lượng qua Proxy nội bộ và tường lửa mạng của doanh nghiệp."
+        },
+        {
+          "Tiêu chuẩn an toàn & Pháp lý": "Cơ chế quản trị dữ liệu",
+          "Microsoft Copilot Studio": "Tích hợp nhãn nhạy cảm và chính sách ngăn chặn thất thoát dữ liệu từ Microsoft Purview.",
+          "Google Vertex AI": "Mã hóa khóa do khách hàng kiểm soát (CMEK) cho cả dữ liệu tĩnh và vector.",
+          "Anthropic Claude Enterprise": "Chính sách Không lưu giữ dữ liệu (Zero Data Retention) trên hợp đồng doanh nghiệp."
+        },
+        {
+          "Tiêu chuẩn an toàn & Pháp lý": "Sử dụng dữ liệu huấn luyện",
+          "Microsoft Copilot Studio": "Cam kết không dùng dữ liệu hội thoại và dữ liệu doanh nghiệp để tái đào tạo LLM cơ sở.",
+          "Google Vertex AI": "Cam kết không sử dụng dữ liệu doanh nghiệp của khách hàng để huấn luyện mô hình nền tảng.",
+          "Anthropic Claude Enterprise": "Cam kết bảo mật, không dùng dữ liệu nhập từ tài khoản thương mại/doanh nghiệp để huấn luyện."
+        },
+        {
+          "Tiêu chuẩn an toàn & Pháp lý": "Chứng chỉ tuân thủ",
+          "Microsoft Copilot Studio": "SOC 1/2/3, ISO 27001, HIPAA, FedRAMP, GDPR.",
+          "Google Vertex AI": "SOC 1/2/3, ISO 27000-series, HIPAA, FedRAMP High.",
+          "Anthropic Claude Enterprise": "SOC 2 Type II, thỏa thuận kinh doanh y tế HIPAA BAA, GDPR."
+        }
+      ],
+      "children": [],
+      "confidence": 0.9,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW"
+      ]
+    },
+    {
+      "table_id": "tbl_022",
+      "title": "5. So sánh năng lực tự trị và cơ chế kiểm soát rủi ro",
+      "level": 2,
+      "parent_id": "tbl_010",
+      "title_cell": {
+        "row": 161,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 161,
+        "start_col": 2,
+        "end_row": 167,
+        "end_col": 6
+      },
+      "header_row": 162,
+      "record_start_row": 163,
+      "record_end_row": 167,
+      "columns": [
+        "Cơ chế vận hành",
+        "Microsoft Copilot Studio",
+        "Google Vertex AI Agent Builder",
+        "Anthropic Claude Code"
+      ],
+      "column_details": [
+        {
+          "key": "Cơ chế vận hành",
+          "label": "Cơ chế vận hành",
+          "col_index": 3
+        },
+        {
+          "key": "Microsoft Copilot Studio",
+          "label": "Microsoft Copilot Studio",
+          "col_index": 4
+        },
+        {
+          "key": "Google Vertex AI Agent Builder",
+          "label": "Google Vertex AI Agent Builder",
+          "col_index": 5
+        },
+        {
+          "key": "Anthropic Claude Code",
+          "label": "Anthropic Claude Code",
+          "col_index": 6
+        }
+      ],
+      "records": [
+        {
+          "Cơ chế vận hành": "Kích hoạt tự trị (Triggers)",
+          "Microsoft Copilot Studio": "Kích hoạt theo lịch trình, tín hiệu API, hoặc sự kiện thay đổi dữ liệu bảng Dataverse / Email.",
+          "Google Vertex AI Agent Builder": "Kích hoạt qua lệnh gọi API, sự kiện Cloud Pub/Sub, Webhooks hạ tầng đám mây.",
+          "Anthropic Claude Code": "Kích hoạt qua lệnh CLI, tiến trình định kỳ (/loop, /schedule) hoặc sự kiện tập tin."
+        },
+        {
+          "Cơ chế vận hành": "Cấp độ phân quyền an toàn",
+          "Microsoft Copilot Studio": "3 tầng: Tầng tiền định (luật cứng), Phê duyệt người dùng (Human-in-the-loop), Tự trị kiểm soát.",
+          "Google Vertex AI Agent Builder": "Bộ quy tắc an toàn nội dung (Safety Filters), xác thực đặc quyền tối thiểu qua Google IAM.",
+          "Anthropic Claude Code": "3 chế độ: Plan Mode (chỉ đọc), Normal Mode (hỏi trước khi sửa), Auto Mode (tự phân loại rủi ro)."
+        },
+        {
+          "Cơ chế vận hành": "Cơ chế ghi nhận & Giám sát",
+          "Microsoft Copilot Studio": "Theo dõi trực quan qua Power Platform Admin Center, tích hợp vết kiểm toán Microsoft Purview.",
+          "Google Vertex AI Agent Builder": "Theo dõi toàn diện qua Cloud Logging, Cloud Monitoring và Vertex AI Evaluation Metrics.",
+          "Anthropic Claude Code": "Theo dõi nhật ký kiểm tra lệnh cục bộ và điểm chặn vòng đời (Hooks: PreToolUse, PostToolUse, Stop)."
+        }
+      ],
+      "children": [],
+      "confidence": 0.9,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW",
+        "POSSIBLE_FOOTER"
+      ]
+    },
+    {
+      "table_id": "tbl_023",
+      "title": "7. Ma trận hướng dẫn lựa chọn nền tảng tối ưu",
+      "level": 2,
+      "parent_id": "tbl_010",
+      "title_cell": {
+        "row": 175,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 175,
+        "start_col": 2,
+        "end_row": 181,
+        "end_col": 6
+      },
+      "header_row": 176,
+      "record_start_row": 177,
+      "record_end_row": 181,
+      "columns": [
+        "Hiện trạng & Đặc thù tổ chức",
+        "Trọng tâm nhu cầu",
+        "Nền tảng đề xuất",
+        "Luận cứ chiến lược quyết định"
+      ],
+      "column_details": [
+        {
+          "key": "Hiện trạng & Đặc thù tổ chức",
+          "label": "Hiện trạng & Đặc thù tổ chức",
+          "col_index": 3
+        },
+        {
+          "key": "Trọng tâm nhu cầu",
+          "label": "Trọng tâm nhu cầu",
+          "col_index": 4
+        },
+        {
+          "key": "Nền tảng đề xuất",
+          "label": "Nền tảng đề xuất",
+          "col_index": 5
+        },
+        {
+          "key": "Luận cứ chiến lược quyết định",
+          "label": "Luận cứ chiến lược quyết định",
+          "col_index": 6
+        }
+      ],
+      "records": [
+        {
+          "Hiện trạng & Đặc thù tổ chức": "Doanh nghiệp vừa và lớn dùng Microsoft 365 (E3/E5)",
+          "Trọng tâm nhu cầu": "Tự động hóa quy trình nội bộ, giải phóng tác nghiệp văn phòng thường nhật",
+          "Nền tảng đề xuất": "Microsoft Copilot Studio",
+          "Luận cứ chiến lược quyết định": "Tận dụng chính sách zero-rated credits cho nhân sự có bản quyền M365 Copilot; kế thừa sẵn hạ tầng phân quyền."
+        },
+        {
+          "Hiện trạng & Đặc thù tổ chức": "Tổ chức vận hành trên hạ tầng Google Cloud (GCP)",
+          "Trọng tâm nhu cầu": "Phân tích dữ liệu lớn trên BigQuery, cần RAG trực tiếp với thông tin web trực tuyến",
+          "Nền tảng đề xuất": "Google Vertex AI Agent Builder",
+          "Luận cứ chiến lược quyết định": "Đồng bộ hóa dữ liệu gốc, cơ chế Google Search Grounding dẫn đầu thị trường và bảo mật mạng VPC-SC."
+        },
+        {
+          "Hiện trạng & Đặc thù tổ chức": "Công ty công nghệ, đội ngũ kỹ sư phần mềm, DevOps",
+          "Trọng tâm nhu cầu": "Tự động hóa chu trình viết mã, bảo trì kho mã nguồn và nghiên cứu kỹ thuật chuyên sâu",
+          "Nền tảng đề xuất": "Anthropic Claude (Code & Console)",
+          "Luận cứ chiến lược quyết định": "Năng lực lập luận và sinh mã vượt trội; tự động hóa trực tiếp trong môi trường phát triển của lập trình viên."
+        },
+        {
+          "Hiện trạng & Đặc thù tổ chức": "Nhóm dự án thử nghiệm khái niệm nhanh (POC)",
+          "Trọng tâm nhu cầu": "Kiểm chứng nhanh tính khả thi của prompt và luồng chức năng với ngân sách tối thiểu",
+          "Nền tảng đề xuất": "Google AI Studio",
+          "Luận cứ chiến lược quyết định": "Không mất phí khởi tạo, không cần thẻ tín dụng, giao diện nhẹ và hỗ trợ xuất mã sang nhiều ngôn ngữ lập trình."
+        },
+        {
+          "Hiện trạng & Đặc thù tổ chức": "Doanh nghiệp phát triển sản phẩm công nghệ (B2B SaaS)",
+          "Trọng tâm nhu cầu": "Xây dựng tác tử thương mại nhúng trực tiếp vào sản phẩm phần mềm bán cho khách hàng",
+          "Nền tảng đề xuất": "Anthropic API hoặc Vertex AI Agent Engine",
+          "Luận cứ chiến lược quyết định": "Tự do kiểm soát giao diện sản phẩm, tối ưu chi phí token theo quy mô và không chịu ràng buộc bản quyền người dùng."
+        }
+      ],
+      "children": [],
+      "confidence": 0.9,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW"
+      ]
+    },
+    {
+      "table_id": "tbl_024",
+      "title": "Hệ Thống 4 Mô Hình Tư Duy Cấu Trúc Đoạn Văn",
+      "level": 2,
+      "parent_id": "tbl_010",
+      "title_cell": {
+        "row": 184,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 184,
+        "start_col": 2,
+        "end_row": 189,
+        "end_col": 6
+      },
+      "header_row": 185,
+      "record_start_row": 186,
+      "record_end_row": 189,
+      "columns": [
+        "Phương pháp (Framework)",
+        "Cơ chế cấu trúc (Topic & Comment)",
+        "Mục đích & Trường hợp sử dụng",
+        "Lưu ý kỹ thuật"
+      ],
+      "column_details": [
+        {
+          "key": "Phương pháp (Framework)",
+          "label": "Phương pháp (Framework)",
+          "col_index": 3
+        },
+        {
+          "key": "Cơ chế cấu trúc (Topic & Comment)",
+          "label": "Cơ chế cấu trúc (Topic & Comment)",
+          "col_index": 4
+        },
+        {
+          "key": "Mục đích & Trường hợp sử dụng",
+          "label": "Mục đích & Trường hợp sử dụng",
+          "col_index": 5
+        },
+        {
+          "key": "Lưu ý kỹ thuật",
+          "label": "Lưu ý kỹ thuật",
+          "col_index": 6
+        }
+      ],
+      "records": [
+        {
+          "Phương pháp (Framework)": "1. Constant Topic\n\n(Chủ đề cố định / Mở rộng)",
+          "Cơ chế cấu trúc (Topic & Comment)": "• Giữ nguyên một đối tượng/khái niệm ở vị trí Topic (đầu câu) xuyên suốt các câu hoặc mệnh đề liên tiếp (ví dụ lặp lại từ hoặc đại từ: Happiness... It... It...).\n\n• Đưa toàn bộ thông tin mới, phức tạp vào phần Comment (vị trí cuối câu).\n\n• Ẩn dụ: Người đọc đứng yên tại một \"ngưỡng cửa\" và quan sát ra nhiều hướng khác nhau.",
+          "Mục đích & Trường hợp sử dụng": "• Giúp người đọc duy trì sự tập trung tối đa vào duy nhất một thực thể mà không bị phân tâm.\n\n• Phù hợp khi mô tả đặc điểm, định nghĩa sâu hoặc phát triển một khái niệm đa diện.",
+          "Lưu ý kỹ thuật": "• Dễ tạo cảm giác đơn điệu, trì trệ (stagnant) nếu lạm dụng quá dài.\n\n• Nên giới hạn trong các đoạn văn cần đào sâu bản chất khái niệm."
+        },
+        {
+          "Phương pháp (Framework)": "2. Linking / Chaining\n\n(Nối chuỗi / Bậc thang)",
+          "Cơ chế cấu trúc (Topic & Comment)": "• Lấy thông tin mới ở phần Comment của câu trước làm Topic (thông tin quen thuộc) ở đầu câu tiếp theo.\n\n• Tạo chuỗi liên kết tịnh tiến: A $\\rightarrow$ B, B $\\rightarrow$ C, C $\\rightarrow$ D.\n\n• Ẩn dụ: Người đọc bước qua ngưỡng cửa vào phòng một, rồi từ phòng một bước tiếp sang phòng hai theo từng nhịp kế tiếp.",
+          "Mục đích & Trường hợp sử dụng": "• Tạo đà chuyển động (momentum) mạnh mẽ và nhịp chảy tự nhiên cho bài viết.\n\n• Rất hiệu quả khi giải thích quan hệ nhân quả, quy trình từng bước hoặc các lập luận logic tăng tiến.",
+          "Lưu ý kỹ thuật": "• Phải đảm bảo bước nhảy giữa hai câu gắn kết chặt chẽ; tránh chuyển đổi quá đột ngột khiến người đọc bị \"lạc hướng\" trong chuỗi logic."
+        },
+        {
+          "Phương pháp (Framework)": "3. Split Topic / Decomposition\n\n(Phân rã chủ đề)",
+          "Cơ chế cấu trúc (Topic & Comment)": "• Câu mở đầu nêu một khái niệm tổng thể hoặc một khối phức tạp.\n\n• Các câu tiếp theo chia nhỏ khối đó và lần lượt lấy từng thành phần/yếu tố bộ phận làm Topic để triển khai.\n\n• Phân rã cấu trúc theo mô hình: Tổng thể $\\rightarrow$ Yếu tố 1, Yếu tố 2, Yếu tố 3.",
+          "Mục đích & Trường hợp sử dụng": "• Bẻ gãy những ý tưởng lớn, trừu tượng hoặc phức tạp thành các đơn vị nhỏ hơn, dễ tiếp nhận.\n\n• Phù hợp khi phân tích cơ cấu, phân loại danh mục hoặc mổ xẻ cấu trúc của một vấn đề.",
+          "Lưu ý kỹ thuật": "• Các yếu tố thành phần phải có cùng cấp độ logic (cùng phân cấp) để tránh gây rối loạn tư duy phân loại của người đọc."
+        },
+        {
+          "Phương pháp (Framework)": "4. Theme Preview / Roadmap\n\n(Báo trước chủ đề)",
+          "Cơ chế cấu trúc (Topic & Comment)": "• Phần Comment của câu dẫn đường liệt kê sẵn các nhánh nội dung chính (ví dụ: A, B và C).\n\n• Các câu (hoặc đoạn) tiếp theo lần lượt nhặt chính xác các thành tố A, B, C làm Topic để diễn giải chi tiết.\n\n• Ẩn dụ: Người hướng dẫn thông báo trước toàn bộ lộ trình các phòng sẽ đi qua trước khi dẫn khách vào từng phòng.",
+          "Mục đích & Trường hợp sử dụng": "• Đan kết nhiều luồng nội dung độc lập vào một mạch lập luận thống nhất.\n\n• Cung cấp cho người đọc \"bản đồ tư duy\" trước khi đi vào chi tiết; dễ dàng mở rộng từ cấp độ đoạn văn lên cấp độ chương mục lớn.",
+          "Lưu ý kỹ thuật": "• Bắt buộc lặp lại đúng từ khóa đã nêu ở câu mở đầu; tuyệt đối tránh dùng từ đồng nghĩa tùy tiện vì sẽ làm tăng tải nhận thức (cognitive load) của người đọc khi đối chiếu cấu trúc."
+        }
+      ],
+      "children": [],
+      "confidence": 0.9,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW"
+      ]
+    },
+    {
+      "table_id": "tbl_026",
+      "title": "BẢNG 1: THEO DÕI CÁC VẤN ĐỀ CÓ RỦI RO TỒN ĐỌNG (TAX & OPERATIONAL RISK LOG)",
+      "level": 2,
+      "parent_id": "tbl_025",
+      "title_cell": {
+        "row": 193,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 193,
+        "start_col": 2,
+        "end_row": 199,
+        "end_col": 7
+      },
+      "header_row": 194,
+      "record_start_row": 195,
+      "record_end_row": 199,
+      "columns": [
+        "STT",
+        "Vấn đề / Giao dịch",
+        "Bản chất nghiệp vụ",
+        "Rủi ro thuế & Vận hành tiềm ẩn",
+        "Biện pháp kiểm soát & Giảm thiểu rủi ro"
+      ],
+      "column_details": [
+        {
+          "key": "STT",
+          "label": "STT",
+          "col_index": 3
+        },
+        {
+          "key": "Vấn đề / Giao dịch",
+          "label": "Vấn đề / Giao dịch",
+          "col_index": 4
+        },
+        {
+          "key": "Bản chất nghiệp vụ",
+          "label": "Bản chất nghiệp vụ",
+          "col_index": 5
+        },
+        {
+          "key": "Rủi ro thuế & Vận hành tiềm ẩn",
+          "label": "Rủi ro thuế & Vận hành tiềm ẩn",
+          "col_index": 6
+        },
+        {
+          "key": "Biện pháp kiểm soát & Giảm thiểu rủi ro",
+          "label": "Biện pháp kiểm soát & Giảm thiểu rủi ro",
+          "col_index": 7
+        }
+      ],
+      "records": [
+        {
+          "STT": 1,
+          "Vấn đề / Giao dịch": "Chi trả cho Cá nhân nước ngoài (Sheet 101 & Sheet Citibank)",
+          "Bản chất nghiệp vụ": "• Dòng tiền ngoại tệ chuyển ra nước ngoài cho cá nhân (chuyên gia, chuyên viên hỗ trợ kỹ thuật).\n\n• Hiện tại thống nhất chấp nhận rủi ro và không đánh giá FCT.",
+          "Rủi ro thuế & Vận hành tiềm ẩn": "• Truy thu thuế & phạt: Khi thanh tra thuế đối chiếu sao kê ngân hàng chuyển tiền ra nước ngoài với tờ khai thuế, nếu không chứng minh được tư cách lao động hay khấu trừ PIT/FCT, sẽ bị truy thu thuế FCT/PIT.\n\n• Tiền chậm nộp: Tính 0,03%/ngày trên số thuế truy thu.\n\n• Phạt hành chính: 20% trên số thuế khai sai.",
+          "Biện pháp kiểm soát & Giảm thiểu rủi ro": "• Lưu trữ bằng chứng/biên bản xác nhận khách hàng đồng ý chấp nhận rủi ro này (bằng văn bản/email).\n\n• Lập bảng theo dõi riêng quy mô dòng tiền chi trả cho cá nhân hàng tháng; nếu phát sinh giá trị lớn bất thường phải cảnh báo ngay cấp quản lý."
+        },
+        {
+          "STT": 2,
+          "Vấn đề / Giao dịch": "Khoản \"Other\" chưa phân loại AP/AR (Sheet IHB Bank)",
+          "Bản chất nghiệp vụ": "• Các giao dịch khách hàng đưa vào nhóm \"Other\" với diễn giải sơ sài, không rõ là khoản phải thu, phải trả, hay giao dịch tài chính nội bộ.",
+          "Rủi ro thuế & Vận hành tiềm ẩn": "• Kê khai sót doanh thu chịu thuế: Bỏ sót các khoản phí dịch vụ logistics gián tiếp phát sinh nghĩa vụ FCT.\n\n• Rủi ro bị ấn định thuế: Cơ quan thuế có xu hướng ấn định FCT đối với các khoản tiền chuyển ra nước ngoài không giải trình được bản chất kinh tế.",
+          "Biện pháp kiểm soát & Giảm thiểu rủi ro": "• Luôn bốc toàn bộ các dòng \"Other\" có diễn giải không rõ ràng vào Consumption Test để khách hàng giải trình bằng văn bản.\n\n• Yêu cầu khách hàng cung cấp chứng từ đối ứng (Invoice/Debit Note) nếu số tiền lớn."
+        },
+        {
+          "STT": 3,
+          "Vấn đề / Giao dịch": "Loại trừ \"Inland Fuel Surcharge - Import\" khi chiều hàng là Export",
+          "Bản chất nghiệp vụ": "• Phân loại hệ thống là Export nhưng tên phụ phí lại chứa từ khóa \"Import\" nên bị loại trừ, không kê khai FCT.",
+          "Rủi ro thuế & Vận hành tiềm ẩn": "• Xung đột logic dữ liệu (Data Conflict): Nếu bản chất thực tế là phụ phí nội địa tại Việt Nam cho hàng xuất khẩu thì thuộc diện chịu FCT; việc chỉ nhìn tên charge để loại trừ có thể dẫn đến kê khai thiếu.",
+          "Biện pháp kiểm soát & Giảm thiểu rủi ro": "• Kiểm tra ngẫu nhiên (Spot-check) trên một số tờ vận đơn (Bill of Lading) xem đây là lỗi gõ tên phụ phí của khách hàng hay bản chất thực sự là chặng nội địa nước ngoài."
+        },
+        {
+          "STT": 4,
+          "Vấn đề / Giao dịch": "Xác định ngày thanh toán IHB vào cuối tháng & Áp dụng tỷ giá bình quân",
+          "Bản chất nghiệp vụ": "• Các khoản bù trừ thanh toán nội bộ (IHB) được quy ước chốt ngày thanh toán vào ngày cuối tháng và áp tỷ giá bình quân.",
+          "Rủi ro thuế & Vận hành tiềm ẩn": "• Lệch thời điểm phát sinh nghĩa vụ thuế: Theo quy định, thời điểm tính thuế FCT là thời điểm thực hiện bù trừ công nợ thực tế.\n\n• Rủi ro chênh lệch tỷ giá tính thuế: Nếu tỷ giá bình quân thấp hơn tỷ giá bán ra thực tế tại ngày bù trừ, cơ quan thuế có thể ấn định lại doanh thu tính thuế và phạt chậm nộp.",
+          "Biện pháp kiểm soát & Giảm thiểu rủi ro": "• Lưu trữ Biên bản đối soát bù trừ công nợ (Offsetting Agreement / Settlement Statement) có xác nhận ngày hiệu lực là ngày cuối tháng.\n\n• Lưu trữ bảng tính tỷ giá bình quân và nguồn trích xuất dữ liệu làm căn cứ kiểm tra."
+        },
+        {
+          "STT": 5,
+          "Vấn đề / Giao dịch": "Chênh lệch giữa Sheet AP và Sheet Summary (Combine File)",
+          "Bản chất nghiệp vụ": "• Tổng số tiền trên bảng chi tiết các khoản phải trả (AP) không khớp hoàn toàn với số tổng trên bảng Summary do khách hàng gửi.",
+          "Rủi ro thuế & Vận hành tiềm ẩn": "• Rủi ro sai lệch cơ sở dữ liệu: Kê khai thiếu hoặc trùng lặp số liệu.\n\n• Khi cơ quan thuế yêu cầu đối chiếu tờ khai với báo cáo tài chính/sổ cái AP sẽ xuất hiện chênh lệch không giải trình được.",
+          "Biện pháp kiểm soát & Giảm thiểu rủi ro": "• Thiết lập nguyên tắc kiểm soát cứng (Hard stop): Mọi chênh lệch phải được khách hàng xác nhận lý do bằng email trước khi tiến hành bước tính thuế."
+        }
+      ],
+      "children": [],
+      "confidence": 0.9,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW"
+      ]
+    },
+    {
+      "table_id": "tbl_027",
+      "title": "BẢNG 2: THEO DÕI CÁC THỎA THUẬN NGHIỆP VỤ VỚI KHÁCH HÀNG (CLIENT CONVENTIONS LOG)",
+      "level": 2,
+      "parent_id": "tbl_025",
+      "title_cell": {
+        "row": 202,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 202,
+        "start_col": 2,
+        "end_row": 208,
+        "end_col": 7
+      },
+      "header_row": 203,
+      "record_start_row": 204,
+      "record_end_row": 208,
+      "columns": [
+        "STT",
+        "Nội dung quy ước",
+        "Chi tiết thỏa thuận nghiệp vụ",
+        "Căn cứ áp dụng trong file tính",
+        "Lưu ý khi bàn giao / Vận hành"
+      ],
+      "column_details": [
+        {
+          "key": "STT",
+          "label": "STT",
+          "col_index": 3
+        },
+        {
+          "key": "Nội dung quy ước",
+          "label": "Nội dung quy ước",
+          "col_index": 4
+        },
+        {
+          "key": "Chi tiết thỏa thuận nghiệp vụ",
+          "label": "Chi tiết thỏa thuận nghiệp vụ",
+          "col_index": 5
+        },
+        {
+          "key": "Căn cứ áp dụng trong file tính",
+          "label": "Căn cứ áp dụng trong file tính",
+          "col_index": 6
+        },
+        {
+          "key": "Lưu ý khi bàn giao / Vận hành",
+          "label": "Lưu ý khi bàn giao / Vận hành",
+          "col_index": 7
+        }
+      ],
+      "records": [
+        {
+          "STT": 1,
+          "Nội dung quy ước": "Giới hạn FRC HPH & SGN cho chặng Export quốc tế",
+          "Chi tiết thỏa thuận nghiệp vụ": "• Đối với chặng POD & POL overseas - Export, chỉ bốc kê khai FCT đối với các mã FRC là HPH (Hải Phòng) và SGN (Sài Gòn).\n\n• Các mã FRC còn lại được xem là thực hiện ngoài Việt Nam và không chịu FCT.",
+          "Căn cứ áp dụng trong file tính": "• Cột phân loại chiều hàng tại Sheet WHT.\n\n• Công thức phân loại trong Sheet Classify.",
+          "Lưu ý khi bàn giao / Vận hành": "• Đây là quy ước đặc thù riêng với khách hàng này.\n\n• Nếu khách hàng mở thêm tuyến dịch vụ tại các cảng/hub khác (như Cái Mép, Đà Nẵng, Quy Nhơn), cần review lại thỏa thuận."
+        },
+        {
+          "STT": 2,
+          "Nội dung quy ước": "Xử lý khoản Inland Fuel Surcharge - Import",
+          "Chi tiết thỏa thuận nghiệp vụ": "• Không kê khai FCT đối với phụ phí có tên Inland Fuel Surcharge - Import, bất kể hệ thống đang phân loại chiều hàng là Export hay Import.",
+          "Căn cứ áp dụng trong file tính": "• Cột Declare to FCT tại Sheet WHT.\n\n• Bộ lọc loại trừ trong công thức tính.",
+          "Lưu ý khi bàn giao / Vận hành": "• Giữ nguyên quy tắc loại trừ này trừ khi có thông báo thay đổi chính sách từ khách hàng."
+        },
+        {
+          "STT": 3,
+          "Nội dung quy ước": "Chốt ngày thanh toán và Tỷ giá cho luồng IHB",
+          "Chi tiết thỏa thuận nghiệp vụ": "• Mọi giao dịch phát sinh qua IHB đều lấy ngày thanh toán (Payment Date) là ngày cuối cùng của tháng kê khai.\n\n• Tỷ giá quy đổi ngoại tệ tính thuế áp dụng là tỷ giá bình quân do khách hàng cung cấp/thống nhất.",
+          "Căn cứ áp dụng trong file tính": "• Cột Payment Date trên file tính tổng hợp.\n\n• Sheet Interest Rate (Tỷ giá).",
+          "Lưu ý khi bàn giao / Vận hành": "• Khác với ICB (lấy theo ngày thực tế trên Sheet 101).\n\n• Đảm bảo tính nhất quán qua các tháng."
+        },
+        {
+          "STT": 4,
+          "Nội dung quy ước": "Chấp nhận rủi ro đối với dòng tiền Cá nhân",
+          "Chi tiết thỏa thuận nghiệp vụ": "• Các dòng tiền chuyển cho cá nhân nước ngoài trên Sheet 101 (được đối chiếu qua Sheet Citibank) không đưa vào diện đánh giá hay kê khai FCT.",
+          "Căn cứ áp dụng trong file tính": "• Sheet 101 và Sheet Sample List.\n\n• Bỏ qua bước kiểm tra chuyên sâu FCT/PIT cho đối tượng này.",
+          "Lưu ý khi bàn giao / Vận hành": "• Cần duy trì văn bản/email xác nhận miễn trừ trách nhiệm này để bảo vệ quyền lợi của đơn vị tư vấn khi quyết toán thuế."
+        },
+        {
+          "STT": 5,
+          "Nội dung quy ước": "Loại trừ dòng tiền Dương và Không rõ chiều hàng",
+          "Chi tiết thỏa thuận nghiệp vụ": "• Loại bỏ toàn bộ các khoản phát sinh dương (khoản thu/hoàn tiền) tại Sheet 002, 101.\n\n• Các khoản trên Sheet WHT không thể phân loại được Inbound/Outbound sẽ không đưa vào Consumption Test vì không có cơ sở xác định.",
+          "Căn cứ áp dụng trong file tính": "• Bộ lọc dữ liệu khi bốc mẫu sang Sheet Consumption Test.",
+          "Lưu ý khi bàn giao / Vận hành": "• Tránh làm loãng danh sách gửi khách hàng với những khoản thu tiền không mang bản chất chi phí."
+        }
+      ],
+      "children": [],
+      "confidence": 0.9,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW"
+      ]
+    },
+    {
+      "table_id": "tbl_028",
+      "title": "BẢNG 3: QUY TRÌNH KÊ KHAI CHI TIẾT THEO DÒNG THỜI GIAN (TIMELINE-BASED SOP)",
+      "level": 2,
+      "parent_id": "tbl_025",
+      "title_cell": {
+        "row": 211,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 211,
+        "start_col": 2,
+        "end_row": 221,
+        "end_col": 7
+      },
+      "header_row": 213,
+      "record_start_row": 214,
+      "record_end_row": 221,
+      "columns": [
+        "Ngày trong tháng",
+        "Vai trò / Người thực hiện",
+        "Hành động chi tiết",
+        "Tài liệu & Công cụ sử dụng",
+        "Tiêu chuẩn hoàn thành (Checklist)"
+      ],
+      "column_details": [
+        {
+          "key": "Ngày trong tháng",
+          "label": "Ngày trong tháng",
+          "col_index": 3
+        },
+        {
+          "key": "Vai trò / Người thực hiện",
+          "label": "Vai trò / Người thực hiện",
+          "col_index": 4
+        },
+        {
+          "key": "Hành động chi tiết",
+          "label": "Hành động chi tiết",
+          "col_index": 5
+        },
+        {
+          "key": "Tài liệu & Công cụ sử dụng",
+          "label": "Tài liệu & Công cụ sử dụng",
+          "col_index": 6
+        },
+        {
+          "key": "Tiêu chuẩn hoàn thành (Checklist)",
+          "label": "Tiêu chuẩn hoàn thành (Checklist)",
+          "col_index": 7
+        }
+      ],
+      "records": [
+        {
+          "Ngày trong tháng": "Ngày 1",
+          "Vai trò / Người thực hiện": "Phụ trách kê khai",
+          "Hành động chi tiết": "• Khởi tạo kỳ làm việc mới.\n\n• Soạn và gửi IRL (Information Request List) yêu cầu khách hàng chuẩn bị dữ liệu tháng trước.",
+          "Tài liệu & Công cụ sử dụng": "• Mẫu email IRL chuẩn.\n\n• Danh mục tài liệu yêu cầu (AP, Bank statements, IHB, ICB).",
+          "Tiêu chuẩn hoàn thành (Checklist)": "• Email IRL đã được gửi đúng đầu mối khách hàng.\n\n• Nêu rõ deadline nhận dữ liệu là Ngày 12–13."
+        },
+        {
+          "Ngày trong tháng": "Ngày 12 – 13",
+          "Vai trò / Người thực hiện": "Phụ trách kê khai",
+          "Hành động chi tiết": "• Nhận gói dữ liệu từ khách hàng.\n\n• Lưu trữ vào thư mục làm việc theo cấu trúc chuẩn.\n\n• Kiểm tra tính toàn vẹn của dữ liệu: đủ file Combine, Sheet 002, Sheet 101.",
+          "Tài liệu & Công cụ sử dụng": "• Gói dữ liệu thô từ khách hàng.\n\n• Folder IHB tháng làm việc.",
+          "Tiêu chuẩn hoàn thành (Checklist)": "• Xác nhận đã nhận đủ dữ liệu.\n\n• Không bị lỗi mở file hay thiếu sheet."
+        },
+        {
+          "Ngày trong tháng": "Ngày 13",
+          "Vai trò / Người thực hiện": "Phụ trách kê khai",
+          "Hành động chi tiết": "• Tạo working file mới từ file tháng trước của Senior.\n\n• Đối chiếu số tổng giữa Sheet AP và Sheet Summary.\n\n• Chạy công thức Sheet Classify để phân loại chiều hàng và đánh dấu Declare to FCT.\n\n• Rà soát Sheet 002 & 101 để lọc các khoản chi nước ngoài nghi ngờ.",
+          "Tài liệu & Công cụ sử dụng": "• Working file tháng trước.\n\n• Sheet Classify (Bảng quy tắc).\n\n• Bảng theo dõi phụ phí Export lịch sử.",
+          "Tiêu chuẩn hoàn thành (Checklist)": "• Sheet AP khớp số tổng với Summary.\n\n• Hoàn thành cột phân loại chiều hàng.\n\n• Nhận diện xong các phụ phí mới phát sinh trong tháng."
+        },
+        {
+          "Ngày trong tháng": "Ngày 13 – 14",
+          "Vai trò / Người thực hiện": "Phụ trách kê khai",
+          "Hành động chi tiết": "• Trích xuất các dòng nghi ngờ sang Sheet Consumption Test:\n\n- Hàng Import chi trả đầu Destination.\n\n- Hàng Export chi trả đầu Origin.\n\n- Dòng có ghi chú Check OPS.\n\n- Dòng Other tại IHB Bank có diễn giải chưa rõ ràng.\n\n• Gửi file Consumption list cho khách hàng yêu cầu làm rõ nơi tiêu dùng dịch vụ.",
+          "Tài liệu & Công cụ sử dụng": "• Sheet Consumption Test.\n\n• Email gửi khách hàng kèm hướng dẫn xác nhận.",
+          "Tiêu chuẩn hoàn thành (Checklist)": "• File Consumption list gửi khách hàng trước 17:00 Ngày 14.\n\n• Đính kèm đầy đủ diễn giải cần làm rõ."
+        },
+        {
+          "Ngày trong tháng": "Ngày 15",
+          "Vai trò / Người thực hiện": "Phụ trách kê khai",
+          "Hành động chi tiết": "• Chuẩn bị trước các khung làm việc:\n\n- Cập nhật tỷ giá sơ bộ.\n\n- Thiết lập sẵn các bảng Pivot và Form 01.\n\n• Theo dõi và nhắc nhở khách hàng phản hồi đúng hạn.",
+          "Tài liệu & Công cụ sử dụng": "• File tính nháp.\n\n• Sheet Interest Rate.",
+          "Tiêu chuẩn hoàn thành (Checklist)": "• Sẵn sàng cấu trúc file, chỉ chờ dữ liệu xác nhận để hoàn thiện."
+        },
+        {
+          "Ngày trong tháng": "Ngày 16",
+          "Vai trò / Người thực hiện": "Phụ trách kê khai",
+          "Hành động chi tiết": "• Nhận lại file Consumption list có phản hồi của khách hàng.\n\n• Chạy hàm mapping đa điều kiện để điền kết quả vào cột LNS's note to clarify.\n\n• Cập nhật các khoản khách hàng xác nhận chịu FCT vào danh sách kê khai chính thức.",
+          "Tài liệu & Công cụ sử dụng": "• File Consumption list đã phản hồi từ khách hàng.\n\n• Hàm mapping đa điều kiện trên Excel.",
+          "Tiêu chuẩn hoàn thành (Checklist)": "• 100% dòng mẫu được cập nhật ý kiến khách hàng.\n\n• Chốt danh sách các khoản chịu FCT cuối cùng."
+        },
+        {
+          "Ngày trong tháng": "Ngày 17 (Sáng)",
+          "Vai trò / Người thực hiện": "Phụ trách kê khai",
+          "Hành động chi tiết": "• Đẩy toàn bộ dữ liệu chịu thuế sang Sheet ICB.\n\n• Lập Pivot Table tổng hợp theo Nhà thầu và Số hợp đồng/Payment.\n\n• Cập nhật tỷ giá thực tế:\n\n- IHB: Ngày cuối tháng, tỷ giá bình quân.\n\n- ICB: Ngày thanh toán thực tế trên Sheet 101.\n\n• Đẩy số liệu sang Form 01 và tự động mapping tên tiếng Việt, thuế suất.",
+          "Tài liệu & Công cụ sử dụng": "• Sheet ICB, Pivot Table.\n\n• Sheet Interest Rate.\n\n• Form 01/NTNN.",
+          "Tiêu chuẩn hoàn thành (Checklist)": "• Bảng Pivot cân khớp với dữ liệu chi tiết.\n\n• Form 01 đầy đủ thông tin doanh thu, tỷ lệ thuế và số thuế phải nộp."
+        },
+        {
+          "Ngày trong tháng": "Ngày 17 (Chiều)",
+          "Vai trò / Người thực hiện": "Phụ trách kê khai & Quản lý",
+          "Hành động chi tiết": "• Soạn Báo cáo dự thảo (Draft Report) và Tờ khai gửi khách hàng phê duyệt.\n\n• Sau khi khách hàng xác nhận (Client OK):\n\n- Nộp tờ khai điện tử lên cổng thuế.\n\n- Tải Thông báo tiếp nhận hồ sơ từ cơ quan thuế.\n\n- Gửi tờ khai chính thức và thông báo tiếp nhận cho khách hàng.",
+          "Tài liệu & Công cụ sử dụng": "• Cổng kê khai thuế điện tử (Thuedientu).\n\n• Email báo cáo hoàn thành.",
+          "Tiêu chuẩn hoàn thành (Checklist)": "• Tờ khai được nộp thành công đúng hạn.\n\n• Khách hàng nhận được bộ hồ sơ hoàn chỉnh."
+        }
+      ],
+      "children": [],
+      "confidence": 0.9,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW"
+      ]
+    },
+    {
+      "table_id": "tbl_029",
+      "title": "BẢNG 4: QUY TRÌNH KÊ KHAI CHI TIẾT THEO CÁC BƯỚC THỰC HIỆN (STEP-BY-STEP SOP)",
+      "level": 2,
+      "parent_id": "tbl_025",
+      "title_cell": {
+        "row": 224,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 224,
+        "start_col": 2,
+        "end_row": 232,
+        "end_col": 7
+      },
+      "header_row": 226,
+      "record_start_row": 227,
+      "record_end_row": 232,
+      "columns": [
+        "Bước thực hiện",
+        "Mục tiêu cụ thể",
+        "Trình tự thao tác chi tiết",
+        "Logic phân loại & Điều kiện lọc",
+        "Xử lý ngoại lệ & Lưu ý"
+      ],
+      "column_details": [
+        {
+          "key": "Bước thực hiện",
+          "label": "Bước thực hiện",
+          "col_index": 3
+        },
+        {
+          "key": "Mục tiêu cụ thể",
+          "label": "Mục tiêu cụ thể",
+          "col_index": 4
+        },
+        {
+          "key": "Trình tự thao tác chi tiết",
+          "label": "Trình tự thao tác chi tiết",
+          "col_index": 5
+        },
+        {
+          "key": "Logic phân loại & Điều kiện lọc",
+          "label": "Logic phân loại & Điều kiện lọc",
+          "col_index": 6
+        },
+        {
+          "key": "Xử lý ngoại lệ & Lưu ý",
+          "label": "Xử lý ngoại lệ & Lưu ý",
+          "col_index": 7
+        }
+      ],
+      "records": [
+        {
+          "Bước thực hiện": "Bước 1: Tiếp nhận & Đối soát Dữ liệu AP",
+          "Mục tiêu cụ thể": "Đảm bảo dữ liệu đầu vào đầy đủ, toàn vẹn và khớp số liệu trước khi phân tích.",
+          "Trình tự thao tác chi tiết": "1. Mở file tháng trước của Senior để sao chép cấu trúc sang kỳ mới.\n\n2. Mở file Combine trong Folder IHB, vào Sheet AP và Sheet Summary.\n\n3. Kiểm tra số tổng phát sinh: =SUM(AP) - SUM(Summary).\n\n4. Sao chép toàn bộ Sheet AP vào Sheet WHT của working file.",
+          "Logic phân loại & Điều kiện lọc": "• Tiêu chí so sánh: Số tổng tiền ghi nhận trong kỳ.\n\n• Dung sai chấp nhận: Bằng 0.",
+          "Xử lý ngoại lệ & Lưu ý": "• Nếu có chênh lệch: Tạm dừng bước 2, gửi email phản hồi ngay cho khách hàng yêu cầu kiểm tra lại file Combine."
+        },
+        {
+          "Bước thực hiện": "Bước 2: Phân loại Chiều hàng & Xác định nghĩa vụ FCT sơ bộ",
+          "Mục tiêu cụ thể": "Nhận diện bản chất dịch vụ thực hiện tại VN hay nước ngoài để gắn nghĩa vụ FCT.",
+          "Trình tự thao tác chi tiết": "1. Áp dụng công thức đối chiếu với Sheet Classify.\n\n2. Xác định chiều hàng dựa trên các trường thông tin:\n\n- POR (VN) – Export: Cảng đi tại Việt Nam.\n\n- POD (VN) – Import: Cảng đến tại Việt Nam.\n\n- POD & POL overseas – Export: Cả hai cảng ngoài VN nhưng FRC là HPH hoặc SGN.\n\n- POD & POL overseas – Import: Cả hai cảng ngoài VN và FRC ngoài HPH/SGN.\n\n3. Đánh dấu X vào cột Declare to FCT theo quy tắc.\n\n4. Xử lý phụ phí Air Freight & Tuyến đường sắt xuyên lục địa (Intercontinental Rail).",
+          "Logic phân loại & Điều kiện lọc": "Điều kiện đánh dấu Declare to FCT:\n\n• Export: Lấy toàn bộ Ocean freight, Air freight, Surcharge, Transport Arbitrary (cả Origin & Destination).\n\n• Loại trừ: Không kê Inland Fuel Surcharge - Import.\n\n• Air freight: Lọc các khoản Import có từ khóa 'Air freight'.\n\n• Rail: Lọc chặng dính đến Việt Nam.",
+          "Xử lý ngoại lệ & Lưu ý": "• Kiểm tra phụ phí mới: So sánh danh sách Charge Name tháng này với Bảng theo dõi lịch sử; nếu có phí mới phát sinh, highlight để đưa vào kiểm tra mẫu."
+        },
+        {
+          "Bước thực hiện": "Bước 3: Lập Danh sách Kiểm tra Tiêu dùng (Consumption Test)",
+          "Mục tiêu cụ thể": "Thu thập cơ sở xác nhận từ khách hàng đối với các khoản nghi ngờ thực hiện tại VN.",
+          "Trình tự thao tác chi tiết": "1. Bốc mẫu từ Sheet WHT, Intercontinental rail, Cargo direction theo logic quy định.\n\n2. Rà soát file Combine (Sheet IHB bank): Lọc Category Other, bốc các dòng diễn giải không rõ ràng.\n\n3. Lọc cột Shipment by Maersk có chữ Check OPS.\n\n4. Tổng hợp thành Sheet Consumption Test gửi khách hàng.",
+          "Logic phân loại & Điều kiện lọc": "Logic chọn mẫu:\n\n• POD (VN) – Import: Lọc chi phí đầu Destination (loại trừ Transport Arbitrary - Dest).\n\n• POR (VN) – Export: Lọc chi phí đầu Origin (loại trừ Transport Arbitrary - Orig).\n\n• Quy tắc loại trừ: Không lấy dòng số dương, không lấy dòng không rõ chiều hàng.",
+          "Xử lý ngoại lệ & Lưu ý": "• Bản chất kinh tế:\n\n- Import - Destination: Dịch vụ làm thủ tục/vận chuyển tại cảng đến VN.\n\n- Export - Origin: Dịch vụ tại cảng đi xuất xứ từ VN."
+        },
+        {
+          "Bước thực hiện": "Bước 4: Rà soát Sao kê Ngân hàng (Sheet 002 & Sheet 101)",
+          "Mục tiêu cụ thể": "Đảm bảo không bỏ sót các khoản thanh toán trực tiếp cho nhà thầu nước ngoài ngoài luồng AP.",
+          "Trình tự thao tác chi tiết": "1. Sheet 002 (VND) & Sheet 101 (USD): Lọc các khoản chi (Credit amount = blanks).\n\n2. Lọc cột Narrative tìm tên nhà thầu nước ngoài hoặc từ khóa CT, ICB, NCT, cargo claim.\n\n3. Sheet 002: Thêm cột kiểm tra từ khóa VN (Cty, CP, TNHH, Việt Nam) để loại trừ vendor trong nước.\n\n4. Đối chiếu ICB qua Sheet ICB Payment; kiểm tra dòng tên cá nhân qua Sheet Citibank.",
+          "Logic phân loại & Điều kiện lọc": "• Chỉ đánh giá các khoản tiền chuyển ra (Debit).\n\n• Đánh dấu x đối tượng nghi ngờ là nhà thầu nước ngoài chịu thuế.",
+          "Xử lý ngoại lệ & Lưu ý": "• Tuân thủ thỏa thuận: Dòng tên cá nhân sau khi tra cứu Citibank thì bỏ qua, không đánh giá tiếp rủi ro FCT."
+        },
+        {
+          "Bước thực hiện": "Bước 5: Cập nhật Kết quả sau Kiểm tra & Lập Bảng Pivot ICB",
+          "Mục tiêu cụ thể": "Hợp nhất toàn bộ dữ liệu chịu thuế FCT sau khi đã có phản hồi chính thức từ khách hàng.",
+          "Trình tự thao tác chi tiết": "1. Nhận lại file phản hồi Ngày 16.\n\n2. Dùng công thức mapping đa điều kiện (Charge Name + Invoice + Amount) cập nhật vào cột LNS's note to clarify.\n\n3. Bốc toàn bộ các khoản chịu thuế (đã tick X từ trước + khách hàng confirm chịu thuế) đẩy vào Sheet ICB.\n\n4. Tạo Pivot Table từ Sheet ICB.",
+          "Logic phân loại & Điều kiện lọc": "• Hàng (Rows): Tên Vendor, Số hợp đồng/Số Payment.\n\n• Giá trị (Values): Doanh thu tính thuế quy đổi.",
+          "Xử lý ngoại lệ & Lưu ý": "• Phải phân định rõ trạng thái dữ liệu bằng tên cột chuẩn hóa: trước test, sau test và kết quả do hệ thống chạy."
+        },
+        {
+          "Bước thực hiện": "Bước 6: Áp Biểu thuế, Tỷ giá & Lập Tờ khai Mẫu 01/NTNN",
+          "Mục tiêu cụ thể": "Tính toán số thuế chính xác và hoàn thiện tờ khai pháp lý gửi cơ quan thuế.",
+          "Trình tự thao tác chi tiết": "1. Xác định ngày thanh toán (Payment Date):\n\n- Luồng IHB: Ngày cuối tháng.\n\n- Luồng ICB: Ngày thực tế trên Sheet 101.\n\n2. Cập nhật tỷ giá tại Sheet Interest Rate (IHB dùng tỷ giá bình quân, ICB dùng tỷ giá ngày giao dịch).\n\n3. Đẩy số liệu sang Form 01/NTNN.\n\n4. Dùng VLOOKUP/XLOOKUP lấy tên tiếng Việt và biểu thuế (CIT/VAT) theo từng nhóm dịch vụ.",
+          "Logic phân loại & Điều kiện lọc": "• Vận tải quốc tế: 0% VAT, 2% CIT.\n\n• Dịch vụ logistics/giao nhận tổng hợp: 5% VAT, 5% CIT.\n\n• Dịch vụ hỗ trợ vận tải: 3% VAT, 2% CIT (tùy mã dịch vụ cụ thể).",
+          "Xử lý ngoại lệ & Lưu ý": "• Kiểm tra chéo số thuế trên Form 01 với số tổng trên Pivot Table trước khi ký số nộp tờ khai."
+        }
+      ],
+      "children": [],
+      "confidence": 0.9,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW"
+      ]
+    },
+    {
+      "table_id": "tbl_030",
+      "title": "BẢNG 5: KẾ HOẠCH & GIẢI PHÁP TỰ ĐỘNG HÓA CHI TIẾT (AUTOMATION MATRIX)",
+      "level": 2,
+      "parent_id": "tbl_025",
+      "title_cell": {
+        "row": 235,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 235,
+        "start_col": 2,
+        "end_row": 242,
+        "end_col": 8
+      },
+      "header_row": 237,
+      "record_start_row": 238,
+      "record_end_row": 242,
+      "columns": [
+        "STT",
+        "Khâu nghiệp vụ",
+        "Hiện trạng & Điểm nghẽn (Bottlenecks)",
+        "Giải pháp kỹ thuật tự động hóa chi tiết",
+        "Công cụ đề xuất",
+        "Tác động & Mức độ ưu tiên"
+      ],
+      "column_details": [
+        {
+          "key": "STT",
+          "label": "STT",
+          "col_index": 3
+        },
+        {
+          "key": "Khâu nghiệp vụ",
+          "label": "Khâu nghiệp vụ",
+          "col_index": 4
+        },
+        {
+          "key": "Hiện trạng & Điểm nghẽn (Bottlenecks)",
+          "label": "Hiện trạng & Điểm nghẽn (Bottlenecks)",
+          "col_index": 5
+        },
+        {
+          "key": "Giải pháp kỹ thuật tự động hóa chi tiết",
+          "label": "Giải pháp kỹ thuật tự động hóa chi tiết",
+          "col_index": 6
+        },
+        {
+          "key": "Công cụ đề xuất",
+          "label": "Công cụ đề xuất",
+          "col_index": 7
+        },
+        {
+          "key": "Tác động & Mức độ ưu tiên",
+          "label": "Tác động & Mức độ ưu tiên",
+          "col_index": 8
+        }
+      ],
+      "records": [
+        {
+          "STT": 1,
+          "Khâu nghiệp vụ": "Rà soát Sao kê Ngân hàng (Sheet 002 & 101)",
+          "Hiện trạng & Điểm nghẽn (Bottlenecks)": "• Điểm nghẽn lớn nhất: Đang phải lọc tay từng tháng trên cột Narrative.\n\n• Dữ liệu biến động liên tục, tên vendor viết tắt hoặc dính liền nội dung thanh toán.",
+          "Giải pháp kỹ thuật tự động hóa chi tiết": "• Xây dựng bảng Vendor Master List và danh mục Regex Patterns.\n\n• Viết script tự động bóc tách text:\n\n- Tự động nhận diện MST/Mã đối tác.\n\n- Tự động lọc bỏ các từ khóa nội địa (TNHH, Cty, CP, chi lương, phí ngân hàng).\n\n- Tự động gán nhãn rủi ro (Risk Score) và xuất danh sách các khoản ngoại tệ cần review.",
+          "Công cụ đề xuất": "Python (Pandas/Regex) hoặc Google Apps Script",
+          "Tác động & Mức độ ưu tiên": "Ưu tiên 1 (Cao nhất):\n\nTiết kiệm 70% thời gian rà soát thủ công, hạn chế sót dòng tiền ngoại tệ."
+        },
+        {
+          "STT": 2,
+          "Khâu nghiệp vụ": "Nhận diện Phụ phí mới (New Charge Anomaly Detection)",
+          "Hiện trạng & Điểm nghẽn (Bottlenecks)": "• Hiện tại theo dõi bằng một bảng Excel lịch sử, việc nhận diện phụ phí mới phụ thuộc vào việc dò tìm thủ công của người làm.",
+          "Giải pháp kỹ thuật tự động hóa chi tiết": "• Tạo công thức tự động so sánh danh sách phụ phí phát sinh tháng này với danh mục lịch sử:\n\n=FILTER(UNIQUE(Charge_ThangNay), ISNA(MATCH(UNIQUE(Charge_ThangNay), Master_Charge_List, 0))).\n\n• Tự động hiển thị danh sách cảnh báo \"Phụ phí mới xuất hiện\" trên Dashboard.",
+          "Công cụ đề xuất": "Công thức Excel (Dynamic Arrays) / VBA",
+          "Tác động & Mức độ ưu tiên": "Ưu tiên 2 (Cao):\n\nLoại bỏ rủi ro bỏ sót các loại phí dịch vụ mới phát sinh trong ngành logistics."
+        },
+        {
+          "STT": 3,
+          "Khâu nghiệp vụ": "Trích xuất tự động File Consumption Test",
+          "Hiện trạng & Điểm nghẽn (Bottlenecks)": "• Đang phải lọc và copy-paste thủ công từ nhiều sheet (WHT, Rail, Bank) sang một file riêng để gửi khách hàng.",
+          "Giải pháp kỹ thuật tự động hóa chi tiết": "• Tạo nút bấm Macro/Apps Script: Tự động chạy bộ lọc theo điều kiện đã định sẵn (Import-Dest, Export-Orig, Check OPS, Bank Other) và tự động export ra 1 file Excel riêng có format chuẩn kèm mẫu câu hỏi gửi khách hàng.",
+          "Công cụ đề xuất": "Excel VBA / Apps Script",
+          "Tác động & Mức độ ưu tiên": "Ưu tiên 3 (Trung bình):\n\nRút ngắn thời gian chuẩn bị file gửi khách từ vài tiếng xuống còn vài giây."
+        },
+        {
+          "STT": 4,
+          "Khâu nghiệp vụ": "Tự động hóa cập nhật Tỷ giá (Exchange Rate Automation)",
+          "Hiện trạng & Điểm nghẽn (Bottlenecks)": "• Tra cứu thủ công tỷ giá từng ngày giao dịch trên Sheet 101 rồi gõ vào file tính.",
+          "Giải pháp kỹ thuật tự động hóa chi tiết": "• Kết nối API hoặc viết script tự động cào (scrape) bảng tỷ giá bán ra của ngân hàng thương mại (Vietcombank/HSBC...) theo từng ngày phát sinh giao dịch và tự động điền vào Sheet Interest Rate.",
+          "Công cụ đề xuất": "Python Script / API Google Sheets",
+          "Tác động & Mức độ ưu tiên": "Ưu tiên 4 (Trung bình):\n\nGiảm sai sót nhập liệu số học về tỷ giá."
+        },
+        {
+          "STT": 5,
+          "Khâu nghiệp vụ": "Kiểm soát đối soát tự động AP vs Summary",
+          "Hiện trạng & Điểm nghẽn (Bottlenecks)": "• Người làm tự nhìn bằng mắt và đặt phép trừ so sánh.",
+          "Giải pháp kỹ thuật tự động hóa chi tiết": "• Thiết lập ô kiểm soát chất lượng (Reconciliation Gatekeeper) tại trang chủ file tính:\n\n- Nếu = 0: Hiển thị trạng thái \"PASS - Cho phép chạy các bước tiếp theo\".\n\n- Nếu != 0: Đổi màu đỏ cảnh báo \"FAIL\" và khóa công thức các bước sau để ngăn việc tính toán trên số liệu lệch.",
+          "Công cụ đề xuất": "Excel Conditional Formatting & Validation",
+          "Tác động & Mức độ ưu tiên": "Ưu tiên 5 (Dễ làm, áp dụng ngay):\n\nNgăn chặn việc làm tiếp khi dữ liệu nguồn bị sai lệch."
+        }
+      ],
+      "children": [],
+      "confidence": 0.9,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW"
+      ]
+    },
+    {
+      "table_id": "tbl_032",
+      "title": "2. Chi tiết 5 cấp độ (Levels) xây dựng AI Second Brain",
+      "level": 2,
+      "parent_id": "tbl_031",
+      "title_cell": {
+        "row": 254,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 254,
+        "start_col": 2,
+        "end_row": 261,
+        "end_col": 6
+      },
+      "header_row": 256,
+      "record_start_row": 257,
+      "record_end_row": 261,
+      "columns": [
+        "Cấp độ (Level)",
+        "Câu hỏi cốt lõi",
+        "Đặc điểm & Cơ chế hoạt động",
+        "Trường hợp áp dụng & Lưu ý"
+      ],
+      "column_details": [
+        {
+          "key": "Cấp độ (Level)",
+          "label": "Cấp độ (Level)",
+          "col_index": 3
+        },
+        {
+          "key": "Câu hỏi cốt lõi",
+          "label": "Câu hỏi cốt lõi",
+          "col_index": 4
+        },
+        {
+          "key": "Đặc điểm & Cơ chế hoạt động",
+          "label": "Đặc điểm & Cơ chế hoạt động",
+          "col_index": 5
+        },
+        {
+          "key": "Trường hợp áp dụng & Lưu ý",
+          "label": "Trường hợp áp dụng & Lưu ý",
+          "col_index": 6
+        }
+      ],
+      "records": [
+        {
+          "Cấp độ (Level)": "Level 1: Basic File & Folder Organization",
+          "Câu hỏi cốt lõi": "“Có tìm được file/thông tin bằng từ khóa hoặc tên file chính xác không?” [00:03:25]",
+          "Đặc điểm & Cơ chế hoạt động": "• Khởi đầu với tệp cấu hình như CLAUDE.md đóng vai trò bộ điều hướng (Router) và System Prompt [00:04:24].\n\n• Thiết lập quy tắc định tuyến rõ ràng (vd: thông tin cá nhân tìm ở thư mục A, mục tiêu quý tìm ở thư mục B) [00:04:47].\n\n• Dựa chủ yếu vào tìm kiếm từ khóa chính xác (Exact word search) [00:05:27].",
+          "Trường hợp áp dụng & Lưu ý": "• Áp dụng: Khi phải liên tục giải thích lại ngữ cảnh cơ bản cho AI [00:29:00].\n\n• Hạn chế: Dễ phình to, lộn xộn nếu quy mô tăng nhanh [00:05:22]."
+        },
+        {
+          "Cấp độ (Level)": "Level 2: Wikis & Data Clustering",
+          "Câu hỏi cốt lõi": "“Có thể gom toàn bộ thông tin về một chủ đề lại với nhau không?” [00:03:30]",
+          "Đặc điểm & Cơ chế hoạt động": "• Tổ chức dữ liệu thành hệ thống Wiki với cấu trúc liên kết nội bộ (linking).\n\n• Gom nhóm các khái niệm và thực thể liên quan thành từng cụm thông tin có trật tự [00:00:19].",
+          "Trường hợp áp dụng & Lưu ý": "• Áp dụng: Khi sở hữu từ 30+ ghi chú trở lên và bắt đầu quên mất nội dung nằm ở đâu [00:29:05]."
+        },
+        {
+          "Cấp độ (Level)": "Level 3: Semantic Search with Vector DB",
+          "Câu hỏi cốt lõi": "“Tìm kiếm bằng từ ngữ khác với từ đã viết có ra kết quả không?” [00:03:35]",
+          "Đặc điểm & Cơ chế hoạt động": "• Tích hợp cơ sở dữ liệu véc-tơ (Vector Database) để hỗ trợ tìm kiếm theo ngữ nghĩa (Semantic Search).\n\n• Truy xuất thông tin dựa trên ý nghĩa và bối cảnh thay vì phụ thuộc vào từ khóa trùng khớp tuyệt đối [00:29:09].",
+          "Trường hợp áp dụng & Lưu ý": "• Áp dụng: Khi hệ thống bỏ sót tài liệu dù dữ liệu có tồn tại, do người hỏi dùng từ vựng khác với từ trong ghi chú."
+        },
+        {
+          "Cấp độ (Level)": "Level 4: Knowledge Graphs & Relationship Mapping",
+          "Câu hỏi cốt lõi": "“Có thể hỏi về chủ đề X và truy vết ngược về chủ đề A qua chuỗi quan hệ không?” [00:03:41]",
+          "Đặc điểm & Cơ chế hoạt động": "• Xây dựng đồ thị tri thức (Knowledge Graph) để ánh xạ các mối quan hệ đa chiều giữa các thực thể và nút dữ liệu [00:00:28].\n\n• Cho phép theo dõi chuỗi suy luận logic xuyên suốt nhiều tài liệu [00:29:20].",
+          "Trường hợp áp dụng & Lưu ý": "• Áp dụng: Khi xử lý các dự án phức tạp, cần phân tích sự liên kết chéo giữa nhiều nghiệp vụ hoặc dự án khác nhau."
+        },
+        {
+          "Cấp độ (Level)": "Level 5: Fully Autonomous Systems",
+          "Câu hỏi cốt lõi": "“Hệ thống có thể tự động đồng bộ và hoạt động mà không cần can thiệp thủ công không?” [00:03:48]",
+          "Đặc điểm & Cơ chế hoạt động": "• Vận hành các Agent chạy ngầm liên tục (Always-on/Offline agents như Gbrain, Hermes sync) [00:29:28].\n\n• Tự động thu thập, phân loại, đồng bộ và tối ưu hóa dữ liệu nền tảng.",
+          "Trường hợp áp dụng & Lưu ý": "• Lưu ý: Độ phức tạp rất cao; không khuyến khích áp dụng nếu các cấp độ trước chưa phát sinh vấn đề cần giải quyết [00:03:57]."
+        }
+      ],
+      "children": [],
+      "confidence": 0.9,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW"
+      ]
+    },
+    {
+      "table_id": "tbl_033",
+      "title": "3. Kinh nghiệm thực thi & Mở rộng quy mô đội ngũ (Team Level)",
+      "level": 2,
+      "parent_id": "tbl_031",
+      "title_cell": {
+        "row": 263,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 263,
+        "start_col": 2,
+        "end_row": 266,
+        "end_col": 4
+      },
+      "header_row": 264,
+      "record_start_row": 265,
+      "record_end_row": 266,
+      "columns": [
+        "Hạng mục",
+        "Các điểm lưu ý chính"
+      ],
+      "column_details": [
+        {
+          "key": "Hạng mục",
+          "label": "Hạng mục",
+          "col_index": 3
+        },
+        {
+          "key": "Các điểm lưu ý chính",
+          "label": "Các điểm lưu ý chính",
+          "col_index": 4
+        }
+      ],
+      "records": [
+        {
+          "Hạng mục": "Tính linh hoạt trong cùng một hệ sinh thái",
+          "Các điểm lưu ý chính": "• Toàn bộ dự án không nhất thiết phải nằm ở cùng một Level [00:28:52].\n\n• Có thể phân bổ linh hoạt: thư mục tài liệu cơ bản ở Level 2, thư mục nghiên cứu ở Level 3, và hệ thống theo dõi dự án ở Level 4."
+        },
+        {
+          "Hạng mục": "Triển khai cho tổ chức/nhóm",
+          "Các điểm lưu ý chính": "• Thách thức lớn nhất không nằm ở công nghệ hay phần mềm (Notion, Google Drive, GitHub...), mà là quản trị sự thay đổi và chuyển dịch thói quen (Change Management & Habit Shift) [00:30:02].\n\n• Cần thống nhất quy trình người phụ trách cập nhật tài liệu thường xuyên thay vì phụ thuộc vào việc nhắn tin hỏi trực tiếp từng cá nhân [00:30:12].\n\n• Khuyến nghị: Cá nhân cần làm chủ và vận hành ổn định Second Brain của riêng mình trước khi nhân rộng ra quy mô tập thể [00:30:27]."
+        }
+      ],
+      "children": [],
+      "confidence": 0.9,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW"
+      ]
+    },
+    {
+      "table_id": "tbl_035",
+      "title": "Bảng chi tiết: Thiết kế vai trò (System Prompts) trong tổ chức",
+      "level": 2,
+      "parent_id": "tbl_034",
+      "title_cell": {
+        "row": 280,
+        "col": 2
+      },
+      "anchor_column": 3,
+      "data_range": {
+        "start_row": 280,
+        "start_col": 2,
+        "end_row": 284,
+        "end_col": 6
+      },
+      "header_row": 281,
+      "record_start_row": 282,
+      "record_end_row": 284,
+      "columns": [
+        "Vị trí tác nhân",
+        "Tên vai trò",
+        "Nhiệm vụ chính",
+        "Mẫu System Prompt chuẩn hóa"
+      ],
+      "column_details": [
+        {
+          "key": "Vị trí tác nhân",
+          "label": "Vị trí tác nhân",
+          "col_index": 3
+        },
+        {
+          "key": "Tên vai trò",
+          "label": "Tên vai trò",
+          "col_index": 4
+        },
+        {
+          "key": "Nhiệm vụ chính",
+          "label": "Nhiệm vụ chính",
+          "col_index": 5
+        },
+        {
+          "key": "Mẫu System Prompt chuẩn hóa",
+          "label": "Mẫu System Prompt chuẩn hóa",
+          "col_index": 6
+        }
+      ],
+      "records": [
+        {
+          "Vị trí tác nhân": "AI 1 (Cấp Quản lý)",
+          "Tên vai trò": "Orchestrator / Project Manager",
+          "Nhiệm vụ chính": "• Tiếp nhận yêu cầu tổng quát từ người dùng.\n\n• Chia nhỏ mục tiêu thành các đầu việc cụ thể.\n\n• Phân bổ task cho đúng chuyên gia.\n\n• Nghiệm thu và tổng hợp báo cáo sau cùng.",
+          "Mẫu System Prompt chuẩn hóa": "\"Bạn là Quản lý dự án cấp cao. Khi nhận đề bài, hãy bóc tách thành các giai đoạn: Nghiên cứu, Xử lý và Phản biện. Phân công dữ liệu cho Chuyên viên tương ứng, thu hồi kết quả và tổng hợp thành báo cáo hoàn chỉnh mạch lạc cho người dùng.\""
+        },
+        {
+          "Vị trí tác nhân": "AI 2 (Cấp Thực thi)",
+          "Tên vai trò": "Data / Research Specialist",
+          "Nhiệm vụ chính": "• Thu thập thông tin, tài liệu liên quan.\n\n• Xử lý, bóc tách dữ liệu thô.\n\n• Trích xuất thông tin trọng tâm theo yêu cầu của AI 1.",
+          "Mẫu System Prompt chuẩn hóa": "\"Bạn là Chuyên viên Phân tích Dữ liệu/Nghiên cứu. Nhiệm vụ duy nhất của bạn là trích xuất thông tin, xử lý số liệu thô và trình bày insights một cách khách quan, không tự ý đưa ra kết luận chiến lược nếu không được giao.\""
+        },
+        {
+          "Vị trí tác nhân": "AI 3 (Cấp Phản biện)",
+          "Tên vai trò": "Auditor / Risk Reviewer",
+          "Nhiệm vụ chính": "• Rà soát kết quả đầu ra của AI 2.\n\n• Chỉ ra các điểm hở logic, sai sót hoặc rủi ro tiềm ẩn.\n\n• Đưa ra góp ý chỉnh sửa trước khi AI 1 nghiệm thu.",
+          "Mẫu System Prompt chuẩn hóa": "\"Bạn là Chuyên gia Kiểm toán & Đánh giá Rủi ro. Hãy soi xét kỹ lưỡng bản phân tích từ Chuyên viên Nghiên cứu để phát hiện sai lệch số liệu, lập luận thiếu căn cứ hoặc rủi ro pháp lý/nghiệp vụ.\""
+        }
+      ],
+      "children": [],
+      "confidence": 0.9,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW"
+      ]
+    }
+  ],
+  "orphan_tables": [
+    {
+      "table_id": "tbl_001",
+      "title": "Xây dựng thương hiệu cá nhân",
+      "level": 1,
+      "parent_id": null,
+      "title_cell": {
+        "row": 4,
+        "col": 1
+      },
+      "anchor_column": 2,
+      "data_range": {
+        "start_row": 4,
+        "start_col": 1,
+        "end_row": 13,
+        "end_col": 2
+      },
+      "header_row": 5,
+      "record_start_row": 6,
+      "record_end_row": 13,
+      "columns": [
+        "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng"
+      ],
+      "column_details": [
+        {
+          "key": "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng",
+          "label": "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng",
+          "col_index": 2
+        }
+      ],
+      "records": [
+        {
+          "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng": "Bảng 2: Phân tích đối chiếu đặc thù quản trị giữa Thương hiệu Sản phẩm và Thương hiệu Cá nhân"
+        },
+        {
+          "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng": "Bảng 3: Quy trình chuẩn mực 4 giai đoạn xây dựng thương hiệu cá nhân"
+        },
+        {
+          "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng": "Bảng 4: Quy trình chuẩn mực 4 giai đoạn xây dựng thương hiệu sản phẩm"
+        },
+        {
+          "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng": "Bảng 5: Phân loại 12 Hình mẫu thương hiệu (Brand Archetypes) theo động lực tâm lý"
+        },
+        {
+          "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng": "Bảng 6: Cấu trúc 6 khía cạnh của Lăng kính Bản sắc Thương hiệu (Brand Identity Prism)"
+        },
+        {
+          "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng": "Bảng 7: Các mô hình Kiến trúc thương hiệu (Brand Architecture)"
+        },
+        {
+          "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng": "Bảng 8: Ma trận chỉ số đo lường hiệu quả (KPIs)"
+        },
+        {
+          "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng": "Bảng 9: Ma trận quản trị khủng hoảng danh tiếng theo thuyết SCCT"
+        }
+      ],
+      "children": [],
+      "confidence": 0.75,
+      "warnings": [
+        "ORPHAN_TABLE"
+      ]
+    },
+    {
+      "table_id": "tbl_002",
+      "title": "Nghiên Cứu Chiến Lược & So Sánh Các Nền Tảng AI Agent: Microsoft Copilot Studio, Google Gemini và Anthropic Claude",
+      "level": 1,
+      "parent_id": null,
+      "title_cell": {
+        "row": 14,
+        "col": 1
+      },
+      "anchor_column": 2,
+      "data_range": {
+        "start_row": 14,
+        "start_col": 1,
+        "end_row": 18,
+        "end_col": 2
+      },
+      "header_row": 15,
+      "record_start_row": 16,
+      "record_end_row": 18,
+      "columns": [
+        "1. So sánh kiến trúc kỹ thuật và triết lý phát triển"
+      ],
+      "column_details": [
+        {
+          "key": "1. So sánh kiến trúc kỹ thuật và triết lý phát triển",
+          "label": "1. So sánh kiến trúc kỹ thuật và triết lý phát triển",
+          "col_index": 2
+        }
+      ],
+      "records": [
+        {
+          "1. So sánh kiến trúc kỹ thuật và triết lý phát triển": "2. So sánh năng lực RAG, kết nối dữ liệu và chuẩn tích hợp"
+        },
+        {
+          "1. So sánh kiến trúc kỹ thuật và triết lý phát triển": "3. So sánh an toàn, bảo mật, định danh và tuân thủ"
+        }
+      ],
+      "children": [
+        "tbl_003",
+        "tbl_004",
+        "tbl_005",
+        "tbl_006",
+        "tbl_007",
+        "tbl_008",
+        "tbl_009"
+      ],
+      "confidence": 0.75,
+      "warnings": [
+        "POSSIBLE_FOOTER",
+        "ORPHAN_TABLE"
+      ]
+    },
+    {
+      "table_id": "tbl_010",
+      "title": "Xây dựng thương hiệu cá nhân",
+      "level": 1,
+      "parent_id": null,
+      "title_cell": {
+        "row": 53,
+        "col": 1
+      },
+      "anchor_column": 2,
+      "data_range": {
+        "start_row": 53,
+        "start_col": 1,
+        "end_row": 61,
+        "end_col": 2
+      },
+      "header_row": 54,
+      "record_start_row": 55,
+      "record_end_row": 61,
+      "columns": [
+        "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng"
+      ],
+      "column_details": [
+        {
+          "key": "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng",
+          "label": "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng",
+          "col_index": 2
+        }
+      ],
+      "records": [
+        {
+          "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng": null
+        },
+        {
+          "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng": null
+        },
+        {
+          "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng": null
+        },
+        {
+          "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng": null
+        },
+        {
+          "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng": null
+        },
+        {
+          "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng": null
+        },
+        {
+          "Bảng 1: Tổng hợp các lý thuyết và khung tham chiếu học thuật nền tảng": null
+        }
+      ],
+      "children": [
+        "tbl_011",
+        "tbl_012",
+        "tbl_013",
+        "tbl_014",
+        "tbl_015",
+        "tbl_016",
+        "tbl_017",
+        "tbl_018",
+        "tbl_019",
+        "tbl_020",
+        "tbl_021",
+        "tbl_022",
+        "tbl_023",
+        "tbl_024"
+      ],
+      "confidence": 0.65,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW",
+        "ORPHAN_TABLE"
+      ]
+    },
+    {
+      "table_id": "tbl_025",
+      "title": "Quy trình kê khai FCT",
+      "level": 1,
+      "parent_id": null,
+      "title_cell": {
+        "row": 192,
+        "col": 1
+      },
+      "anchor_column": 2,
+      "data_range": {
+        "start_row": 192,
+        "start_col": 1,
+        "end_row": 193,
+        "end_col": 2
+      },
+      "header_row": 192,
+      "record_start_row": 193,
+      "record_end_row": 193,
+      "columns": [
+        "Col_2"
+      ],
+      "column_details": [
+        {
+          "key": "Col_2",
+          "label": "",
+          "col_index": 2
+        }
+      ],
+      "records": [],
+      "children": [
+        "tbl_026",
+        "tbl_027",
+        "tbl_028",
+        "tbl_029",
+        "tbl_030"
+      ],
+      "confidence": 0.45,
+      "warnings": [
+        "MISSING_HEADER",
+        "ORPHAN_TABLE"
+      ]
+    },
+    {
+      "table_id": "tbl_031",
+      "title": "Second brain",
+      "level": 1,
+      "parent_id": null,
+      "title_cell": {
+        "row": 245,
+        "col": 1
+      },
+      "anchor_column": 2,
+      "data_range": {
+        "start_row": 245,
+        "start_col": 1,
+        "end_row": 250,
+        "end_col": 2
+      },
+      "header_row": 246,
+      "record_start_row": 247,
+      "record_end_row": 250,
+      "columns": [
+        "1. Tổng quan & Triết lý cốt lõi của AI Second Brain"
+      ],
+      "column_details": [
+        {
+          "key": "1. Tổng quan & Triết lý cốt lõi của AI Second Brain",
+          "label": "1. Tổng quan & Triết lý cốt lõi của AI Second Brain",
+          "col_index": 2
+        }
+      ],
+      "records": [
+        {
+          "1. Tổng quan & Triết lý cốt lõi của AI Second Brain": null
+        },
+        {
+          "1. Tổng quan & Triết lý cốt lõi của AI Second Brain": null
+        },
+        {
+          "1. Tổng quan & Triết lý cốt lõi của AI Second Brain": null
+        },
+        {
+          "1. Tổng quan & Triết lý cốt lõi của AI Second Brain": null
+        }
+      ],
+      "children": [
+        "tbl_032",
+        "tbl_033"
+      ],
+      "confidence": 0.65,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW",
+        "ORPHAN_TABLE"
+      ]
+    },
+    {
+      "table_id": "tbl_034",
+      "title": "Multi agent",
+      "level": 1,
+      "parent_id": null,
+      "title_cell": {
+        "row": 270,
+        "col": 1
+      },
+      "anchor_column": 2,
+      "data_range": {
+        "start_row": 270,
+        "start_col": 1,
+        "end_row": 277,
+        "end_col": 2
+      },
+      "header_row": 271,
+      "record_start_row": 272,
+      "record_end_row": 277,
+      "columns": [
+        "bảng tổng hợp chi tiết toàn bộ các giải pháp xây dựng hệ thống AI đa tác nhân (Multi-Agent)"
+      ],
+      "column_details": [
+        {
+          "key": "bảng tổng hợp chi tiết toàn bộ các giải pháp xây dựng hệ thống AI đa tác nhân (Multi-Agent)",
+          "label": "bảng tổng hợp chi tiết toàn bộ các giải pháp xây dựng hệ thống AI đa tác nhân (Multi-Agent)",
+          "col_index": 2
+        }
+      ],
+      "records": [
+        {
+          "bảng tổng hợp chi tiết toàn bộ các giải pháp xây dựng hệ thống AI đa tác nhân (Multi-Agent)": null
+        },
+        {
+          "bảng tổng hợp chi tiết toàn bộ các giải pháp xây dựng hệ thống AI đa tác nhân (Multi-Agent)": null
+        },
+        {
+          "bảng tổng hợp chi tiết toàn bộ các giải pháp xây dựng hệ thống AI đa tác nhân (Multi-Agent)": null
+        },
+        {
+          "bảng tổng hợp chi tiết toàn bộ các giải pháp xây dựng hệ thống AI đa tác nhân (Multi-Agent)": null
+        },
+        {
+          "bảng tổng hợp chi tiết toàn bộ các giải pháp xây dựng hệ thống AI đa tác nhân (Multi-Agent)": null
+        },
+        {
+          "bảng tổng hợp chi tiết toàn bộ các giải pháp xây dựng hệ thống AI đa tác nhân (Multi-Agent)": null
+        }
+      ],
+      "children": [
+        "tbl_035"
+      ],
+      "confidence": 0.65,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW",
+        "ORPHAN_TABLE"
+      ]
+    },
+    {
+      "table_id": "tbl_036",
+      "title": "Build app phân tích app khác",
+      "level": 1,
+      "parent_id": null,
+      "title_cell": {
+        "row": 288,
+        "col": 1
+      },
+      "anchor_column": 2,
+      "data_range": {
+        "start_row": 288,
+        "start_col": 1,
+        "end_row": 298,
+        "end_col": 2
+      },
+      "header_row": 289,
+      "record_start_row": 290,
+      "record_end_row": 298,
+      "columns": [
+        "Bảng Tổng Hợp Chi Tiết Giải Pháp Kỹ Thuật & Đầu Ra Tái Lập Ứng Dụng"
+      ],
+      "column_details": [
+        {
+          "key": "Bảng Tổng Hợp Chi Tiết Giải Pháp Kỹ Thuật & Đầu Ra Tái Lập Ứng Dụng",
+          "label": "Bảng Tổng Hợp Chi Tiết Giải Pháp Kỹ Thuật & Đầu Ra Tái Lập Ứng Dụng",
+          "col_index": 2
+        }
+      ],
+      "records": [
+        {
+          "Bảng Tổng Hợp Chi Tiết Giải Pháp Kỹ Thuật & Đầu Ra Tái Lập Ứng Dụng": null
+        },
+        {
+          "Bảng Tổng Hợp Chi Tiết Giải Pháp Kỹ Thuật & Đầu Ra Tái Lập Ứng Dụng": null
+        },
+        {
+          "Bảng Tổng Hợp Chi Tiết Giải Pháp Kỹ Thuật & Đầu Ra Tái Lập Ứng Dụng": null
+        },
+        {
+          "Bảng Tổng Hợp Chi Tiết Giải Pháp Kỹ Thuật & Đầu Ra Tái Lập Ứng Dụng": null
+        },
+        {
+          "Bảng Tổng Hợp Chi Tiết Giải Pháp Kỹ Thuật & Đầu Ra Tái Lập Ứng Dụng": null
+        },
+        {
+          "Bảng Tổng Hợp Chi Tiết Giải Pháp Kỹ Thuật & Đầu Ra Tái Lập Ứng Dụng": null
+        },
+        {
+          "Bảng Tổng Hợp Chi Tiết Giải Pháp Kỹ Thuật & Đầu Ra Tái Lập Ứng Dụng": null
+        },
+        {
+          "Bảng Tổng Hợp Chi Tiết Giải Pháp Kỹ Thuật & Đầu Ra Tái Lập Ứng Dụng": null
+        },
+        {
+          "Bảng Tổng Hợp Chi Tiết Giải Pháp Kỹ Thuật & Đầu Ra Tái Lập Ứng Dụng": null
+        }
+      ],
+      "children": [],
+      "confidence": 0.65,
+      "warnings": [
+        "UNEXPECTED_BLANK_ROW",
+        "ORPHAN_TABLE"
+      ]
+    }
+  ],
+  "unclassified_rows": [
+    {
+      "row": 2,
+      "cells": [
+        {
+          "col": 1,
+          "value": "Ứng dụng tự động hóa task trong role Tax consultant"
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 3,
+      "cells": [
+        {
+          "col": 1,
+          "value": "Quy trình thiết kế Dashboard Power BI bằng AI"
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 19,
+      "cells": [
+        {
+          "col": 2,
+          "value": "5. So sánh năng lực tự trị và cơ chế kiểm soát rủi ro"
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 20,
+      "cells": [
+        {
+          "col": 2,
+          "value": "6. Bảng tổng hợp ứng dụng thực tế theo phòng ban doanh nghiệp"
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 21,
+      "cells": [
+        {
+          "col": 2,
+          "value": "7. Ma trận hướng dẫn lựa chọn nền tảng tối ưu"
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 28,
+      "cells": [
+        {
+          "col": 1,
+          "value": "Ứng dụng tự động hóa task trong role Tax consultant"
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 30,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Phân hệ nghiệp vụ"
+        },
+        {
+          "col": 4,
+          "value": "Tác vụ cụ thể"
+        },
+        {
+          "col": 5,
+          "value": "Bản chất & Điểm nghẽn thủ công"
+        },
+        {
+          "col": 6,
+          "value": "Nguồn dữ liệu sử dụng"
+        },
+        {
+          "col": 7,
+          "value": "Logic nghiệp vụ & Tiêu chí kiểm soát"
+        },
+        {
+          "col": 8,
+          "value": "Giải pháp Tự động hóa / AI đề xuất"
+        },
+        {
+          "col": 9,
+          "value": "Công nghệ phù hợp"
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 31,
+      "cells": [
+        {
+          "col": 2,
+          "value": 1
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 32,
+      "cells": [
+        {
+          "col": 2,
+          "value": 2
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 33,
+      "cells": [
+        {
+          "col": 2,
+          "value": 3
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 34,
+      "cells": [
+        {
+          "col": 2,
+          "value": 4
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 35,
+      "cells": [
+        {
+          "col": 2,
+          "value": 5
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 36,
+      "cells": [
+        {
+          "col": 2,
+          "value": 6
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 37,
+      "cells": [
+        {
+          "col": 2,
+          "value": 7
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 38,
+      "cells": [
+        {
+          "col": 2,
+          "value": 8
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 41,
+      "cells": [
+        {
+          "col": 1,
+          "value": "Quy trình thiết kế Dashboard Power BI bằng AI"
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 43,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Mục tiêu Kỹ thuật"
+        },
+        {
+          "col": 4,
+          "value": "Nhiệm vụ Trọng tâm Thực thi"
+        },
+        {
+          "col": 5,
+          "value": "Công cụ & Tính năng AI Hỗ trợ"
+        },
+        {
+          "col": 6,
+          "value": "Kết quả Đầu ra (Deliverables)"
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 49,
+      "cells": [
+        {
+          "col": 2,
+          "value": "6. Chuẩn Bị Dữ Liệu Cho AI & Triển Khai"
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 55,
+      "cells": [
+        {
+          "col": 3,
+          "value": "STT"
+        },
+        {
+          "col": 4,
+          "value": "Tên lý thuyết / Khung tham chiếu"
+        },
+        {
+          "col": 5,
+          "value": "Tác giả & Mốc phát triển"
+        },
+        {
+          "col": 6,
+          "value": "Luận điểm khoa học cốt lõi"
+        },
+        {
+          "col": 7,
+          "value": "Ý nghĩa và ứng dụng trong xây dựng thương hiệu"
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 56,
+      "cells": [
+        {
+          "col": 3,
+          "value": 1
+        },
+        {
+          "col": 4,
+          "value": "Tài sản Thương hiệu Dựa trên Khách hàng (CBBE)"
+        },
+        {
+          "col": 5,
+          "value": "Kevin Lane Keller (1993), David Aaker (1991)"
+        },
+        {
+          "col": 6,
+          "value": "Thương hiệu là tập hợp các liên tưởng nhận thức, nhận biết chất lượng và lòng trung thành tạo nên phản ứng khác biệt của khách hàng trước các nỗ lực tiếp thị."
+        },
+        {
+          "col": 7,
+          "value": "Đo lường sức mạnh nhận thức của thương hiệu sản phẩm và định giá trị tài sản vô hình của cá nhân trên thị trường."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 57,
+      "cells": [
+        {
+          "col": 3,
+          "value": 2
+        },
+        {
+          "col": 4,
+          "value": "Lý thuyết Quản trị Ấn tượng (Impression Management)"
+        },
+        {
+          "col": 5,
+          "value": "Erving Goffman (1956), Kowalski & Leary (1990)"
+        },
+        {
+          "col": 6,
+          "value": "Con người chủ động kiểm soát và dẫn dắt các tín hiệu hành vi, biểu đạt ngôn ngữ và ngoại diện để định hình nhận thức của người khác về năng lực và tư cách của mình."
+        },
+        {
+          "col": 7,
+          "value": "Cung cấp cơ chế giải thích việc thiết lập hình ảnh chuyên nghiệp, phong thái ứng xử và định vị diện mạo của thương hiệu cá nhân."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 58,
+      "cells": [
+        {
+          "col": 3,
+          "value": 3
+        },
+        {
+          "col": 4,
+          "value": "Lý thuyết Bản sắc Xã hội (Social Identity Theory)"
+        },
+        {
+          "col": 5,
+          "value": "Henri Tajfel & John Turner (1986)"
+        },
+        {
+          "col": 6,
+          "value": "Nhận thức bản thân của cá nhân bắt nguồn từ các nhóm xã hội mà họ thuộc về, tạo nên sự cân bằng giữa nhu cầu hòa nhập và nhu cầu khẳng định sự khác biệt."
+        },
+        {
+          "col": 7,
+          "value": "Hướng dẫn định vị thương hiệu cá nhân: vừa đáp ứng các tiêu chuẩn ngành (POP) vừa xác lập bản sắc dị biệt độc bản (POD)."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 59,
+      "cells": [
+        {
+          "col": 3,
+          "value": 4
+        },
+        {
+          "col": 4,
+          "value": "Lý thuyết Vốn Xã hội (Social Capital Theory)"
+        },
+        {
+          "col": 5,
+          "value": "Pierre Bourdieu (1986)"
+        },
+        {
+          "col": 6,
+          "value": "Uy tín, danh tiếng và mạng lưới quan hệ xã hội bền vững vận hành như một dạng vốn biểu tượng có khả năng chuyển hóa thành các nguồn lực kinh tế thực chất."
+        },
+        {
+          "col": 7,
+          "value": "Giải thích quy luật mở rộng mạng lưới quan hệ nghề nghiệp và sự chuyển hóa từ tầm ảnh hưởng cá nhân sang cơ hội hợp tác kinh doanh."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 60,
+      "cells": [
+        {
+          "col": 3,
+          "value": 5
+        },
+        {
+          "col": 4,
+          "value": "Khung Năng lực Nghề nghiệp (Competency-Based Career)"
+        },
+        {
+          "col": 5,
+          "value": "Arthur và cộng sự (2005)"
+        },
+        {
+          "col": 6,
+          "value": "Năng lực sự nghiệp cấu thành từ 3 trụ cột: Động lực nội tại (Knowing why), Kỹ năng kỹ thuật (Knowing how), và Mạng lưới liên kết (Knowing whom)."
+        },
+        {
+          "col": 7,
+          "value": "Trực tiếp tương ứng với 3 chiều kích đo lường tài sản cá nhân: Sức hút (Brand Appeal), Tính khác biệt (Differentiation) và Độ nhận diện (Recognition)."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 61,
+      "cells": [
+        {
+          "col": 3,
+          "value": 6
+        },
+        {
+          "col": 4,
+          "value": "Lăng kính Bản sắc Thương hiệu (Brand Identity Prism)"
+        },
+        {
+          "col": 5,
+          "value": "Jean-Noël Kapferer (1986, 2008)"
+        },
+        {
+          "col": 6,
+          "value": "Bản sắc thương hiệu là một cấu trúc giao tiếp 6 chiều kết nối hữu cơ giữa Bên phát và Bên nhận, giữa Căn tính bên trong và Biểu hiện bên ngoài."
+        },
+        {
+          "col": 7,
+          "value": "Kiểm soát tính toàn vẹn và đồng nhất của hệ thống nhận diện, thông điệp cốt lõi và trải nghiệm khách hàng."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 125,
+      "cells": [
+        {
+          "col": 1,
+          "value": "Nghiên Cứu Chiến Lược & So Sánh Các Nền Tảng AI Agent: Microsoft Copilot Studio, Google Gemini và Anthropic Claude"
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 154,
+      "cells": [
+        {
+          "col": 2,
+          "value": "4. So sánh cơ cấu chi phí và tổng chi phí sở hữu (TCO)"
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 155,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Thành phần định giá"
+        },
+        {
+          "col": 4,
+          "value": "Microsoft Copilot Studio"
+        },
+        {
+          "col": 5,
+          "value": "Google Vertex AI"
+        },
+        {
+          "col": 6,
+          "value": "Anthropic Claude"
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 156,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Đơn vị thanh toán chính"
+        },
+        {
+          "col": 4,
+          "value": "Copilot Credits (áp dụng chính thức thay thế đơn vị tin nhắn cũ)."
+        },
+        {
+          "col": 5,
+          "value": "Đa tầng theo tài nguyên: Giờ tính toán vCPU/GB, lượt gọi tìm kiếm, token mô hình."
+        },
+        {
+          "col": 6,
+          "value": "Token thực tế tiêu thụ: Cước Input Tokens và Output Tokens theo từng mô hình."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 157,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Mức phí niêm yết chuẩn"
+        },
+        {
+          "col": 4,
+          "value": "- Capacity Pack: $200/tháng cho 25.000 credits (~$0,008/credit). \n\n\n\n- Pay-As-You-Go: $0,01/credit qua Azure."
+        },
+        {
+          "col": 5,
+          "value": "- Agent Engine: $0,0864/vCPU-giờ, $0,0090/GB-giờ. \n\n\n\n- Search: $1,50 - $6,00/1.000 truy vấn. \n\n\n\n- Phiên lưu trữ: $0,25/1.000 sự kiện."
+        },
+        {
+          "col": 6,
+          "value": "- Claude Pro: $20/tháng; Claude Max: $100/tháng (gói cá nhân). \n\n\n\n- API Console: Tính theo cước token thực tế phát sinh."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 158,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Chính sách miễn cước / Ưu đãi"
+        },
+        {
+          "col": 4,
+          "value": "Miễn phí hoàn toàn credits cho người dùng đã có giấy phép Microsoft 365 Copilot ($30/tháng) khi dùng nội bộ."
+        },
+        {
+          "col": 5,
+          "value": "Tặng $300 tín dụng thử nghiệm trong 90 ngày cho tài khoản Google Cloud mới."
+        },
+        {
+          "col": 6,
+          "value": "Tiết kiệm đến 90% chi phí cho các token bối cảnh được lưu bộ đệm (Prompt Caching)."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 159,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Cơ cấu chi phí ẩn cần lưu ý"
+        },
+        {
+          "col": 4,
+          "value": "Một tác vụ dùng reasoning model tốn trên 100 credits; nếu vượt 125% gói trả trước sẽ bị dừng tác tử nếu không bật PAYG."
+        },
+        {
+          "col": 5,
+          "value": "Khó dự toán trước ngân sách hàng tháng do một thao tác tác tử kích hoạt đồng thời 4 hóa đơn SKU phụ trợ."
+        },
+        {
+          "col": 6,
+          "value": "Chi phí nhân sự kỹ thuật cao do doanh nghiệp phải tự duy trì đội ngũ kỹ sư viết code và duy trì giao diện."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 168,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Nghiệp vụ phòng ban"
+        },
+        {
+          "col": 4,
+          "value": "Ứng dụng cụ thể của Copilot Studio"
+        },
+        {
+          "col": 5,
+          "value": "Giải pháp tương ứng trên Gemini / Claude"
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 169,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Bàn trợ giúp CNTT (IT Support)"
+        },
+        {
+          "col": 4,
+          "value": "Tự động phân loại sự cố, đặt lại mật khẩu, cấp quyền phần mềm qua Entra ID và gửi thẻ phê duyệt trên Teams."
+        },
+        {
+          "col": 5,
+          "value": "Xây dựng API bot tích hợp hệ thống quản lý vé (Jira/Zendesk), đối soát log hạ tầng đám mây tự động."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 170,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Dịch vụ Nhân sự (HR Services)"
+        },
+        {
+          "col": 4,
+          "value": "Giải đáp chế độ đãi ngộ từ sổ tay SharePoint, tra cứu số ngày phép tồn qua API Workday/SAP và kích hoạt đơn nghỉ phép."
+        },
+        {
+          "col": 5,
+          "value": "Nạp các tập hồ sơ quy chế lao động phức tạp vào Claude Projects để phân tích và đối soát chính sách đa quốc gia."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 171,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Vận hành & Chuỗi cung ứng"
+        },
+        {
+          "col": 4,
+          "value": "Đọc dữ liệu hóa đơn, kiểm tra tồn kho trong Dynamics 365, phát hiện sai lệch đơn hàng và tự gửi email cảnh báo đối tác."
+        },
+        {
+          "col": 5,
+          "value": "Truy vấn kho dữ liệu lớn BigQuery qua Vertex AI để dự báo nhu cầu thị trường và tối ưu lộ trình logistics."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 172,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Kỹ thuật & Phát triển phần mềm"
+        },
+        {
+          "col": 4,
+          "value": "Giới hạn ở việc gọi webhook cơ bản hoặc kích hoạt quy trình tự động hóa kiểm thử mã qua Power Automate."
+        },
+        {
+          "col": 5,
+          "value": "Claude Code vận hành trực tiếp trong terminal: Tự đọc hiểu repository, chạy test, refactor mã nguồn và tạo PR tự động."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 173,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Nghiên cứu & Tình báo thị trường"
+        },
+        {
+          "col": 4,
+          "value": "Hạn chế hơn; chủ yếu tra cứu trong tài liệu nội bộ hoặc gọi công cụ tìm kiếm Bing có kiểm soát."
+        },
+        {
+          "col": 5,
+          "value": "Tận dụng Google Search Grounding của Gemini để tổng hợp dữ liệu biến động giá và tin tức tài chính thời gian thực."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 184,
+      "cells": [
+        {
+          "col": 4,
+          "value": "https://www.youtube.com/watch?v=cayUBPHB1HQ"
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 247,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Tiêu chí"
+        },
+        {
+          "col": 4,
+          "value": "Nội dung phân tích chi tiết"
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 248,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Bản chất của Second Brain"
+        },
+        {
+          "col": 4,
+          "value": "• Bản chất không nằm ở công cụ lưu trữ mà là bài toán định tuyến ngữ cảnh (Context Routing) [00:01:56].\n\n• Là nơi tiếp nhận ghi chú, biên bản họp, chuỗi trao đổi (Slack/ClickUp) và tổ chức dưới dạng tệp Markdown để các mô hình AI (Claude Code, Codex, Hermes...) dễ dàng truy xuất chính xác [00:02:05]."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 249,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Giá trị cốt lõi"
+        },
+        {
+          "col": 4,
+          "value": "• Dữ liệu và tài sản trí tuệ (IP) cá nhân/doanh nghiệp là lợi thế cạnh tranh then chốt [00:00:44].\n\n• Giúp giảm tải nhận thức, hạn chế AI bị ảo giác (hallucination) và tránh lãng phí token do AI phải quét toàn bộ kho tài liệu [00:00:58]."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 250,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Tư duy thiết kế (Mindset)"
+        },
+        {
+          "col": 4,
+          "value": "• Thiết kế ngược từ nhu cầu truy xuất (Reverse Engineering): Xác định dữ liệu sẽ được hỏi và sử dụng như thế nào trong tương lai trước khi quyết định cấu trúc nạp vào [00:02:30].\n\n• Nguyên tắc tinh gọn (Lowest-pain Level): Không cố gắng leo lên cấp độ cao nhất; chỉ chọn cấp độ thấp nhất giải quyết được điểm nghẽn thực tế [00:04:07]."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 272,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Giải pháp"
+        },
+        {
+          "col": 4,
+          "value": "Nền tảng / Công cụ"
+        },
+        {
+          "col": 5,
+          "value": "Cách thức thiết lập & Cơ chế hoạt động"
+        },
+        {
+          "col": 6,
+          "value": "Ưu điểm cốt lõi"
+        },
+        {
+          "col": 7,
+          "value": "Hạn chế / Điểm lưu ý"
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 273,
+      "cells": [
+        {
+          "col": 3,
+          "value": "No-code / Low-code (Trực quan, kéo thả)"
+        },
+        {
+          "col": 4,
+          "value": "Dify.ai (Cloud version: cloud.dify.ai)"
+        },
+        {
+          "col": 5,
+          "value": "• Tạo ứng dụng dạng Workflow / Chatflow.\n\n• Node 1 (Orchestrator): Sử dụng LLM phân tích prompt, bóc tách nhiệm vụ và rẽ nhánh điều kiện (Condition).\n\n• Các Node tiếp theo (Workers): Mỗi node đóng vai trò một chuyên viên với System Prompt và công cụ riêng.\n\n• Node kết thúc: Tổng hợp kết quả từ các nhánh gửi lại người dùng."
+        },
+        {
+          "col": 6,
+          "value": "• Miễn phí credits khởi tạo.\n\n• Giao diện trực quan, dễ debug từng bước.\n\n• Hỗ trợ tích hợp sẵn đa dạng API (Gemini, Claude, OpenAI, Groq)."
+        },
+        {
+          "col": 7,
+          "value": "• Luồng logic phức tạp đòi hỏi cấu hình nhiều node rẽ nhánh thủ công."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 274,
+      "cells": [
+        {
+          "col": 4,
+          "value": "Coze (coze.com)"
+        },
+        {
+          "col": 5,
+          "value": "• Sử dụng tính năng tích hợp sẵn: Multi-Agent Mode.\n\n• Tạo 1 Agent cha (Router/Manager).\n\n• Thêm các Agent con chuyên môn hóa vào cùng workspace.\n\n• Agent cha tự động gọi agent con dựa trên ngữ cảnh hội thoại."
+        },
+        {
+          "col": 6,
+          "value": "• Tự động điều phối bằng AI, không cần vẽ sơ đồ node phức tạp.\n\n• Kho plugin và công cụ tích hợp sẵn phong phú."
+        },
+        {
+          "col": 7,
+          "value": "• Khả năng can thiệp sâu vào cấu trúc dữ liệu thô bị hạn chế so với code."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 275,
+      "cells": [
+        {
+          "col": 4,
+          "value": "Flowise / Langflow (Deploy miễn phí lên Hugging Face Spaces)"
+        },
+        {
+          "col": 5,
+          "value": "• Tạo một Web App trên Hugging Face Spaces bằng template Langflow/Flowise.\n\n• Dùng component Supervisor hoặc Agent Selector đóng vai trò Quản lý.\n\n• Nối dây từ Quản lý đến các Worker Agents chuyên trách."
+        },
+        {
+          "col": 6,
+          "value": "• Nguồn mở (Open-source), toàn quyền kiểm soát.\n\n• Trực quan hóa chuẩn kiến trúc của LangChain/LangGraph."
+        },
+        {
+          "col": 7,
+          "value": "• Cần vài thao tác khởi tạo web app ban đầu trên Hugging Face."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 276,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Code Framework (Lập trình linh hoạt trên Cloud)"
+        },
+        {
+          "col": 4,
+          "value": "CrewAI trên Google Colab / Kaggle (colab.research.google.com)"
+        },
+        {
+          "col": 5,
+          "value": "• Cài đặt qua môi trường Colab (!pip install crewai).\n\n• Khai báo từng Agent theo bộ ba: Role (Vai trò), Goal (Mục tiêu), Backstory (Bối cảnh).\n\n• Bật cờ điều phối tự động: process=Process.hierarchical và gán manager_llm.\n\n• Manager tự động phân task, nhận kết quả và tổng hợp báo cáo."
+        },
+        {
+          "col": 6,
+          "value": "• Mô phỏng sát nhất mô hình phòng ban doanh nghiệp.\n\n• Hoàn toàn miễn phí tài nguyên tính toán trên trình duyệt.\n\n• Linh hoạt tinh chỉnh, xử lý dữ liệu phức tạp."
+        },
+        {
+          "col": 7,
+          "value": "• Cần biết cú pháp Python cơ bản.\n\n• Phải nhập API key cá nhân vào notebook mỗi phiên chạy."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 277,
+      "cells": [
+        {
+          "col": 4,
+          "value": "LangGraph trên Google Colab"
+        },
+        {
+          "col": 5,
+          "value": "• Thiết lập hệ thống dưới dạng đồ thị có trạng thái (State Graph).\n\n• Node Quản lý điều hướng trạng thái sang các Node Chuyên gia dựa trên logic điều kiện.\n\n• Kết quả lưu vào bộ nhớ chung (State) để các node tái sử dụng."
+        },
+        {
+          "col": 6,
+          "value": "• Kiểm soát trạng thái (state management) và vòng lặp phản biện/kiểm duyệt cực kỳ chặt chẽ.\n\n• Phù hợp với bài toán phức tạp đòi hỏi nhiều vòng lặp."
+        },
+        {
+          "col": 7,
+          "value": "• Độ dốc học tập (learning curve) cao hơn CrewAI."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 290,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Thành phần / Phân hệ"
+        },
+        {
+          "col": 4,
+          "value": "Công nghệ & Giải pháp đề xuất"
+        },
+        {
+          "col": 5,
+          "value": "Cơ chế vận hành kỹ thuật"
+        },
+        {
+          "col": 6,
+          "value": "Giá trị cho bài toán Rebuild & Bảo mật nội bộ"
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 291,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Tiếp nhận & Làm sạch dữ liệu"
+        },
+        {
+          "col": 4,
+          "value": "- File System Access API- Bộ lọc quy tắc .gitignore- Quét dữ liệu nhạy cảm Secretlint\n[cite: 1, 2]"
+        },
+        {
+          "col": 5,
+          "value": "- Đọc cây thư mục trực tiếp trên máy tính người dùng qua trình duyệt.- Tự động bỏ qua thư mục phụ thuộc và file nhị phân (node_modules, dist, .git).- Dùng Regex tự động phát hiện và làm mờ (masking) token, API keys, chuỗi bí mật."
+        },
+        {
+          "col": 6,
+          "value": "- Dữ liệu không bao giờ rời khỏi thiết bị cá nhân.- Ngăn chặn nguy cơ rò rỉ mã bí mật doanh nghiệp vào bộ nhớ LLM hoặc tệp xuất."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 292,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Bóc tách cú pháp (AST Parsing)"
+        },
+        {
+          "col": 4,
+          "value": "- Tree-sitter (py-tree-sitter)- Bộ phân tích siêu tốc oxc-parser- Module Path Resolver"
+        },
+        {
+          "col": 5,
+          "value": "- Xây dựng cây cú pháp trừu tượng không cần cài đặt compiler của dự án mục tiêu.- Trích xuất chữ ký hàm, class, interface và quan hệ import/export.- Phân giải đường dẫn tương đối và đường dẫn bí danh (@/...) thành đường dẫn tệp thực tế."
+        },
+        {
+          "col": 6,
+          "value": "- Phân tích tĩnh xác định 100%, không bị ảo giác như khi dùng AI đọc code thô.- Xử lý được các kho mã nguồn đa ngôn ngữ (JS, TS, Python, Java)."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 293,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Mô hình hóa Đồ thị Kiến trúc"
+        },
+        {
+          "col": 4,
+          "value": "- Đồ thị có hướng NetworkX $G = (V, E)$\n[cite: 5, 11]\n- Thuật toán Tarjan (SCC)- Thuật toán Personalized PageRank"
+        },
+        {
+          "col": 5,
+          "value": "- Nút là tệp tin, cạnh là quan hệ phụ thuộc.- Phát hiện chính xác các chu trình phụ thuộc vòng ($A \\rightarrow B \\rightarrow C \\rightarrow A$).- Tính toán trọng số kiến trúc để xác định các tệp \"xương sống\" (Architectural Spine)."
+        },
+        {
+          "col": 6,
+          "value": "- Nhận diện ngay các điểm thắt nút cổ chai và lỗi cấu trúc cần tháo gỡ khi viết lại.- Đưa ra thứ tự ưu tiên các tệp quan trọng nhất cần nắm bắt."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 294,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Trực quan hóa Sơ đồ (Canvas)"
+        },
+        {
+          "col": 4,
+          "value": "- React Flow (@xyflow/react)- Động cơ phân tầng elkjs- Luồng tính toán Web Worker"
+        },
+        {
+          "col": 5,
+          "value": "- Biểu diễn cấu trúc thư mục dạng khối lồng nhau (Compound Nodes).- Định tuyến cạnh vuông góc (Orthogonal), bo góc và chống cắt đè lên các khối.- Phân tầng màu ngữ nghĩa: Router (vàng), Service (xanh), Model (tím), Util (xám)."
+        },
+        {
+          "col": 6,
+          "value": "- Sơ đồ trực quan, dễ đọc, không bị hiện tượng \"mạng nhện\" đan chéo dây.- Giao diện mượt mà, không bị đơ giật khi hiển thị dự án hàng nghìn tệp."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 295,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Làm giàu Ngữ nghĩa (Local AI)"
+        },
+        {
+          "col": 4,
+          "value": "- Máy chủ Ollama cục bộ (localhost:11434)- Mô hình Qwen2.5-Coder (7B / 14B)- Kỹ thuật AST Skeleton Compression"
+        },
+        {
+          "col": 5,
+          "value": "- Loại bỏ toàn bộ phần thân hàm, chỉ giữ lại chữ ký giao diện và kiểu dữ liệu.- Cắt giảm 80%–90% dung lượng token ngữ cảnh.- Ép LLM xuất ra JSON có cấu trúc về vai trò tệp và đánh giá rủi ro kiến trúc."
+        },
+        {
+          "col": 6,
+          "value": "- Vận hành hoàn toàn ngoại tuyến (air-gapped), bảo mật tuyệt đối.- Tối ưu hóa bộ nhớ, suy luận nhanh trên máy trạm thông thường."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 296,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Chiến lược Rebuild Từ Dưới Lên"
+        },
+        {
+          "col": 4,
+          "value": "- Thuật toán Sắp xếp Tô-pô (Topological Sort)- Phương pháp Bottom-Up Migration- Khử phụ thuộc bằng Dependency Inversion"
+        },
+        {
+          "col": 5,
+          "value": "- Sắp xếp thứ tự xây dựng: Model/Type $\\rightarrow$ Service $\\rightarrow$ API/UI.- Gợi ý tách các interface ra tệp độc lập để bẻ gãy các chu trình phụ thuộc vòng."
+        },
+        {
+          "col": 6,
+          "value": "- Cung cấp lộ trình từng bước logic để tái lập ứng dụng từ con số 0.- Giảm thiểu tối đa lỗi xung đột tích hợp khi tái tạo tại nơi mới."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 297,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Các Tùy Chọn Tệp Đầu Ra (Outcomes)"
+        },
+        {
+          "col": 4,
+          "value": "- Rebuild Playbook (.md)- Skeleton Stubs (.zip)- OpenAPI Spec (.yaml)- Sơ đồ Mermaid (.mmd)- Báo cáo đơn tệp (.html)"
+        },
+        {
+          "col": 5,
+          "value": "- Xuất tài liệu hướng dẫn tái lập chi tiết từng tầng.- Xuất toàn bộ cây thư mục rỗng với chữ ký hàm và kiểu dữ liệu (không chứa logic bên trong).- Trích xuất danh sách API endpoints, HTTP method, schema DTO.- Xuất mã nguồn sơ đồ mở và báo cáo HTML tự vận hành không cần server."
+        },
+        {
+          "col": 6,
+          "value": "- Có đầy đủ tài liệu và khung sườn để nạp cho AI agent (Claude Code, Cursor) viết lại code.- An toàn pháp lý và bảo mật dữ liệu vì không mang logic nhạy cảm ra ngoài."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    },
+    {
+      "row": 298,
+      "cells": [
+        {
+          "col": 3,
+          "value": "Hạ tầng Giao tiếp Thời gian thực"
+        },
+        {
+          "col": 4,
+          "value": "- Khung ứng dụng FastAPI- Giao thức Server-Sent Events (SSE)- SQLite lưu đệm cục bộ"
+        },
+        {
+          "col": 5,
+          "value": "- Backend bất đồng bộ xử lý tác vụ quét và điều phối tiến trình phân tích.- Phát trực tiếp tiến độ bóc tách và phản hồi của LLM lên giao diện.- Lưu đệm phân tích dựa trên hash nội dung tệp."
+        },
+        {
+          "col": 6,
+          "value": "- Giao diện cập nhật tiến trình trực quan, người dùng không phải chờ đợi trong mơ hồ.- Tăng tốc tối đa khi quét lại các dự án cũ."
+        }
+      ],
+      "warnings": [
+        "UNCLASSIFIED_DATA"
+      ]
+    }
+  ]
+}

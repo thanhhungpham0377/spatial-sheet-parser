@@ -1,0 +1,22 @@
+Company Annual Financial Report 2026
+Confidential - For Internal Use Only
+Prepared by: Financial Ops Team
+[BEGIN DATA]
+Corporate Group Alpha
+	Division North
+		Item Name	Q1 Revenue	Q2 Revenue	Status	Status
+		Product A1	10000	12000	Active	Verified
+		Product A2	15000	18000	Active	Pending
+
+	Division South
+		Item Name	Q1 Revenue	Q2 Revenue
+		Product S1	20000	22000
+		Product S2	25000	27000
+
+		Deep Project Subtable
+			Task	Assignee	Budget
+			Task 1	Alice	5000
+			Task 2	Bob	7000
+
+Tổng cộng	50000	79000
+Standalone Footer Note: Pending final audit approval

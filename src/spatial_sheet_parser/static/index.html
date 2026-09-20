@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spatial Sheet Parser — Local Web Interface</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-container">
+            <div class="brand">
+                <span class="logo-icon">📊</span>
+                <div>
+                    <h1>Spatial Sheet Parser</h1>
+                    <p class="tagline">Deterministic 2D Grid Matrix Parser & Hierarchy Detector</p>
+                </div>
+            </div>
+            <div class="header-controls">
+                <div class="lang-switch-group" role="group" aria-label="Language Selector">
+                    <button type="button" id="lang-btn-vi" class="lang-btn active" title="Tiếng Việt">🇻🇳 VN</button>
+                    <button type="button" id="lang-btn-en" class="lang-btn" title="English">🇬🇧 EN</button>
+                </div>
+                <button type="button" id="about-btn" class="btn btn-xs btn-header-about" title="Thông tin tác giả & Bản quyền">
+                    <span>🛡️ <span data-i18n="authorBtn">Tác giả</span></span>
+                </button>
+                <div class="header-badge">
+                    <span class="badge badge-version">v0.1.0</span>
+                    <span class="badge badge-mode">Local App</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="app-main">
+        <div id="error-banner" class="alert alert-error hidden" role="alert">
+            <div class="alert-header">
+                <span class="alert-icon">⚠️</span>
+                <span id="error-message" class="alert-text"></span>
+                <div class="alert-actions">
+                    <button id="copy-error-btn" class="btn btn-xs btn-error-copy" title="Copy error details">
+                        <span data-i18n="copyError">📋 Copy error</span>
+                    </button>
+                    <button id="close-error-btn" class="alert-close" aria-label="Close error">&times;</button>
+                </div>
+            </div>
+            <details id="error-details-toggle" class="error-details-container">
+                <summary class="error-details-summary" data-i18n="technicalDetails">Technical Details</summary>
+                <pre id="error-details-content" class="error-details-code"></pre>
+            </details>
+        </div>
+
+        <div class="workspace-grid">
+            <!-- Left Panel: Input & Controls -->
+            <section class="panel input-panel">
+                <div class="panel-header">
+                    <h2 data-i18n="inputTitle">Input Sheet Data</h2>
+                    <span class="panel-subtitle" data-i18n="inputSubtitle">Upload file or paste TSV / CSV / JSON matrix</span>
+                </div>
+
+                <div class="panel-body">
+                    <div id="drop-zone" class="drop-zone">
+                        <input type="file" id="file-input" accept=".xlsx,.xls,.ods,.xlsm,.xltx,.xltm,.tsv,.csv,.json,.txt" class="file-input">
+                        <div class="drop-zone-content">
+                            <span class="drop-icon">📁</span>
+                            <p class="drop-text" id="drop-zone-text">
+                                <span data-i18n="dropText">Drag & drop Excel (.xlsx, .xls, Google Sheets export), OpenDocument (.ods), TSV, CSV, or JSON file here, or </span><span class="browse-link" data-i18n="browseLink">browse</span>
+                            </p>
+                            <div class="drop-limit-badge" id="drop-limit-badge">
+                                <span class="limit-icon">ℹ️</span>
+                                <span data-i18n="dropLimitNotice">Max supported file size: <strong>50MB</strong>. All processing is 100% offline &amp; private.</span>
+                            </div>
+                            <span id="file-name-display" class="file-name-display hidden"></span>
+                        </div>
+                    </div>
+
+                    <div id="file-metadata-panel" class="file-metadata-panel hidden">
+                        <div class="meta-card-header">
+                            <span class="meta-card-title" data-i18n="fileMetaTitle">📄 Selected File Metadata</span>
+                            <button type="button" id="meta-clear-btn" class="btn btn-xs btn-outline" title="Remove selected file" data-i18n="removeFile">Remove file</button>
+                        </div>
+                        <div class="meta-grid">
+                            <div><strong style="color: var(--text-muted);" data-i18n="metaFilenameLabel">Filename:</strong> <span id="meta-filename" class="meta-val"></span></div>
+                            <div><strong style="color: var(--text-muted);" data-i18n="metaSizeLabel">File Size:</strong> <span id="meta-size" class="meta-val"></span></div>
+                            <div><strong style="color: var(--text-muted);" data-i18n="metaFormatLabel">Format:</strong> <span id="meta-format" class="meta-val"></span></div>
+                            <div><strong style="color: var(--text-muted);" data-i18n="metaModeLabel">Payload Mode:</strong> <span id="meta-mode" class="meta-val"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="divider">
+                        <span data-i18n="dividerOr">OR PASTE TEXT DIRECTLY</span>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="input-text" class="form-control text-area" placeholder="Paste your spreadsheet matrix data here (TSV, CSV, or JSON)..." rows="12" spellcheck="false"></textarea>
+                    </div>
+
+                    <div class="options-grid">
+                        <div class="form-group">
+                            <label for="format-select" class="form-label" data-i18n="formatSelectLabel">Source Format</label>
+                            <select id="format-select" class="form-control">
+                                <option value="auto" selected data-i18n="formatAuto">Auto-detect</option>
+                                <option value="xlsx">Excel (.xlsx / Google Sheets)</option>
+                                <option value="xls">Legacy Excel (.xls Workbook)</option>
+                                <option value="ods">OpenDocument (.ods Spreadsheet)</option>
+                                <option value="tsv">TSV (Tab-separated / Google Sheets Paste)</option>
+                                <option value="csv">CSV (Comma-separated)</option>
+                                <option value="json">JSON (Grid Matrix)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sheet-name-input" class="form-label" id="sheet-label" data-i18n="sheetNameLabel">Sheet Name (Optional)</label>
+                            <select id="sheet-select" class="form-control hidden" style="margin-bottom: 0.5rem;"></select>
+                            <input type="text" id="sheet-name-input" class="form-control" placeholder="e.g. SalesSummary">
+                        </div>
+                    </div>
+
+                    <div class="action-bar">
+                        <button id="analyze-btn" class="btn btn-primary">
+                            <span>⚡ <span data-i18n="analyzeBtn">Analyze Sheet</span></span>
+                        </button>
+                        <button id="clear-btn" class="btn btn-secondary">
+                            <span>🗑 <span data-i18n="clearBtn">Clear</span></span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Panel: Results & Preview -->
+            <section class="panel results-panel">
+                <div class="panel-header tab-header">
+                    <div class="tab-nav">
+                        <button id="tab-btn-summary" class="tab-btn active" data-tab="summary">
+                            <span>📊 <span data-i18n="tabSummary">Summary Preview</span></span>
+                        </button>
+                        <button id="tab-btn-catalog" class="tab-btn" data-tab="catalog">
+                            <span>📋 <span data-i18n="tabCatalog">Table Catalog</span></span>
+                        </button>
+                        <button id="tab-btn-details" class="tab-btn" data-tab="details">
+                            <span>🧩 <span data-i18n="tabDetails">Tables &amp; Hierarchy</span></span>
+                        </button>
+                        <button id="tab-btn-markdown" class="tab-btn" data-tab="markdown">
+                            <span>📝 <span data-i18n="tabMarkdown">Structured Text</span></span>
+                        </button>
+                        <button id="tab-btn-json" class="tab-btn" data-tab="json">
+                            <span>{ } <span data-i18n="tabJson">JSON Output</span></span>
+                        </button>
+                    </div>
+                    <div class="export-actions">
+                        <button id="copy-json-btn" class="btn btn-sm btn-outline" disabled>
+                            <span>📋 <span data-i18n="copyJsonBtn">Copy JSON</span></span>
+                        </button>
+                        <button id="download-json-btn" class="btn btn-sm btn-outline" disabled>
+                            <span>💾 <span data-i18n="downloadJsonBtn">Download JSON</span></span>
+                        </button>
+                        <button id="copy-md-btn" class="btn btn-sm btn-outline" disabled>
+                            <span>📋 <span data-i18n="copyMdBtn">Copy Markdown</span></span>
+                        </button>
+                        <button id="download-md-btn" class="btn btn-sm btn-outline" disabled>
+                            <span>💾 <span data-i18n="downloadMdBtn">Download .md</span></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="panel-body tab-body">
+                    <!-- Tab 1: Summary & Preview -->
+                    <div id="tab-summary" class="tab-content active">
+                        <div id="summary-metrics" class="metrics-bar hidden">
+                            <div class="metric-card">
+                                <span class="metric-label" data-i18n="metricStatus">Status</span>
+                                <span id="metric-status" class="metric-value badge badge-success">VALID</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-label" data-i18n="metricFormat">Format</span>
+                                <span id="metric-format" class="metric-subval">AUTO</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-label" data-i18n="metricSheet">Sheet</span>
+                                <span id="metric-sheet" class="metric-subval">Default</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-label" data-i18n="metricDims">Grid Size</span>
+                                <span id="metric-dims" class="metric-subval">0 x 0</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-label" data-i18n="metricTables">Tables</span>
+                                <span id="metric-tables" class="metric-value">0</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-label" data-i18n="metricOrphans">Orphans</span>
+                                <span id="metric-orphans" class="metric-value">0</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-label" data-i18n="metricWarnings">Warnings</span>
+                                <span id="metric-warnings" class="metric-value">0</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-label" data-i18n="metricUnclassified">Unclassified</span>
+                                <span id="metric-unclassified" class="metric-value">0</span>
+                            </div>
+                        </div>
+
+                        <div class="preview-container">
+                            <pre id="preview-output" class="code-box preview-box">No dataset analyzed yet. Paste spreadsheet text or upload a file and click "Analyze Sheet".</pre>
+                        </div>
+                    </div>
+
+                    <!-- Tab: Table Catalog (Summary Registry of All Detected Tables) -->
+                    <div id="tab-catalog" class="tab-content">
+                        <div id="catalog-empty" class="empty-state">
+                            <span class="empty-icon">📋</span>
+                            <p data-i18n="catalogEmptyText">No tables detected yet. Run analysis to see the full catalog and summary table of all detected regions.</p>
+                        </div>
+                        <div id="catalog-content" class="hidden">
+                            <div class="catalog-toolbar">
+                                <div class="catalog-search-wrapper">
+                                    <span class="search-icon">🔍</span>
+                                    <input type="text" id="catalog-search-input" class="form-control" placeholder="Search tables by title, ID, or range...">
+                                </div>
+                                <div class="catalog-filter-wrapper">
+                                    <select id="catalog-level-filter" class="form-control">
+                                        <option value="all" data-i18n="filterAll">All Levels &amp; Tables</option>
+                                        <option value="sections" data-i18n="filterSections">📁 Sections Only (Categories)</option>
+                                        <option value="root" data-i18n="filterRoot">Root Tables Only (Level 1)</option>
+                                        <option value="sub" data-i18n="filterSub">Sub-tables Only (Level 2+)</option>
+                                        <option value="orphans" data-i18n="filterOrphans">Orphan Tables Only</option>
+                                    </select>
+                                </div>
+                                <div class="catalog-stats">
+                                    <span id="catalog-count-badge" class="badge badge-version">0 tables</span>
+                                </div>
+                            </div>
+                            <div class="catalog-table-container">
+                                <table class="catalog-table" id="catalog-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 45px;">#</th>
+                                            <th style="width: 85px;" data-i18n="thTableId">Table ID</th>
+                                            <th data-i18n="thTitle">Table Title &amp; Hierarchy</th>
+                                            <th style="width: 75px;" data-i18n="thLevel">Level</th>
+                                            <th style="width: 95px;" data-i18n="thParentId">Parent ID</th>
+                                            <th style="width: 120px;" data-i18n="thDataRange">Data Range</th>
+                                            <th style="width: 75px;" data-i18n="thRecords">Records</th>
+                                            <th style="width: 70px;" data-i18n="thCols">Cols</th>
+                                            <th style="width: 85px;" data-i18n="thConfidence">Confidence</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="catalog-table-body"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 2: Structural Details (Tables, Warnings, Unclassified) -->
+                    <div id="tab-details" class="tab-content">
+                        <div id="details-empty" class="empty-state">
+                            <span class="empty-icon">🔍</span>
+                            <p data-i18n="detailsEmptyText">No analysis results available yet. Run analysis to inspect detected tables and boundaries.</p>
+                        </div>
+                        <div id="details-content" class="details-wrapper hidden">
+                            <section class="details-section">
+                                <h3 class="section-title" data-i18n="secTablesTitle">Detected Hierarchical Tables</h3>
+                                <div id="tables-list" class="cards-list"></div>
+                            </section>
+
+                            <section id="orphans-section" class="details-section hidden">
+                                <h3 class="section-title title-warning" data-i18n="secOrphansTitle">Orphan Tables (No Parent)</h3>
+                                <div id="orphans-list" class="cards-list"></div>
+                            </section>
+
+                            <section id="warnings-section" class="details-section hidden">
+                                <h3 class="section-title title-warning" data-i18n="secWarningsTitle">Global Warnings</h3>
+                                <div id="warnings-list" class="warnings-chips"></div>
+                            </section>
+
+                            <section id="unclassified-section" class="details-section hidden">
+                                <h3 class="section-title" data-i18n="secUnclassTitle">Unclassified Rows (Traceability Loss Prevention)</h3>
+                                <div id="unclassified-list" class="unclassified-table-wrapper"></div>
+                            </section>
+                        </div>
+                    </div>
+
+                    <!-- Tab 3: Structured Text (Markdown) -->
+                    <div id="tab-markdown" class="tab-content">
+                        <div id="markdown-empty" class="empty-state">
+                            <span class="empty-icon">📝</span>
+                            <p data-i18n="markdownEmptyText">Structured text output will appear here after parsing. This format is reversible — it can be parsed back into tables.</p>
+                        </div>
+                        <div id="markdown-content" class="hidden">
+                            <pre id="markdown-output" class="code-box" style="white-space: pre-wrap; font-size: 0.8rem; line-height: 1.55;"></pre>
+                        </div>
+                    </div>
+
+                    <!-- Tab 4: JSON Output Contract -->
+                    <div id="tab-json" class="tab-content">
+                        <pre id="json-output" class="code-box json-box">{
+  "info": "JSON contract output will appear here after parsing."
+}</pre>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Copyright & Author attribution -->
+    <footer class="app-footer">
+        <div class="footer-container">
+            <span class="footer-author" id="footer-author-text">
+                <span data-i18n="footerDev">Phát triển bởi</span> <strong>Phạm Thanh Hùng</strong> © 2026. <span data-i18n="footerRights">Tất cả các quyền được bảo lưu.</span>
+            </span>
+            <span class="footer-meta">Spatial Sheet Parser v0.1.0 | Offline &amp; Privacy-First</span>
+        </div>
+    </footer>
+
+    <!-- About & Copyright Modal -->
+    <div id="about-modal" class="modal-overlay hidden">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <span class="modal-icon">🛡️</span>
+                    <h3 data-i18n="aboutTitle">Thông tin Tác giả &amp; Bản quyền</h3>
+                </div>
+                <button type="button" id="close-about-btn" class="alert-close" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="about-author-card">
+                    <div class="author-avatar">PTH</div>
+                    <div>
+                        <h4 class="author-name">Phạm Thanh Hùng</h4>
+                        <p class="author-role" data-i18n="authorRole">Tác giả &amp; Chủ sở hữu bản quyền phần mềm</p>
+                        <p class="author-en">Pham Thanh Hung (Author &amp; Copyright Owner)</p>
+                    </div>
+                </div>
+                <div class="about-info-list">
+                    <div class="about-info-item">
+                        <strong data-i18n="aboutSoftware">Phần mềm:</strong>
+                        <span>Spatial Sheet Parser (Local Web Engine v0.1.0)</span>
+                    </div>
+                    <div class="about-info-item">
+                        <strong data-i18n="aboutLicense">Bản quyền:</strong>
+                        <span>Copyright © 2026 Phạm Thanh Hùng. All Rights Reserved.</span>
+                    </div>
+                    <div class="about-info-item">
+                        <strong data-i18n="aboutNotice">Bảo mật &amp; Dung lượng:</strong>
+                        <span data-i18n="aboutLimitDesc">Hỗ trợ kích thước tệp tối đa 50MB. Dữ liệu xử lý hoàn toàn 100% ngoại tuyến (offline) trên máy tính của bạn, đảm bảo tuyệt đối an toàn và bảo mật dữ liệu riêng tư.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="close-about-action-btn" class="btn btn-secondary btn-sm" data-i18n="closeBtn">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="progress-card">
+            <div class="progress-header">
+                <div class="spinner"></div>
+                <div>
+                    <h3 id="progress-title" style="font-size: 1rem; font-weight: 700;">Analyzing Spatial Grid Matrix...</h3>
+                    <p id="progress-step-text" style="font-size: 0.8125rem; color: var(--text-muted);">Step 1 of 6: Reading file...</p>
+                </div>
+            </div>
+
+            <div class="progress-bar-bg">
+                <div id="progress-bar-fill" class="progress-bar-fill" style="width: 0%;"></div>
+            </div>
+
+            <ul id="progress-steps-list" class="progress-steps-list">
+                <li id="step-marker-1" class="step-item"><span class="step-icon">1</span> <span class="step-name">Reading file</span> <span class="step-badge pending">Pending</span></li>
+                <li id="step-marker-2" class="step-item"><span class="step-icon">2</span> <span class="step-name">Preparing upload</span> <span class="step-badge pending">Pending</span></li>
+                <li id="step-marker-3" class="step-item"><span class="step-icon">3</span> <span class="step-name">Uploading</span> <span class="step-badge pending">Pending</span></li>
+                <li id="step-marker-4" class="step-item"><span class="step-icon">4</span> <span class="step-name">Parsing workbook</span> <span class="step-badge pending">Pending</span></li>
+                <li id="step-marker-5" class="step-item"><span class="step-icon">5</span> <span class="step-name">Building result</span> <span class="step-badge pending">Pending</span></li>
+                <li id="step-marker-6" class="step-item"><span class="step-icon">6</span> <span class="step-name">Completed</span> <span class="step-badge pending">Pending</span></li>
+            </ul>
+
+            <div class="progress-actions">
+                <button id="cancel-analyze-btn" type="button" class="btn btn-secondary btn-sm">
+                    <span>⏹ <span data-i18n="cancelBtn">Cancel Analysis</span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="/static/app.js?v=0.1.5"></script>
+</body>
+</html>
+

@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: spatial-sheet-parser
+    runtime: python
+    buildCommand: pip install -r requirements.txt && pip install -e .
+    startCommand: python -m spatial_sheet_parser.web
+    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: HOST
+        value: 0.0.0.0

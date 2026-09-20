@@ -1,0 +1,13 @@
+Warehouse Inventory Report
+Generated: 2026-09-20
+[BEGIN DATA]
+,,Orphan Sub-Table Level 2,
+,,,SKU,Quantity,Price
+,,,SKU-001,100,$15.00
+,,,SKU-002,200,$25.00
+Main Warehouse Section,,
+,Storage Bay A,
+,,Item,Count
+,,Pallet 1,40
+,,Pallet 2,60
+Ghi chú: All items inspected

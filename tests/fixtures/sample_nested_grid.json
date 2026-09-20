@@ -1,0 +1,22 @@
+{
+  "sheet_name": "RegionalSalesSheet",
+  "merged_cells": [
+    {
+      "start_row": 0,
+      "start_col": 0,
+      "end_row": 0,
+      "end_col": 2
+    }
+  ],
+  "grid": [
+    ["Executive Summary", null, null],
+    ["Region East", "", "", ""],
+    ["", "District 101", "", ""],
+    ["", "", "Store", "Sales"],
+    ["", "", "Store 101A", "5000"],
+    ["", "", "Store 101B", "7500"],
+    ["", "District 102", "", ""],
+    ["", "", "Store", "Sales"],
+    ["", "", "Store 102A", "8200"]
+  ]
+}
