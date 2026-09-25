@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec-Driven Product Toolkit"
+  short_description: "Develop products from specs through verified release"
+  default_prompt: "Help me choose a product development profile, install the Spec-Driven Product Toolkit, and explain its verification gates."
